@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<!--
+   plan.html
+-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>Plan lekcji</title>
+</head>
+
+<body>
+    <h1>Plan lekcji</h1>
+    <h2>Klasa 1A</h2>
+    <p>To jest główny tekst na stronie.<br>
+    dziś zrobimy ładny tabelkowy plan lekcji :)</p>
+    <p>Zaraz poznamy znaczniki tworzące tabelę</p>
+    
+    <table border="2" cellpadding="3" cellspacing="3" width="80%">
+        <caption>Plan lekcji 1A</caption>
+        <thead>
+            <tr>
+                <th>Nr</th>
+                <th>Godz.</th>
+                <th>Poniedziałek</th>
+                <th>Wtorek</th>
+                <th>Środa</th>
+                <th>Czwartek</th>
+                <th>Piątek</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="5"> to jest stopka</td>
+                <td colspan="2">2 kolumny</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td align="center">1</td>
+                <td>7:10-7:55</td>
+                <td>fizyka</td>
+                <td>wos</td>
+                <td>informatyka</td>
+                <td>religia</td>
+                <td>j.polski</td>
+            </tr>
+            <tr>
+                <td align="center">2</td>
+                <td>8:00-8:45</td>
+                <td>matematyka</td>
+                <td>wf</td>
+                <td>informatyka</td>
+                <td>wf</td>
+                <td>fizyka</td>
+            </tr>
+            <tr>
+                <td align="center">3</td>
+                <td>8:55-9:40</td>
+                <td>informatyka</td>
+                <td>przedsiębiorczość</td>
+                <td>j.polski</td>
+                <td>geografia</td>
+                <td>wf</td>
+            </tr>
+        </tbody>
+    </table>
+    <table border="2" cellpadding="3" cellspacing="3" width="80%">
+        <caption>Łączenie komórek i wierszy</caption>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td colspan="2">6</td>
+        </tr>
+    </table>
+</body>
+
+</html>
