@@ -1,3 +1,35 @@
 body {
+    font-family: arial, tahoma, verdana, serif;
+    font-size: 12pt;
+    line-height: 1.5em;
     background-color: pink;
 }
+
+h1 {
+    font-size: 250%;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.pochylony {
+    font-style: italic;
+}
+
+.pogrubiony {
+    font-weight: bold;
+}
+
+li {
+    font: normal 20px/24px gabriola, serif;
+}
+
+.tekst1 {
+    color: #9100FF;
+}
+
+.tekst2 {
+    color: #FF00D3;
+}
+
