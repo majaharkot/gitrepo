@@ -5,6 +5,27 @@ body {
     background-color: pink;
 }
 
+img { border: 5px solid black; } /* 0,0,0,1 */
+
+.header img { border: 8px solid green; } /* 0,0,1,1 */
+
+#header img { border-color: red; } /* 0,1,0,1 */
+
+div#header {
+    border-color: yellow;
+}
+
+#header {
+    padding-top: 50px;
+    border-top: 40px dashed blue;
+}
+
+.header {
+    padding: 20px;
+    border: 10px solid purple;
+    margin: 15px;
+}
+
 h1 {
     font-size: 250%;
 }
