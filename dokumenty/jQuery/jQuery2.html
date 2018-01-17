@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Przykłady użycia jQuery</title>
+    <title></title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -16,42 +16,52 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style media="screen">
-        .formularz {display: none;}
-    </style>
   </head>
   <body>
 
-    <button type="button" id="przycisk" name="button">Login</button>
+    <p id="akapit1">Jakiś przykładowy tekst</p>
+    <p id="akapit2">Jakiś <em>przykładowy tekst</em></p>
 
-    <form class="formularz" action="index.html" method="post">
-      <div class="form-group">
-        <label for="imie"></label>
-        <input type="text" class="form-control" id="imie" placeholder="podaj imię">
-        <p class="help-block">Podaj swoje imię.</p>
-      </div>
-    </form>
+    <input id="input1" type="text" name="imie" value="">
+
+    <p id="akapit3"> <a id="link1" href="http://lo1.sandomierz.pl">I LO Sandomierz</a> </p>
+
+    <br>
+
+    <button id="btn1" type="button" name="btn1">Pokaż tekst</button>
+    <button id="btn2" type="button" name="btn2">Pokaż HTML</button>
+    <button id="btn3" type="button" name="btn3">Pokaż wartość</button>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
     <script type="text/javascript">
       $(document).ready(() => {
-        //$('#przycisk').click(() => {
-        //  $('.formularz').toggle();
-        //});
-        const $przycisk = $('#przycisk');
-        const $form = $('.formularz');
-        $przycisk.on('mouseenter', () => {
-          $form.show();
+
+        $('#btn1').click(() => {
+          alert($('#akapit1').text());
+          $('#akapit1').text("Nowy tekst");
         });
-        $przycisk.on('mouseleave', () => {
-          $form.hide();
+
+        $('#btn2').click(() => {
+          alert($('#akapit2').html());
+          $('#akapit2').html('Imię i <span class="label label-success">nazwisko</span>')
         });
+
+        $('#btn3').click(() => {
+          alert($('#input1').val());
+          $('#input1').val('Imię i nazwisko')
+        });
+
+        $('#akapit3').mouseover(function() {
+          alert($('#link1').attr('href'));
+          document.location = $('#link1').attr('href')
+        });
+
       });
     </script>
 
-    </script>
   </body>
 </html>
