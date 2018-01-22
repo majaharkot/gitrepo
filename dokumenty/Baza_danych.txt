@@ -1,0 +1,43 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-22T09:10:00+01:00
+
+====== Baza danych ======
+Created poniedziałek 22 styczeń 2018
+
+__PROJEKTOWANIE BAZY DANYCH:__
+* tabela
+* pola=kolumy (zawierają dane tego samego typu, np. liczby, tekst)
+* rekord informacji - zbiór pól w tabeli
+
+SQL- strukturalny język zapytań w bazach danych
+
+__PROGRAMY:__
+microsoft access
+libreoffice base
+**SQLiteStudio** 
+
+nespójność bazy danych - za dużo informacji, chaotyczność
+
+relacyjna baza danych - składa się z wielu tabel połączonych relacjami
+
+**systemy/silinki baz danych**
+* mySQL
+* mar[[mari|i]][[maria|a]][[mariaD|D]][[mariaDB|B]]
+* [[PostgreSQL]]
+* Oracle
+* SQLite
+
+TYPY BANYCH:
+* liczboowe:
+	- integer - liczby całkowite
+	- float lub real - liczby zmiennoprzecinkowe
+* data i czas:
+	-date - data, np. w formacie ISO ( rrrr-mm-dd)
+	-datetime - data i czas
+
+
+
+
+
+
