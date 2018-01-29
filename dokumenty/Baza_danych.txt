@@ -23,7 +23,7 @@ relacyjna baza danych - składa się z wielu tabel połączonych relacjami
 
 **systemy/silinki baz danych**
 * mySQL
-* mar[[mari|i]][[maria|a]][[mariaD|D]][[mariaDB|B]]
+* mar[[mari|i]][[maria|a]][[mariaD|D]]B
 * [[PostgreSQL]]
 * Oracle
 * SQLite
@@ -35,7 +35,12 @@ TYPY BANYCH:
 * data i czas:
 	-date - data, np. w formacie ISO ( rrrr-mm-dd)
 	-datetime - data i czas
+	
+primary key - klucz główny
+ 
+podstawowym typem relacji w bazach danych jest jeden do wielu
 
+autoinkrementacja
 
 
 
