@@ -1,9 +1,9 @@
 Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
-Creation-Date: 2018-01-22T09:10:00+01:00
+Creation-Date: 2018-01-31T07:53:19+01:00
 
-====== Baza danych ======
-Created poniedziałek 22 styczeń 2018
+====== Bazy danych ======
+Created środa 31 styczeń 2018
 
 __PROJEKTOWANIE BAZY DANYCH:__
 * tabela
@@ -23,8 +23,8 @@ relacyjna baza danych - składa się z wielu tabel połączonych relacjami
 
 **systemy/silinki baz danych**
 * mySQL
-* mar[[mari|i]][[maria|a]][[mariaD|D]]B
-* [[PostgreSQL]]
+* mariaDB
+* PostgreSQL
 * Oracle
 * SQLite
 
@@ -41,8 +41,3 @@ primary key - klucz główny
 podstawowym typem relacji w bazach danych jest jeden do wielu
 
 autoinkrementacja
-
-
-
-
-
