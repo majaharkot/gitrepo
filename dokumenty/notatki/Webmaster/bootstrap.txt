@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-26T09:23:43+01:00
+
+====== bootstrap ======
+Created poniedziałek 26 luty 2018
+
+bootstrap zakłada że stronę dzielimy na 12 sekcji
+klasa container pozwala uzyskać przestrzeń która jest wyśrodkowana i skalowana
+klasa container-fluid pozwala uzyskać przestrzeń rozciągniętą na całą dostępną szerokość
