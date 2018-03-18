@@ -1,0 +1,46 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-31T07:30:56+01:00
+
+====== klient-server ======
+Created środa 31 styczeń 2018
+
+serwer - "komputer" udostępniający zasoby
+
+//Jakie zasoby można udostępniać?//
+
+__USŁUGI (ang. service):__
+* DNS - Domain Name System; zamiana nazw hostów na adresy IP (Internet Protocols); polecenie //ping//; port 53
+* HTTP - Hyper Text Transfer Protocol; komunikacja w zakresie stron WWW; port 80
+* FTP - File Transfer Protocol; port 20, 21
+* SSH - Secure Shell; port 22
+
+**cache** - pamięć podręczna
+**klient** - "komputer" korzystający z usług udostępnianych przez serwer
+**protokół** - język porozumiewania się klienta z serwerem definiowany w dokumentach RFC
+**port** - 
+	well known services: 0-1024
+
+__Serwer HTTP:__
+1. python -m SimpleHTTPServer
+	  python3 -m http.server
+3. php - S localhost:8000
+
+__Lokalny serwer:__
+localhost:8000
+127.0.0.1:8000
+
+/ - katalog, w którym został uruchomiony serwer
+komunikat "//200"// - zasób został odnaleziony
+komunikat "//404"// - file not found
+
+__Metody HTTP:__
+* GET - parametry przekazujemy po znaku ? 
+* POST - przesyłanie danych w sposób niejawny, np. z formularzy
+
+**parametry** - przekazujemy jako: //nazwa_parametru=wartość //i możemy je łączyć znakiem &
+
+PRACA DOMOWA:
+1. ściągnij pythona 3.6.4 (executable installer) -ecg.vot.pl -> narzędzia -> interpreter pythona
+2. zainstaluj serwer php ecg.vot.pl -> narzędzia -> technologie www -> serwer www (uwamp)
+ 
