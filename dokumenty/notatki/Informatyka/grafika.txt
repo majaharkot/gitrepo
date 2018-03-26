@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-19T09:04:08+01:00
+
+====== grafika ======
+Created poniedziałek 19 marzec 2018
+
+**model kolorów = system zaoisu koloru - różnorodne sposoby definiowania kolorów**
+
+=== model RGB (addytywny) ===
+Kolory powstają wskutek nakładania się 3 źródeł światła (czerwonego, zielonego, niebieskiego). Każda składowa określana jest przez liczbę (od 0 do 255). 
+Potrzeba min. 3 bajtów na jeden punkt. __0x - poprzedza liczbę szesnastkową__. 
+Kolor biały powstaje z maksymalnych wartości (255, 255, 255), kolor czarny z minimalnych (0, 0, 0).
+Kolory wtórne: //cyjan// (G+B), //magenta// (R+B), //żółty// (R+G)
+
+=== model CMYK (substraktywny) ===
+Podstawowe kolory: C - cyjan; M - magenta; Y - yellow; K - black. Jest odwrotnością modelu RGB. Kolory powstają poprzez nakładanie barwników podstawowych w takich proporcjach, by pochłaniały i odbijały określone zakresy widma światła. 
+
+=== model HSB ===
+Hue (barwa) - przyjmuje wartości od 0 do 360; definiuje kolor
+Saturation (nasycenie) - przyjmuje wartości od 0 do 100
+Brightness (jasność) / Value (waartość) - przyjmuje wartości od 0 do 100
+
+
+przestrzenie kolorów - zmienia się w zależności od modelu
+
+
+__grafika rastrowa__ - tworzona z punktów (pikseli), z których każdy przyjmuje określone wartości RGB, może być zapisywana w formatach bezstrarnych (bitmapa - BMP; GIF; PNG) i stratnych (JPEG = JPG) oraz bez kompresji (PSD - format fotoshopa; XCF - format gimpa)
