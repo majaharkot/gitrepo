@@ -1,0 +1,59 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-05-15T16:51:56+02:00
+
+====== SQL ======
+Created wtorek 15 maj 2018
+
+__CREATE TABLE__ tworzy nową tabelę
+__INSERT INTO__ dodaje nowy wiersz do tabeli
+__SELECT__ zapytania danych z tabeli
+__UPDATE__ edytyje wiersz w tabeli
+__ALTER TABLE__ zmienia istniejące tabele
+__DELETE FROM__ usówa wiersze z tabeli
+__AS__ zmienia nazwę kolumny lub tabeli
+__DISTINCT__ zwraca unikalne wartości
+__WHERE__ filtruje wyników zapytania na podstawie określonych warunków. Operatorzy WHERE: =  !=  >  <  >=  <=	
+__LIKE__ jest specjalnym operatorem używanym z klauzulą ​​WHERE do wyszukiwania określonego wzorca w kolumnie. Operatorzy: _  jeden znak ; % wiele znaków
+__NULL__ oznacza nieznane wartości. Operatorzy: IS NULL; IS NOT NULL
+__BETWEEN__ może być użyty w klauzuli WHERE do filtrowania zestawu wyników w pewnym zakresie. Wartości mogą być liczbami, tekstem lub datami
+__AND__ łączy wiele warunków w klauzuli WHERE, aby zestaw wyników był bardziej szczegółowy i użyteczny. Operator AND wyświetla wiersz, jeśli wszystkie warunki są spełnione
+__OR__ łączy wiele warunków w klauzuli WHERE, aby zestaw wyników był bardziej szczegółowy i użyteczny. Operator OR wyświetla wiersz, jeśli dowolny warunek jest prawdziwy
+__ORDER BY__ sortuje wyniki alfabetycznie lub numerycznie
+__LIMIT__ pozwala określić maksymalną liczbę wierszy, które będzie miał zestaw wyników  
+__CASE__ pozwala nam tworzyć różne wyniki (zwykle w instrukcji SELECT)
+__COUNT()__ policz liczbę wierszy
+__SUM()__ suma wartości w kolumnie
+__MAX()__ największa wartość 
+__MIN()__ najmniejsza wartość
+__AVG()__ średnia wartość w kolumnie
+__ROUND()__ zaogrąlij wartości w kolumnie
+__GROUP BY__ łączenie danych z jednej lub więcej kolumn.
+__HAVING__ ograniczya wyniki zapytania na podstawie właściwości zagregowanej.
+__JOIN__ łączy wiersze z różnych tabel, jeśli warunek łączenia jest prawdziwy.
+__LEFT JOIN__ zwróci każdy wiersz w lewej tabeli, a jeśli warunek łączenia nie zostanie spełniony, wartości NULL zostaną użyte do wypełnienia kolumn z prawej tabeli.
+__CROSS JOIN__ pozwala nam łączyć wszystkie wiersze jednego stołu ze wszystkimi wierszami innego stołu
+__UNION__ umieszcza jeden zestaw danych na drugim.
+__WITH__ pozwala nam zdefiniować grupę tabel tymczasowych, które mogą być użyte w zapytaniu końcowym.
+
+//Klucz podstawowy// to kolumna, która obsługuje unikalny identyfikator wierszy w tabeli.
+//Klucz obcy// to kolumna zawierająca klucz podstawowy do innej tabeli.
+
+**SELECT name,**
+** CASE**
+**  WHEN genre = 'romance' THEN 'Chill'**
+**  WHEN genre = 'comedy' THEN 'Chill'**
+**  ELSE 'Intense'**
+** END AS 'Mood'**
+**FROM movies;**
+
+**WITH previous_query AS (**
+**SELECT customer_id,**
+**       COUNT(subscription_id) as subscriptions**
+**FROM orders**
+**GROUP BY customer_id)**
+**SELECT customers.customer_name,**
+**previous_query.subscriptions**
+**FROM previous_query**
+**JOIN customers**
+**	ON customers.customer_id = previous_query.customer_id;**

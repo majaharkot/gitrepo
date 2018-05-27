@@ -33,6 +33,10 @@ a {
 
 .gallery {
   margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .gallery-item {
