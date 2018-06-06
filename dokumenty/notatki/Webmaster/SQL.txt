@@ -6,3 +6,20 @@ Creation-Date: 2018-05-30T08:17:18+02:00
 Created środa 30 maja 2018
 
 CSV -
+
+select * from tbFilmy; - wybierz wszystkie rekordy i pola z tabeli Filmy
+
+SELECT name, genre FROM tbFilmy; - wybierz pola z kolumny nazwa i kolumny gatunek z tabeli Filmy
+
+SELECT name __AS__ nazwa, genre __AS__ gatunek FROM tbFilmy; - aliasowanie
+
+cur.execute("""
+		SELECT name AS nazwa, genre AS gatunek FROM tbFilmy
+	""")   - między """ dowolna długość zapytania
+
+rekord = [x.strip() for x in rekord]  -- usówanie pustych znaków  (spacja na końcu elementu 'trailing spaces')
+
+SELECT DISTINCT genre FROM tbFilmy; - wybierz unikalne wartości dla gatunku
+
+SELECT name AS tytul, imdb_rating FROM tbFilmy WHERE imdb_rating < 5; - wybierz tytuły i oceny z tabeli Filmy, w których ocena jest mniejsza od 5
+
