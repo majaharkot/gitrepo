@@ -35,8 +35,13 @@ a {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
+<<<<<<< HEAD
   flex-wrap: wrap;
   justify-content: space-around;
+=======
+  justify-content: center;
+  flex-wrap: wrap;
+>>>>>>> b86d8b4c86d2cbf3ef8a6fe61f1a704bbacf1a22
 }
 
 .gallery-item {

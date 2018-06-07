@@ -26,3 +26,8 @@ przestrzenie kolorów - zmienia się w zależności od modelu
 
 
 __grafika rastrowa__ - tworzona z punktów (pikseli), z których każdy przyjmuje określone wartości RGB, może być zapisywana w formatach bezstrarnych (bitmapa - BMP; GIF; PNG) i stratnych (JPEG = JPG) oraz bez kompresji (PSD - format fotoshopa; XCF - format gimpa)
+
+===== ROZDZIELCZOŚĆ =====
+{{./pasted_image.png?width=1000}}
+
+program: XnConvert
