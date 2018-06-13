@@ -1,5 +1,6 @@
 Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
+
 <<<<<<< HEAD
 Creation-Date: 2018-05-15T16:51:56+02:00
 
@@ -66,11 +67,13 @@ Created środa 30 maja 2018
 
 CSV -
 
+== KWERWENDY WYBIERAJĄCE ==
+
 **select * from tbFilmy;** - wybierz wszystkie rekordy i pola z tabeli Filmy
 
 **SELECT name, genre FROM tbFilmy;** - wybierz pola z kolumny nazwa i kolumny gatunek z tabeli Filmy
 
-**SELECT name AS nazwa, genre AS gatunek FROM tbFilmy;** - aliasowanie
+SELECT** name AS nazwa, genre AS gatunek **FROM tbFilmy; - aliasowanie
 
 cur.execute(**"""**
 		SELECT name AS nazwa, genre AS gatunek FROM tbFilmy
@@ -80,45 +83,73 @@ cur.execute(**"""**
 
 **SELECT DISTINCT genre FROM tbFilmy;** - wybierz unikalne wartości dla gatunku
 
-__SELECT name AS tytul, imdb_rating FROM tbFilmy WHERE imdb_rating < 5;__ - wybierz tytuły i oceny z tabeli Filmy, w których ocena jest mniejsza od 5
+**SELECT name AS tytul, imdb_rating FROM tbFilmy WHERE imdb_rating < 5;** - wybierz tytuły i oceny z tabeli Filmy, w których ocena jest mniejsza od 5
 
-SELECT name AS tytul, imdb_rating FROM tbFilmy WHERE imdb_rating > 8.5 ORDER BY imdb_rating ASC; — wybierz filmy, których ocena jest większa od 8.5 i uporządkuj rosnąco
+**SELECT name AS tytul, imdb_rating FROM tbFilmy WHERE imdb_rating > 8.5 ORDER BY imdb_rating ASC;** — wybierz filmy, których ocena jest większa od 8.5 i uporządkuj rosnąco
 
-SELECT name AS tytul, imdb_rating FROM tbFilmy WHERE imdb_rating > 8.5 ORDER BY imdb_rating DESC; — wybierz filmy, których ocena jest większa od 8.5 i uporządkuj malejąco
+**SELECT name AS tytul, imdb_rating FROM tbFilmy WHERE imdb_rating > 8.5 ORDER BY imdb_rating DESC;** — wybierz filmy, których ocena jest większa od 8.5 i uporządkuj malejąco
 
-SELECT name AS tytul, imdb_rating FROM tbFilmy WHERE imdb_rating > 8.5 __AND imdb_rating <> ''__ ORDER BY imdb_rating DESC; - i pomiń wartości puste
+SELECT name AS tytul, imdb_rating FROM tbFilmy WHERE imdb_rating > 8.5 **AND imdb_rating <> ''** ORDER BY imdb_rating DESC; - i pomiń wartości puste
 
-SELECT name AS tytul, imdb_rating FROM tbFilmy WHERE imdb_rating='';               \
-SELECT name AS tytul, imdb_rating FROM tbFilmy WHERE imdb_rating LIKE '';        \ - wybierz filmy, których pole oceny jest puste
+**SELECT name AS tytul, imdb_rating FROM tbFilmy WHERE imdb_rating='';**               \
+**SELECT name AS tytul, imdb_rating FROM tbFilmy WHERE imdb_rating LIKE '';**        \ - wybierz filmy, których pole oceny jest puste
 
-WHERE imdb_rating IS NULL - gdzie nie ma żadnej wartości
+**WHERE imdb_rating IS NULL** - gdzie nie ma żadnej wartości
 
-UPDATE tbFilmy SET imdb_rating=NULL WHERE imdb_rating=''; — zmień filmy tam gdzie wartość oceny jest pusta na jej brak
+**UPDATE tbFilmy SET imdb_rating=NULL WHERE imdb_rating='';** — zmień filmy tam gdzie wartość oceny jest pusta na jej brak
 
-SELECT name AS tytul FROM tbFilmy WHERE tytul LIKE 'Se_en';   — na _ może wskoczyć dowolna liczba lub cyfra (jeden znak to jeden _!!!)
-Se7en
-Seven
-SELECT name AS tytul FROM tbFilmy WHERE tytul LIKE '_____'; — mają 5 znaków
-Shrek
-Brave
-Blade  (...)
-SELECT name AS tytul FROM tbFilmy WHERE tytul LIKE 'S%'; — zaczynają się na S
-Star Wars: Episode I - The Phantom Menace
-Star Wars
-Spider-Man  (...)
-SELECT name AS tytul FROM tbFilmy WHERE tytul LIKE 'S%n'; — zaczynają się na S i kończą na N
-Spider-Man
-Saving Private Ryan
-Se7en (...)
-SELECT name AS tytul FROM tbFilmy WHERE tytul LIKE '%n';  — kończą się na N
-Avengers: Age of Ultron
-Spider-Man
-Transformers: Revenge of the Fallen
+**SELECT name AS tytul FROM tbFilmy WHERE tytul LIKE 'Se_en';**   — na _ może wskoczyć dowolna liczba lub cyfra (jeden znak to jeden _!!!)
+//Se7en//
+//Seven//
+**SELECT name AS tytul FROM tbFilmy WHERE tytul LIKE '_____';** — mają 5 znaków
+//Shrek//
+//Brave//
+//Blade  (...)//
+**SELECT name AS tytul FROM tbFilmy WHERE tytul LIKE 'S%';** — zaczynają się na S
+//Star Wars: Episode I - The Phantom Menace//
+//Star Wars//
+//Spider-Man  (...)//
+**SELECT name AS tytul FROM tbFilmy WHERE tytul LIKE 'S%n';** — zaczynają się na S i kończą na N
+//Spider-Man//
+//Saving Private Ryan//
+//Se7en (...)//
+**SELECT name AS tytul FROM tbFilmy WHERE tytul LIKE '%n';**  — kończą się na N
+//Avengers: Age of Ultron//
+//Spider-Man//
+//Transformers: Revenge of the Fallen//
 
-SELECT name AS tytul FROM tbFilmy WHERE tytul BETWEEN 'D' AND 'G'; — wybierz filmy, których tytuł zaczyna się na <D,G)
-SELECT name, imdb_rating FROM tbFilmy WHERE imdb_rating BETWEEN 5 AND 8; — wybierz filmy, które mają ocenę <5,8> (WARTOŚCI LICZBOWE!!!)
+**SELECT name AS tytul FROM tbFilmy WHERE tytul BETWEEN 'D' AND 'G';** — wybierz filmy, których tytuł zaczyna się na <D,G)
+**SELECT name, imdb_rating FROM tbFilmy WHERE imdb_rating BETWEEN 5 AND 8;** — wybierz filmy, które mają ocenę <5,8> (WARTOŚCI LICZBOWE!!!)
 
+== KWERENDY AGREGUJĄCE -dokonują obliczenia ==
 
+**SELECT AVG(downolands) FROM tbApps;** - średnia
+	możemy wybrać wszystkie dane, które są poniżej lub powyżej średniej:  **SELECT name, downloads FROM tbApps WHERE downloads > (SELECT AVG(downloads) FROM tbApps);**
+					**SELECT name, downloads FROM tbApps WHERE downloads > (SELECT AVG(downloads) FROM tbApps) ORDER BY downloads DESC LIMIT 5; **- malejąco 5 wyników
 
+**SELECT COUNT(name) FROM tbApps;** - zlicz ilość aplikacji w bazie
+**SELECT COUNT(name) FROM tbApps WHERE downloads > (SELECT AVG(downloads) FROM tbApps);** - zlicz aplikacje w których downloads > średnia
+
+SELECT price, **COUNT(*)** FROM tbApps; - zlicz wszystkie rekordy
+
+**SELECT price, COUNT(*) FROM tbApps GROUP BY price; **- zlicz ilość rekordów zgrupowane według ceny (ile aplikacji ma daną cenę)
+//0|73//
+//0.99|43//
+//1.99|42//
+//2.99|21//
+//3.99|9//
+//14.99|12//
+
+**SELECT price, SUM(price) FROM tbApps GROUP BY price; **- zsumuj ceny 
+//0|0//
+//0.99|42.57//
+//1.99|83.58//
+//2.99|62.79   //(21*2.99)
+//3.99|35.91//
+//14.99|179.88//
+
+SELECT category, SUM(downloads) AS suma FROM tbApps GROUP BY category ORDER BY suma DESC;
+
+SELECT category, price, AVG(downloads) FROM tbApps GROUP BY category, price; - jaka jest średnia pobrań dla poszczególnych kategorii i cen
 
 >>>>>>> b86d8b4c86d2cbf3ef8a6fe61f1a704bbacf1a22
