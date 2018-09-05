@@ -1,0 +1,37 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-05T07:24:11+02:00
+
+====== programowanie ======
+Created środa 05 września 2018
+
+język ludzki (mowa) :  Jeśli liczba punktów jest większa niż 50, test jest zaliczony; w przeciwnym razie nie zalicza go się.
+
+język programowania wysokiego poziomu:  if (liczba_pkt > 50)
+												zaliczenie = true
+											 else
+												 zaliczenie  = false
+
+W jezyku programowania niskiego poziomu pojawiają się skróty eax ecx, które są oznaczeniami komórek procesora
+
+lata 70.  to język C (funkcjonuje do tej pory) i Pascal (był stosowany przez wiele lat do nauki programowania jako podstawowy język)
+lata 80. język C → język C++
+
+__KOMPILACJA__ — kompilator — tłumaczenie kodu na kod maszynowy (bilarny)
+__KONSOLIDACJA__ — linker — łączenie z kodem potrzebnych do jego działania bibliotek
+
+**Języki interpretowalne** (python, javascript) — nie podlegają one kompilacji i konsolidacji, tylko wykonywane są przez interpreter
+
+__ALGORYTM__ — jest to lista następujących po sobie kroków, która doprowadzi do określonego celu
+
+== Sposoby zapisu algorytmu: ==
+	* lista krkoów
+	* pseudojęzyk
+	* systemy blokowe
+
+FORMA BLOKOWA:
+	blok graniczny (elipsa) —  początek i koniec algorytmu
+	blok operacyjny (prostokąt) —  operacje zmieniające wartości zmiennych
+	blok wejścia/wyjścia (równoległobok) — operacje wprowadzania i wyprowadzania danych
+	blok decyzyjny (romb) — wybór jednej z dwóch mozliwych dróg działania
+
