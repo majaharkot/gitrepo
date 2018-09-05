@@ -34,4 +34,18 @@ FORMA BLOKOWA:
 	blok operacyjny (prostokąt) —  operacje zmieniające wartości zmiennych
 	blok wejścia/wyjścia (równoległobok) — operacje wprowadzania i wyprowadzania danych
 	blok decyzyjny (romb) — wybór jednej z dwóch mozliwych dróg działania
+ 
+Specyfikacją problemu algorytmicznego nazywamy dokładny opis zadania, które ma zostać rozwiązane
+
+iostrem - in out - biblioteka wejścia wyjścia
+
+int - integer (liczby całkowite)
+
+== Podstawowe typy danych (typ; rozmiar w bajtach; zakres) ==
+	* char ; 1 ;  -128 — 127
+	* **int** ; 2, 4 lub 8 ;  -32 768 — 32767
+	* long int ; 4 ;  -2 147 483 648 — 2 147 483 647
+	* **float** ; 4 ;  6 cyfr znaczących:  -3,4E38 — 3,4E38																3,4E38 = 3,4 * 10 ^ 38
+	* double ; 8 ;  10 cyfr znaczących -1,7E308 — 1,7E308
+	* bool  ; 4 ; true lub false
 
