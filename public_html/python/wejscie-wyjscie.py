@@ -2,13 +2,21 @@
 # -*- coding: utf-8 -*-
 #
 #  wejscie-wyjscie.py
+#
+#wszystko co jest pobierane z domyślnego wejścia, tj. terminala, jest znakiem
 
 
 def main(args):
-    a = input("Podaj liczbę: ")
+    a = int(input("Podaj liczbę: "))
     print(a)
-    b = input("Podaj drugą liczbę: ")
+    b = int(input("Podaj drugą liczbę: "))
     print(b)
+    
+    print("Suma: ", a + b)
+    print("Różnica: ", a - b)
+    print("Iloczyn: ", a * b)
+    print("Iloraz: ", a / b)
+    
     return 0
 
 if __name__ == '__main__':
