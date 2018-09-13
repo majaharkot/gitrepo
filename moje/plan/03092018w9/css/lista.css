@@ -1,0 +1,16 @@
+body{
+	background-color: white;
+	color:#000000;
+	font:11px verdana,sans-serif;
+	margin:20}
+p,td{font:16px verdana,sans-serif}
+a:link{color: black}
+a:visited{color: #ee3733}
+a:hover{color: black;text-decoration:none}
+/* odno�niki (lista rozwijalna) */
+a.pp:link,a.pp:visited {color: black;font-weight:bold}
+a.pp:hover{text-decoration:none}
+/* element na li�cie */
+p.el{margin-top:0;margin-bottom:0.5em}
+/* logo szko�y */
+.logo{text-align:center;margin-bottom:10px}
