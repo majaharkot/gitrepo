@@ -153,3 +153,11 @@ SELECT category, SUM(downloads) AS suma FROM tbApps GROUP BY category ORDER BY s
 SELECT category, price, AVG(downloads) FROM tbApps GROUP BY category, price; - jaka jest średnia pobrań dla poszczególnych kategorii i cen
 
 >>>>>>> b86d8b4c86d2cbf3ef8a6fe61f1a704bbacf1a22
+
+
+ls -al
+sqlite3 nazwabazydanych.db < plik.sql
+sqlite3 nazwabazy.db
+	.tables
+	.schema nazwatabeli
+
