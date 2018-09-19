@@ -20,7 +20,7 @@ def maks(a, b, c):
     return m
 
 def maks2(a, b, c):
-    maks = a
+    maks = a #zakładamy, że pierwsza liczba jest największa
     if b > maks:
         maks = b
     if c > maks:
