@@ -5,34 +5,34 @@ body{
 	overflow:auto;
 	margin:0}
 .tabtytul{ /* tabelka z grafik¹ (nag³ówek) */
-	background-color:#DE1922;
-	border-bottom:2px solid #808080}
+	background-color:#ff0000;
+	border-bottom:3px solid #aa0000}
 .tytul{ /* komórka z tytu³em */
-	background-color:#DE1922;
+	background-color:#ff0000;
 	color:#ffffff;
-	height:80px;
+	height:60px;
 	font:bold 36px verdana,sans-serif;
 	border-bottom:3px solid #B11919;
 	text-align:center}
 .tytulnapis{ /* tytu³ strony z cieniem (tylko IE) */
-	padding-left:10px;width:400px;height:60px;filter:Shadow(Color=#666666,Direction=150)}
+	padding-left:10px;width:400px;height:40px;filter:Shadow(Color=#000000,Direction=150)}
 .tabela{ /* tabela z planem */
-	border-color:#B11919}
+	border-color:#aa0000}
 td{
 	font-size:11px}
 th{
-	background-color:#DE1922;
+	background-color:#aa0000;
 	color:#FFFFFF;
 	font-size:13px}
 td.g{ /* godzina */
-	background-color:#DE1922;
+	background-color:#ff0000;
 	color:#FFFFFF;
 	font-weight:bold;
 	vertical-align:top;
 	text-align:center;
 	white-space:nowrap}
 td.nr{ /* numer lekcji */
-	background-color:#DE1922;
+	background-color:#aa0000;
 	color:#FFFFFF;
 	font-weight:bold;
 	text-align:center;
