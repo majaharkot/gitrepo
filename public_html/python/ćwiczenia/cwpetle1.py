@@ -3,13 +3,19 @@
 #
 #  cwpetle1.py
 #  
+def wynik
+
 
 def main(args):
     
+    liczba = 0
     wynik = 0
     
     while wynik >= 75:
-        print(wynik)
+        liczba = int(input("Podaj liczbę: "))
+        wynik = wynik + liczba
+    
+    print("Suma: ", wynik)
 
         
     return 0
