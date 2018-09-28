@@ -7,6 +7,14 @@ Creation-Date: 2018-05-15T16:51:56+02:00
 ====== SQL ======
 Created wtorek 15 maj 2018
 
+**systemy/silinki baz danych**
+* mySQL
+* MariaDB
+* PostgreSQL
+* Microsoft SQLServer
+* SQLite3
+
+
 __CREATE TABLE__ tworzy nową tabelę
 __INSERT INTO__ dodaje nowy wiersz do tabeli
 __SELECT__ zapytania danych z tabeli
@@ -177,4 +185,46 @@ __Normalizacja__ to bezstratny proces organizowania danych w tabelach mający na
    kolumna informacyjna nie należąca do klucza nie zależy też od innej kolumny informacyjnej, nie należącej do klucza (Czyli każdy niekluczowy argument jest bezpośrednio zależny tylko od klucza głównego a
    nie od innej kolumny )
 
+__Więzy integralności__ (constrains) to mechanizmy, które wymuszają na bazie danych kontrolę pól, dzięki czemu jest ona spójna.
+	PRIMARY KEY - klucz główny
+	UNIQUE - unikalność wartości w kolumnie
+	AUTONUMERIC
+	NOT NULL - zapobiega wstawianiu wartości NULL do kolumny
+	NULL - nic
+	FOREIGN KEY - klucz obcy definiuje relacje między tabelami
+	REFERENCES = FOREIGN KEY                                       pole REFERENCES tabela(inne pole)
+	CHECK - zapewnia, że wartość wstawiona do kolumny spełnia wymagany warunek logiczny (np. liczba1 > liczby2)
 
+LICZBOWE TYPY DANYCH:
+	INTEGER -
+	SMALLINT
+	TINYINT
+	
+LICZBY ZMIENNOPRZECINKOWE:
+	DECIMAL
+	NUMERIC
+	MONEY
+	SMALL
+
+TEKSTOWE TYPY DANYCH:
+	TEXT
+	CHARACTER(n) / CHAR(n)
+	VARCHAR(N)
+	
+BINARNE TYPY DANYCH:
+	BLOB
+	
+KODOWANIE = UTF-8
+
+data jako TEXT
+ISO8601  data YYYY-MM-DD
+		   godzina HH:MM:SS.SSS
+
+data jako REAL
+numer dnia, który upłynął od 
+
+klauzula DEFAULT - wartość domyślna
+
+plik/wczytaj ponownie z kodowaniem/wschodnioeuropejskie/WINDOWS-1250
+dokument/ustaw kodowanie znaków/unicode/utf-8
+dokument/wyświetlanie znaków końca wiersza/konwertuj i ustaw na lf

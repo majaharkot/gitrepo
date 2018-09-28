@@ -23,10 +23,10 @@ relacyjna baza danych - składa się z wielu tabel połączonych relacjami
 
 **systemy/silinki baz danych**
 * mySQL
-* mariaDB
+* MariaDB
 * PostgreSQL
-* Oracle
-* SQLite
+* Microsoft SQLServer
+* SQLite3
 
 TYPY BANYCH:
 * liczboowe:
