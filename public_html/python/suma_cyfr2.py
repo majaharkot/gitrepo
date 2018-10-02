@@ -10,9 +10,8 @@ def suma_cyfr(l2):
     
     suma = 0
     
-    while l2 > 0:
-        suma += l2 % 10
-        l2 = int(l2 / 10)
+    for cyfra in l2:
+        suma += cyfra
         
     return suma
 
@@ -23,9 +22,9 @@ def main(args):
 #    while l2 < 10:
 #        l2 = int(input("Podaj liczbę dwucyfrową: "))
     
-    assert(suma_cyfr(568) == 19)
-    assert(suma_cyfr(9632) == 20)
-    assert(suma_cyfr(18) == 9)
+    assert(suma_cyfr("5624956258846") == 70)
+    assert(suma_cyfr("963258796987") == 79)
+    assert(suma_cyfr("1245857458") == 9)
     
     return 0
 
