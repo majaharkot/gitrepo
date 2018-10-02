@@ -11,7 +11,7 @@ def main(args):
     
 
     for liczba in range(n, m + 1):
-        print(liczba, end = " ")
+        print(liczba, end = '')
     
     return 0
 
