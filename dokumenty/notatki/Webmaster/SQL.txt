@@ -162,6 +162,8 @@ SELECT category, price, AVG(downloads) FROM tbApps GROUP BY category, price; - j
 
 >>>>>>> b86d8b4c86d2cbf3ef8a6fe61f1a704bbacf1a22
 
+FORMAT CSV
+
 
 ls -al
 sqlite3 nazwabazydanych.db < plik.sql
@@ -228,3 +230,5 @@ klauzula DEFAULT - wartość domyślna
 plik/wczytaj ponownie z kodowaniem/wschodnioeuropejskie/WINDOWS-1250
 dokument/ustaw kodowanie znaków/unicode/utf-8
 dokument/wyświetlanie znaków końca wiersza/konwertuj i ustaw na lf
+
+{{~/Obrazy/Zrzut ekranu z 2018-10-05 08-26-26.png?width=1000}}
