@@ -7,9 +7,9 @@
 def main(args):
 
     wynik = 0
-    
+    liczba = int(input("Podaj liczbę: "))
+	
     while wynik <= 75:
-        liczba = int(input("Podaj liczbę: "))
         wynik = wynik + liczba
     print("Suma: ", wynik)
 

@@ -6,10 +6,13 @@
 
 def main(args):
     
+    wynik = 0
+    
     a = int(input("Podaj liczbę końcową zakresu: "))
     
     for liczba in range(0, a + 1):
-        print(liczba * liczba)
+		wynik = liczba * liczba
+		print(wynik)
     
     return 0
 
