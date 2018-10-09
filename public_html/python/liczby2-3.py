@@ -12,9 +12,7 @@ def liczby2(a=10, b=99):
     cyfrach oraz zwraca ilość takich liczb
     """
     for liczba in range(10, 99):
-        d = liczba % 10
-        j = liczba / 10
-        if d != j:
+        if (liczba % 11) != 0:
             print(liczba)
         print()
 			          
