@@ -11,9 +11,13 @@ def liczby2(a=10, b=99):
     Program drukuje wszystkie liczby dwucyfrowe o niepowtarzających się
     cyfrach oraz zwraca ilość takich liczb
     """
-    for i in range(a, b):
-        for j in range(a, b):
-            
+    for liczba in range(10, 99):
+        d = liczba % 10
+        j = liczba / 10
+        if d != j:
+            print(liczba)
+        print()
+			          
         
     
 def liczby3(a=100, b=999):
@@ -23,12 +27,9 @@ def liczby3(a=100, b=999):
     cyfrach oraz zwraca ilość takich liczb
     """
 
-
-
 def main(args):
     
-    print(liczby2)
-    print(liczby3)
+    print(liczby2())
     
     return 0
 
