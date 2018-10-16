@@ -4,20 +4,22 @@
 #  nwd_euklides.py
 #  
 
-def nwd(a,b):
+def nwd_klasyczny(a,b):
+    
     while a != b:
         if a > b:
             a = a - b
         else:
             b = b - a
+    
     return a
     
 def main(args):
     
     a = int(input("Podaj liczbę: "))
-    b = int(input("Podaj liczbę: "))
+    b = int(input("Podaj drugą liczbę: "))
     
-    print("NWD {} i {} jest {} ". format(a, b, nwd(a, b)), end='')
+    print(nwd_klasyczny(a, b))
     
     return 0
 
