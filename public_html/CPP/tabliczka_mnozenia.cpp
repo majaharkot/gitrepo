@@ -11,6 +11,7 @@ using namespace std;
 
 void tabliczka(int a, int b)
 {
+    
     //int kolumna, wiersz;
     
     for (int i = 1; i <= a; i++)
@@ -34,6 +35,8 @@ int main(int argc, char **argv)
         
     cout << "Podaj zakres liczb w wierszu: ";
     cin >> b;
+    
+    tabliczka(a, b);
     	
 	return 0;
 }
