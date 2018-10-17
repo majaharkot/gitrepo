@@ -19,14 +19,11 @@ def main(args):
     j = 0
     
     for i in range(a):
-        if i == 0 or i == a-1:
-            print(znak * a)
-            continue
         for j in range(b):
-            if j > 0 and j < b - 1:
-                print(" ", end = '')
+            if j == 0 or j == b-1 or i == 0 or i == a-1:
+                print(znak, end='')
             else:
-                print(znak, end = '')
+                print(" ", end='')
     
         print()
     
