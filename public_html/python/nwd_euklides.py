@@ -6,11 +6,17 @@
 
 def nwd_klasyczny(a,b):
     
+    licznik = 0
+    
     while a != b:
         if a > b:
             a = a - b
+            licznik += 1
         else:
             b = b - a
+            licznik += 1
+            
+    print("Liczba powtórzeń: ", licznik)
     
     return a
     
