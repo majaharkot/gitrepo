@@ -6,6 +6,7 @@ import csv
 import os.path
 
 def dane_z_pliku(nazwa_pliku, separator=','):
+    
     dane = []  # pusta lista na dane
     
     if not os.path.isfile(nazwa_pliku):
@@ -17,10 +18,12 @@ def dane_z_pliku(nazwa_pliku, separator=','):
         for rekord in tresc:
             rekord = [x.strip() for x in rekord]  # oczyszczamy dane
             dane.append(rekord)  # dodawanie rekordów do listy
+    
     return dane
 
 
 def kwerenda_1(cur):
+    
     cur.execute("""
         SELECT * FROM magazyn
     """)
@@ -30,23 +33,26 @@ def kwerenda_1(cur):
     SELECT name, downloads FROM fakeapps WHERE downloads > (SELECT AVG(downloads) FROM fakeapps) ORDER BY downloads DESC LIMIT 5;
     SELECT COUNT(name) FROM fakeapps WHERE downloads > (SELECT AVG(downloads) FROM fakeapps);
     SELECT category, SUM(downloads) AS suma_pobran FROM fakeapps GROUP BY category ORDER BY suma_pobran DESC;
-
-
     """
+
     wyniki = cur.fetchall()  # pobranie wszystkich rekordów na raz
     for row in wyniki:  # odczytywanie kolejnych rekordów
         print(tuple(row))  # drukowanie pól
         
         
 def ile_kolumn(cur, tab):
+    
     """ funkcja zlicza liczbę kolum(pól) w podanej tabeli"""
+    
     i = 0
     for kol in cur.execute("PRAGMA table_info('" + tab + "')"):
         i += 1
+    
     return i
     
 
 def main(args):
+    
     baza_nazwa = 'uczniowie'
     tabele = ['uczniowie', 'klasy', 'przedmioty', 'oceny']
     
@@ -77,6 +83,7 @@ def main(args):
 
     con.commit()  # zatwierdzenie zmian w bazie
     con.close()  # zamknięcie połączenia z bazą
+    
     return 0
 
 
