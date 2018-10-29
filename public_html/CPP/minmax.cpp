@@ -78,7 +78,7 @@ int main(int argc, char **argv)
     
     wypelnij_losowe(tablica, rozmiar);
     drukuj(tablica, rozmiar);
-    cout << "Najmniejsza liczba: " << min1(tablica,rozmiar) << endl;
+    cout << endl << "Najmniejsza liczba: " << min1(tablica,rozmiar) << endl;
     cout << "Największa liczba: " << max1(tablica, rozmiar);
     
 	return 0;
