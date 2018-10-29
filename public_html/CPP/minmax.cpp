@@ -78,8 +78,8 @@ int main(int argc, char **argv)
     
     wypelnij_losowe(tablica, rozmiar);
     drukuj(tablica, rozmiar);
-    min1(tablica,rozmiar);
-    max1(tablica, rozmiar);
+    cout << "Najmniejsza liczba: " << min1(tablica,rozmiar) << endl;
+    cout << "Największa liczba: " << max1(tablica, rozmiar);
     
 	return 0;
 }
