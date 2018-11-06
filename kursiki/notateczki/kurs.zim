@@ -1,0 +1,31 @@
+====== kurs ======
+Created wtorek 30 października 2018
+
+lista = []
+
+type(lista)
+Out: list
+
+lista = [1, '2', 'ala', [2, 3, 4]]
+
+lista[3]
+Out: [2, 3, 4]
+
+len(lista)
+Out: 4
+
+lista.append('klub')
+
+lista
+Out: [1, '2', 'ala', [2, 3, 4], 'klub']
+
+lista.remove(1)
+
+lista
+Out: ['2', 'ala', [2, 3, 4], 'klub']
+
+lista.pop()
+Out: 'klub'
+
+lista
+Out: ['2', 'ala', [2, 3, 4]]

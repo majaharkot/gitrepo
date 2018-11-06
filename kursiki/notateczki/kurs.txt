@@ -1,0 +1,94 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== kurs ======
+Created wtorek 30 października 2018
+http://192.168.3.10:8000
+
+lista = []
+
+type(lista)
+__Out__: list
+
+lista = [1, '2', 'ala', [2, 3, 4]]
+
+lista[3]
+__Out__: [2, 3, 4]
+
+len(lista)
+__Out__: 4
+
+== lista.append('klub') ==
+
+lista
+__Out__: [1, '2', 'ala', [2, 3, 4], 'klub']
+
+== lista.remove(1) ==
+
+lista
+__Out__: ['2', 'ala', [2, 3, 4], 'klub']
+
+== lista.pop() ==
+__Out__: 'klub'
+
+lista
+__Out__: ['2', 'ala', [2, 3, 4]]
+
+zbior ={}
+
+type(zbior)
+__Out__: dict
+
+zbior ={1, '1', 1, 2, 3, 3, 4}
+
+zbior
+__Out__: {1, '1', 2, 3, 4}
+
+type(zbior)
+__Out__: set
+
+zbior1 = set('ala ma kota')
+
+zbior2 = set('wlazl kot na plot i spadl')
+
+zbior1 - zbior2
+__Out__: {'m'}      jest w 1 nie ma w 2
+
+zbior2 - zbior1
+__Out__: {'d', 'i', 'n', 'p', 's', 'w', 'z'}    jest w 2 nie ma w 1
+
+zbior1 & zbior2
+__Out__: {' ', 'a', 'k', 'l', 'o', 't'}   jest w 1 i jest w 2
+
+zbior1 | zbior2
+__Out__: {' ', 'a', 'd', 'i', 'k', 'l', 'm', 'n', 'o', 'p', 's', 't', 'w', 'z'}    wszystkie (1 i 2 razem)
+
+
+slownik = {}
+
+slownik = {'imie': 'Maja'}
+
+osoba = slownik
+
+osoba
+__Out__: {'imie': 'Maja'}
+
+osoba['nazwisko'] = 'Harkot'
+
+osoba
+__Out__: {'imie': 'Maja', 'nazwisko': 'Harkot'}
+
+osoba['wiek'] = 17
+
+== osoba.keys() ==
+__Out__: dict_keys(['imie', 'nazwisko', 'wiek'])
+
+== osoba.values() ==
+__Out__: dict_values(['Maja', 'Harkot', 17])
+
+== for k, v in osoba.items(): ==
+== print(k,v) ==
+    
+	imie Maja
+	nazwisko Harkot
+	wiek 17
