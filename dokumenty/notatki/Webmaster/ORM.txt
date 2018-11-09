@@ -1,0 +1,48 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-11-09T08:06:46+01:00
+
+====== ORM ======
+Created piątek 09 listopada 2018
+
+===== MAPOWANIE OBIEKOWO- RELACYJNE =====
+
+kl2ag1@ubu11:~$ __ls pve3__
+ls: nie ma dostępu do 'pve3': Nie ma takiego pliku ani katalogu
+kl2ag1@ubu11:~$ __python3 -m venv pve3__
+kl2ag1@ubu11:~$ __ls pve3__
+bin  include  lib  lib64  pyvenv.cfg  share
+kl2ag1@ubu11:~$ __source ~/pve3/bin/activate__
+(pve3) kl2ag1@ubu11:~$ __pip list__
+DEPRECATION: The default format will switch to columns in the future. You can use --format=(legacy|columns) (or define a format=(legacy|columns) in your pip.conf under the [list] section) to disable this warning.
+pip (9.0.1)
+pkg-resources (0.0.0)
+setuptools (39.0.1)
+(pve3) kl2ag1@ubu11:~$ __pip install peewee__
+Collecting peewee
+  Downloading https://files.pythonhosted.org/packages/f1/15/6c861d6351613be83fd992b5431ac15353dfbd796ea780dc565b6cdf732d/peewee-3.7.1.tar.gz (2.2MB)
+	100% |████████████████████████████████| 2.2MB 777kB/s 
+Building wheels for collected packages: peewee
+  Running setup.py bdist_wheel for peewee ... error
+  Complete output from command /home/kl2ag1/pve3/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-4atv7050/peewee/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /tmp/tmpta9r9uy3pip-wheel- --python-tag cp36:
+  /tmp/tmp_pw_sqlite3_r02fjc4q/test_pw_sqlite3.c:1:10: fatal error: sqlite3.h: Nie ma takiego pliku ani katalogu
+   #include <sqlite3.h>
+			^~~~~~~~~~~
+  compilation terminated.
+  unable to compile sqlite3 C extensions - missing headers?
+  /tmp/pip-build-4atv7050/peewee/setup.py:98: UserWarning: Could not find libsqlite3, SQLite extensions will not be built.
+	warnings.warn('Could not find libsqlite3, SQLite extensions will not '
+  usage: -c [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+	 or: -c --help [cmd1 cmd2 ...]
+	 or: -c --help-commands
+	 or: -c cmd --help
+  
+  error: invalid command 'bdist_wheel'
+  
+  ----------------------------------------
+  Failed building wheel for peewee
+  Running setup.py clean for peewee
+Failed to build peewee
+Installing collected packages: peewee
+  Running setup.py install for peewee ... done
+Successfully installed peewee-3.7.1
