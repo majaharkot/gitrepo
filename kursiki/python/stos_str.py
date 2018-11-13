@@ -19,7 +19,18 @@ def push(rozmiar, dane):
     else:
         print("Stack overflow!")
 
-def pop()
+
+def pop(rozmiar):
+    
+    global stos, SP
+    
+    SP -= 1  # dekrementacja
+    
+    if SP >= 0:
+        print(stos[SP])
+        stos[SP] = None
+    else:
+        print("Stack overflow!")
 
             
 def main(args):
@@ -29,14 +40,14 @@ def main(args):
     
     stos = [None] * rozmiar
     push(rozmiar, 2)
-    print(SP)
     push(rozmiar, 5)
-    print(SP)
-    push(rozmiar, 8)
-    print(SP)
+    pop(rozmiar)
     push(rozmiar, 3)
+    pop(rozmiar)
+    pop(rozmiar)
+    pop(rozmiar)
+ 
     print(SP)
-    
     print(stos)
         
     return 0
