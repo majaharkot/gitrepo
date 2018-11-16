@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+kl2ag1@ubu11:~/repozytoria/gitrepo/public_html/bazy/ORM$ __source ~/pve3/bin/activate__
+(pve3) kl2ag1@ubu11:~/repozytoria/gitrepo/public_html/bazy/ORM$ __python3 orm_peewee.py__
+(pve3) kl2ag1@ubu11:~/repozytoria/gitrepo/public_html/bazy/ORM$ __sqlite3 test.db__
+SQLite version 3.22.0 2018-01-22 18:45:57
+Enter ".help" for usage hints.
+sqlite> __.schema__
+CREATE TABLE IF NOT EXISTS "klasa" ("id" INTEGER NOT NULL PRIMARY KEY, "nazwa" VARCHAR(255) NOT NULL, "roknaboru" INTEGER NOT NULL, "rokmatury" INTEGER NOT NULL);
+CREATE TABLE IF NOT EXISTS "uczen" ("id" INTEGER NOT NULL PRIMARY KEY, "imie" VARCHAR(255) NOT NULL, "nazwisko" VARCHAR(255) NOT NULL, "plec" INTEGER NOT NULL, "klasa_id" INTEGER NOT NULL, FOREIGN KEY ("klasa_id") REFERENCES "klasa" ("id"));
+CREATE INDEX "uczen_klasa_id" ON "uczen" ("klasa_id");
+CREATE TABLE IF NOT EXISTS "wynik" ("id" INTEGER NOT NULL PRIMARY KEY, "egzhum" REAL NOT NULL, "egzmat" REAL NOT NULL, "egzjez" REAL NOT NULL, "uczen_id" INTEGER NOT NULL, FOREIGN KEY ("uczen_id") REFERENCES "uczen" ("id"));
+CREATE INDEX "wynik_uczen_id" ON "wynik" ("uczen_id");
+sqlite> 

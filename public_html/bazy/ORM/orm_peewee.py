@@ -59,6 +59,26 @@ def main(args):
     baza.connect() #połączenie z bazą
     baza.create_tables([Klasa, Uczen, Wynik])
 
+    #dodawanie danych
+    kl2a = Klasa(nazwa="2A", roknaboru=2010, rokmatury=2013)
+    kl2a.save()
+    
+    kl1a = Klasa(nazwa="1A", roknaboru=2009, rokmatury=2012)
+    kl1a.save()
+    
+    u1 = Uczen(imie="Jakub", nazwisko="Kowalski", plec=False, klasa=kl2a)
+    u1.save()
+    
+    u2 = Uczen(imie="Anna", nazwisko="Gacek", plec=True, klasa=kl1a)
+    u2.save()
+    
+    u3 = Uczen(imie="Roman", nazwisko="Polek", plec=False, klasa=kl1a)
+    u3.save()
+
+    uczniowie = Uczen.select()
+    for uczen in uczniowie:
+        print(uczen.id, uczen.nazwisko, uczen.klasa.nazwa)
+
     return 0
 
 if __name__ == '__main__':

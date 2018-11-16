@@ -1,2 +1,0 @@
-praca domowa 
-program sprawdzający czy liczba jest palindromem
