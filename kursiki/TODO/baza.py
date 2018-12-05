@@ -29,6 +29,43 @@ def ladujDane(sesja):
             sesja.add(Zadanie(tresc=tresc, osoba=o))
     sesja.commit()
 
+def pobierzDane(sesja, osoba):
+    zadania = []
+    wpisy = sesja.query(Zadanie).filter(Zadanie.osoba == osoba)
+    for z in wpisy:
+        zadania.append([
+            z.id,
+            z.tresc,
+            '{0:%Y-%m-%d %H:%M:%S}'.format(z.datad),
+            z.wykonane,
+            False
+        ])
+    return zadania
+    
+def dodajZadanie(sesja, osoba, tresc):
+    """ Dodawanie nowego zadania """
+    zadanie = Zadanie(tresc=tresc, osoba=osoba)
+    sesja.add(zadanie)
+    sesja.commit()
+    return [
+        zadanie.id,
+        zadanie.tresc,
+        '{0:%Y-%m-%d %H:%M:%S}'.format(zadanie.datad),
+        zadanie.wykonane,
+        False]
+        
+def zapiszDane(sesja, zadania):
+    """ Zapisywanie zmian """
+    for i, z in enumerate(zadania):
+        # utworzenie instancji zadania
+        zadanie = sesja.query(Zadanie).filter(Zadanie.id == z[0]).one()
+        if z[4]:  # jeżeli zaznaczono zadanie do usunięcia
+            sesja.delete(zadanie)  # usunięcie zadania z bazy
+            del zadania[i]  # usunięcie zadania z danych modelu
+        else:
+            zadanie.tresc = z[1]
+            zadanie.wykonane = z[3]
+            sesja.commit()
 
 def loguj(sesja, login, haslo):
     osoba = sesja.query(Osoba).filter(Osoba.login == login,
@@ -57,7 +94,7 @@ def main(args):
     #    print(osoba.login, osoba.id)
     #else:
     #    print("Błędne hasło!")
-    #return 0
+    return 0
 
 
 if __name__ == '__main__':
