@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-12-07T07:27:55+01:00
+
+====== aplikacje ======
+Created piątek 07 grudnia 2018
+
+Serwer identyfikujemy po adresie IP oraz numer portu.
+Gniazdo (ang. socket) to połączenie adresu IP i portu. (np. 127.0.0.1:8000)
+Do komunikacji klienta z serwerem służy protokół.
+
+HTTP - Hyper Text Transfer Protocol; komunikacja w zakresie stron WWW; port 80
+
+__Metody HTTP:__
+* GET - pobranie zasobu wskazanego przez URL, parametry przekazujemy po znaku ? 
+* POST - przesyłanie danych w sposób niejawny, np. z formularzy
+
+adres URL: https://pl.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+	  [[https://pl.wikipedia.org/wiki/Hypertext_Transfer_Protocol|https://]] - protokół
+	  [[https://pl.wikipedia.org/wiki/Hypertext_Transfer_Protocol|pl.wikipedia.org]] - nazwa serwera 
+	  z protokołu i serwera wydobywa się adres IP i port, do którego wysyła się zapytania
+	  [[https://pl.wikipedia.org/wiki/Hypertext_Transfer_Protocol|wiki/Hypertext_Transfer_Protocol]] - zapytanie 'czy w katalogu wiki masz zasoby Hypertext...'
+	
+	kod odpowiedzi HTTP
+	
+/ - qłówny katalog serwera, główny zasób
+
+widok (ang.view) - 
