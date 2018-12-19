@@ -44,18 +44,20 @@ void zamien2(int tab[], int i)
 void bubble_sort(int tab[],int n)
 {
     cout << "\nSortowanie bąbelkowe\n";
+    
     int licznik = 0;
+    
     for(int j = n - 1; j > 0; j--)
     {
         for(int i = 0; i <  j; i++) //pętla wewnętrzna
         {
-            licznik++;
             if(tab[i] > tab[i+1])
             {
                 //zamiana miejscami
                 zamien2(tab, i);
             }
         }
+        licznik++;
     }
     cout << "Powtórzenia: " << licznik << endl;
 }
@@ -63,21 +65,39 @@ void bubble_sort(int tab[],int n)
 void insert_sort(int tab[], int n)
 {
     cout << "\nSortowanie przez wstawianie:\n";
-     
+
     int i, j, tmp;
      
     for(i = 1; i < n; i++)
     {
-        tmp = tab[1];
+        tmp = tab[i];
         j = i - 1;
         while (j >= 0 && tab[j] > tmp)
         {
             tab[j+1] = tab[j];
             j--;
         }
-        tab[j=1] = tmp;
+        tab[j+1] = tmp;
     }
-     
+}
+
+void select_sort(int tab[], int n)
+{
+    cout << "\nSortowanie przez wybór:\n";
+    
+    int k;
+    for(int i = 0; i < n; i++)
+    {
+        k = i;
+        for(int j = i + 1; j <n; j++)
+        {
+            if(tab[j]<tab[k])
+            {
+                k = j;
+                zamien2(tab, j);
+            }
+        }
+    }
 }
 
 int main(int argc, char **argv)
@@ -91,6 +111,8 @@ int main(int argc, char **argv)
     bubble_sort(tablica, rozmiar);
     drukuj(tablica, rozmiar);
     insert_sort(tablica, rozmiar);
+    drukuj(tablica, rozmiar);
+    select_sort(tablica, rozmiar);
     drukuj(tablica, rozmiar);
         
 	return 0;
