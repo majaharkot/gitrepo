@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+   index.html   
+-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>QUIZ - pytania bez ściemy</title>
+    <style type="text/css">
+        #menu li { display: inline; }
+    </style>
+
+</head>
+
+<body>
+
+    <ul id="menu">
+        <li><a href="{{ url_for('index') }}">Strona główna</a></li>
+        <li><a href="{{ url_for('lista') }}">Lista pytań</a></li>
+        <li><a href="{{ url_for('quiz') }}">Quiz</a></li>
+        <li><a href="#">Dodaj pytanie</a></li>
+    </ul>
+    
+    <h1>QUIZ - tylko dla odważnych</h1>
+    
+    <div id="komunikaty">
+        {% with komunikaty = get_flashed_messages(with_categories=true) %}
+        {% if komunikaty %}
+            {% for kategoria, komunikat in komunikaty %}
+            <p class="{{ kategoria }}">{{ komunikat }}</p>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+    </div>
+
+
+</body>
+
+</html>
