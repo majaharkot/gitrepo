@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<!--
+   strona.html
+-->
+
+<head>
+<meta charset="utf-8" />
+<title>TA DAAAM</title>
+<meta name="generator" content="Geany 1.32" />
+</head>
+
+<body>
+    <h1>QUIZ - odpowiedz na pytania</h1>
+    
+    <h2>Pytania</h2>
+    
+    <form method="POST">
+    
+    {% for p in query %}
+    <p>
+        {{ p.id }} {{ p.pytanie }}<br>
+        <br>
+        {% for o in p.odpowiedzi %}
+        
+        <input type="radio" name="{{ p.id }}" value="{{ o.id }}">
+        {{ o.odpowiedz }}
+        <br>
+        {% endfor %}
+        
+    </p>
+    {% endfor %}
+    
+    <input type="submit" value="Zapisz odpowiedzi">
+    
+    </form>
+    
+</body>
+
+</html>

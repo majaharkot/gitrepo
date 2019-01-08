@@ -19,10 +19,10 @@ int main(int argc, char **argv)
         if(n % i == 0)
         {
             cout << "Jest to liczba złożona." << endl;
-            break;
+            return 0;
         }
-        else
-            cout << "Jest to liczba pierwsza." << endl;
-    };
+    }
+    
+    cout <<  "Jest to liczba pierwsza." << endl;
 }
 

@@ -49,3 +49,27 @@ int - integer (liczby całkowite)
 	* double ; 8 ;  10 cyfr znaczących -1,7E308 — 1,7E308
 	* bool  ; 4 ; true lub false
 
+Specyfikacja zadania - dane wejściowe i wyjściowe oraz zależność między nimi
+
+algorytm liniowy to taki który nie zawiera rozgałęzień, czyli instrukcji warunkowych if
+
+poprawność składniowa i logiczna musi być zachowana
+błędy składniowe są prostsze do wyłapania i usunięcia (wystarczy przeczytać komunikat)
+błędy logiczne są masakrozą
+
+cechy algorytmów:
+* poprawność - może być całkowita lub częściowa w zależności od możliwości przetestowania go w praktyce
+* złożoność - może być pamięciowa lub czasowa
+* skończoność 
+
+złożoność obliczeniowa algorytmów:
+czasowa - 
+pamięciowa - 
+
+można mówić o złożoności:
+liniowej - 
+kwadratowej -
+stałej - 
+
+ZŁOŻONOŚĆ PAMIĘCIOWA:
+BARDZIEJ WYDAJNE POD WZGLĘDEM UŻYCIA PAMIĘCI SĄ ALGORYTMY INTERACYJNE!!!

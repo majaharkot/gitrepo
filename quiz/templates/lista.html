@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 <!--
-   strona.html
+   lista.html
 -->
 
 <head>
@@ -11,8 +11,13 @@
 </head>
 
 <body>
-    <h1>Moja fensi stronka</h1>
-    <h2>Jak działa aplikacja sieciowa?</h2>
+    <h1>QUIZ - lista pytań</h1>
+    <h2>Pytania</h2>
+    {% for p in query %}
+    <p>
+        {{ p.id }} {{ p.pytanie }}
+    </p>
+    {% endfor %}
 </body>
 
 </html>
