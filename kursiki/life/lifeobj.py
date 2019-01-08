@@ -13,30 +13,26 @@ class Plansza():
         """ Konstruktor, przygotowanie okna gry """
         self.pow = pygame.display.set_mode((szer, wys), 0, 32)
         self.szer, self.wys = szer, wys
-        pygame.display.set_caption('Pong')
+        pygame.display.set_caption('Gra w życie')
 
     def rysuj(self, *args):
         """ Rysowanie okna gry """
         # kolor okna gry, składowe RGB podane w tupli
-        self.pow.fill((200, 255, 255))
-        for obGraf in args:
-            self.pow.blit(obGraf.pow, obGraf.prost)
+        self.pow.fill((0, 0, 0))
+        
+        for obj in args:
+            obj.rysuj_na(self.pow)
+        
         pygame.display.update()
 
 
-class PongGra(object):
+class LifeGra(object):
     """ Kontroler gry """
 
-    def __init__(self, szer, wys):
+    def __init__(self, szer, wys, roz=10):
         pygame.init()
-        pygame.key.set_repeat(50, 25)
-        self.plansza = Plansza(szer, wys)
-        self.pal1 = Paletka(szer=100, wys=20, x=350, y=360)
-        self.pal2 = Paletka(szer=100, wys=20, x=350, y=20, kolor=(255, 0, 0))
-        self.pilka = Pilka(szer=20, wys=20, x=390, y=190, kolor=(0, 0, 255))
-        self.gracz2 = Gracz2(self.pal2, self.pilka, 5)
-        # zegar
-        self.fpsClock = pygame.time.Clock()
+        self.plansza = Plansza(szer * roz, wys * roz)
+        self.populacja = Populacja(szer, wys, roz)
 
     def uruchom(self):
         """ Główna pętla programu """
@@ -45,107 +41,78 @@ class PongGra(object):
                 if event.type == QUIT:
                     pygame.quit()
                     sys.exit()
+                    
+            if event.type == MOUSEMOTION or event.type == MOUSEBUTTONDOWN:
+                self.populacja.obsluz_mysze()
                 
-                if event.type == MOUSEMOTION:
-                    mX, mY = event.pos
-                    self.pal1.przesun(mX, self.plansza.szer)
-
-                if event.type == KEYDOWN:
-                    if event.key == K_LEFT:
-                        self.pal1.przesun2(self.plansza.szer, -10)
-                    elif event.key == K_RIGHT:
-                        self.pal1.przesun2(self.plansza.szer, 10)
-                    if event.key == K_UP:
-                        self.pal1.przesun3(self.plansza.wys, -10)
-                    elif event.key == K_DOWN:
-                        self.pal1.przesun3(self.plansza.wys, 10)
-
-            self.pilka.ruszaj(self.plansza.szer, self.plansza.wys, self.pal1, self.pal2)
-            self.gracz2.ruszaj()
-            self.plansza.rysuj(
-                self.pal1,
-                self.pal2,
-                self.pilka,
-            )
-            self.fpsClock.tick(80)
-
-
-class ObiektGraf():
-    """ Klasa bazowa dla rysowanych obiektów """
-    
-    def __init__(self, szer, wys, x, y, kolor=(0, 255, 0)):
-        self.szer = szer
-        self.wys = wys
-        self.pow = pygame.Surface([szer, wys], pygame.SRCALPHA).convert_alpha()
-        self.prost = self.pow.get_rect(x=x, y=y)
-        self.kolor = kolor
-        
-
-class Paletka(ObiektGraf):
-    
-    def __init__(self, szer, wys, x, y, kolor=(0, 255, 0), maks_v=10):
-        super().__init__(szer, wys, x, y, kolor)
-        self.pow.fill(kolor)
-        self.maks_v = maks_v
-    
-    def przesun(self, mX, o_szer):
-        przesuniecie = mX - self.maks_v
-        if przesuniecie > o_szer - self.szer:
-            przesuniecie = o_szer - self.szer
-        if przesuniecie < 0:
-            przesuniecie = 0
-        self.prost.x = przesuniecie
-
-    def przesun2(self, o_szer, krok):
-        przesuniecie = self.prost.x + krok
-        if przesuniecie > o_szer - self.szer:
-            przesuniecie = o_szer - self.szer
-        if przesuniecie < 0:
-            przesuniecie = 0
-        self.prost.x = przesuniecie
-
-    def przesun3(self, o_wys, krok):
-        przesuniecie = self.prost.y + krok
-        if przesuniecie > o_wys - self.wys:
-            przesuniecie = o_wys - self.wys
-        if przesuniecie < 0:
-            przesuniecie = 0
-        self.prost.y = przesuniecie
-
-class Pilka(ObiektGraf):
-    
-    def __init__(self, szer, wys, x, y, kolor=(0, 255, 0), px_v=3, py_v=3):
-        super().__init__(szer, wys, x, y, kolor)
-        pygame.draw.ellipse(self.pow, self.kolor, [0, 0, self.szer, self.wys])
-        self.px_v = px_v
-        self.py_v = py_v
-        self.start_x = x
-        self.start_y = y
-    
-    def ruszaj(self, o_szer, o_wys, *args):
-        self.prost.move_ip(self.px_v, self.py_v)
-        if self.prost.right >= o_szer or self.prost.left <=0:
-            self.px_v *= -1
-        if self.prost.top <= 0 or self.prost.bottom >= o_wys:
-            self.prost.x = o_szer / 2
-            self.prost.y = o_wys / 2
+            self.plansza.rysuj(self.populacja)
             
-        for pal in args:
-            if self.prost.colliderect(pal.prost):
-                self.py_v *= -1
+DEAD = 0
+ALIVE = 1
+
+class Populacja():
+    def __init__(self, szer, wys, roz=10):
+        self.roz, self.szer, self.wys = roz, szer, wys
+        self.generacja = self.utworz_generacje()
         
-class Gracz2():
-    def __init__(self, pal, pilka, pal_v=5):
-        self.pal = pal
-        self.pilka = pilka
-        self.pal_v = pal_v
-    
-    def ruszaj(self):
-        if self.pilka.prost.centerx > self.pal.prost.centerx:
-            self.pal.prost.x += self.pal_v
-        elif self.pilka.prost.centerx < self.pal.prost.centerx:
-            self.pal.prost.x -= self.pal_v
+    def utworz_generacje(self):
+        # ~generacja = []
+        # ~for x in range(self.szer):
+            # ~kolumna = []
+            # ~for y in range(self.wys):
+                # ~kolumna.append(DEAD)
+            # ~generacja.append(kolumna)
+        return [[DEAD for y in range(self.wys)]for x in range(self.szer)]
+
+    def obsluz_mysze(self):
+        przyciski = pygame.mouse.get_pressed()
+        if not any(przyciski):
+            return
+        x,y = pygame.mouse.get_pos()
+        x /= self.roz
+        y /= self.roz
         
+        stan = True if przyciski[0] else False
+        print(stan)
+        self.generacja[int(x)][int(y)] = ALIVE if stan else DEAD
+        
+    def rysuj_na(self, pow):
+        for x, y in self.zywe_komorki():
+            roz = (self.roz, self.roz)
+            pozycja = (x*self.roz, y*self.roz)
+            kolor = (255, 0, 255)
+            pygame.draw.rect(pow, kolor, Rect(pozycja, roz)) 
+            
+    def zywe_komorki(self):
+        """ Generator zwracający współrzędne żywych komórek """
+        
+        for x in range(len(self.generacja)):
+            kolumna = self.generacja[x]
+            for y in range(len(kolumna)):
+                if kolumna[y] == ALIVE:
+                    yield x, y
+                    
+    def zwroc_sasiada(self, x, y):
+        """ Generator zwracający współrzędne sąsiadów komórki """
+        
+        for i in range(x-1, x+2):
+            for j in range(y-1, y+2):
+                if i == x and j == y:
+                    continue    #pomijamy badaną komórkę
+                
+                if i >= self.szer:
+                    i = 0
+                elif i < 0:
+                    i = self.szer - 1
+                    
+                if j >= self.wys:
+                    j = 0
+                elif j < 0:
+                    j = self.wys - 1
+                    
+                yield self.generacja[i][j]
+        
+
 if __name__ == "__main__":
-    gra = PongGra(800, 400)
+    gra = LifeGra(80, 40)
     gra.uruchom()
