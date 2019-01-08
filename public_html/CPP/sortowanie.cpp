@@ -56,8 +56,8 @@ void bubble_sort(int tab[],int n)
                 //zamiana miejscami
                 zamien2(tab, i);
             }
+            licznik++;
         }
-        licznik++;
     }
     cout << "Powtórzenia: " << licznik << endl;
 }
@@ -85,6 +85,8 @@ void select_sort(int tab[], int n)
 {
     cout << "\nSortowanie przez wybór:\n";
     
+    int licznik = 0;
+    
     int k;
     for(int i = 0; i < n; i++)
     {
@@ -96,13 +98,15 @@ void select_sort(int tab[], int n)
                 k = j;
                 zamien2(tab, j);
             }
+           licznik++; 
         }
     }
+    cout << "Powtórzenia: " << licznik << endl;
 }
 
 int main(int argc, char **argv)
 {
-    int rozmiar = 20;
+    int rozmiar = 10;
     int tablica[rozmiar]; //statyczna deklaracja tablicy
     
     wypelnij_losowe(tablica, rozmiar);

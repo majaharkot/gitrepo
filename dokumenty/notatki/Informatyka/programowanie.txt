@@ -62,3 +62,14 @@ cechy algorytmów:
 * złożoność - może być pamięciowa lub czasowa
 * skończoność 
 
+złożoność obliczeniowa algorytmów:
+czasowa - 
+pamięciowa - 
+
+można mówić o złożoności:
+liniowej - 
+kwadratowej -
+stałej - 
+
+ZŁOŻONOŚĆ PAMIĘCIOWA:
+BARDZIEJ WYDAJNE POD WZGLĘDEM UŻYCIA PAMIĘCI SĄ ALGORYTMY INTERACYJNE!!!
