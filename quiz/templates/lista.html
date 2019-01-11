@@ -1,23 +1,11 @@
-<!DOCTYPE html>
-<html lang="pl">
-<!--
-   lista.html
--->
+{% extends "szablon.html" %}
+{% block tytul %}Quiz - lista pytań{% endblock %}
+{% block h1 %}Quiz - lista pytań{% endblock %}
 
-<head>
-<meta charset="utf-8" />
-<title>TA DAAAM</title>
-<meta name="generator" content="Geany 1.32" />
-</head>
-
-<body>
-    <h1>QUIZ - lista pytań</h1>
-    <h2>Pytania</h2>
+{% block tresc %}
     {% for p in query %}
-    <p>
+    <p class="lead">
         {{ p.id }} {{ p.pytanie }}
     </p>
     {% endfor %}
-</body>
-
-</html>
+{% endblock %}
