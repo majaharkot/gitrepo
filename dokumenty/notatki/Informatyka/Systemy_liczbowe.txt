@@ -1,0 +1,30 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-01-30T07:43:29+01:00
+
+====== Systemy liczbowe ======
+Created środa 30 stycznia 2019
+
+1)Systemy addytywne:
+	
+	system liczbowy rzymski:
+		1 = I
+		8 = VIII
+		40 = XL
+		500 = D
+		2019 = MMXIX
+
+
+2)Systemy pozycyjne:
+
+	system o podstawie 10:
+		123(10) = a(n-1)*p^(n-1)+a(n-2)*p^(n-2)+..+a1*p^1+a0*p^0
+		234(7) = 2 * 7^2 + 3 * 7^1 + 4 * 7^0 = 98 + 21 + 4 = 123(10)
+	
+	system o podstawie 2 (liczby binarne):
+	arkusz bin2dec
+		8bit = krótkie słowo (1bajt), maksymalnie 255(10)
+		16bit = słowo (2bajty)
+		32bit = 
+		64bit =
+	

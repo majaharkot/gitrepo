@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 Creation-Date: 2018-09-05T07:24:11+02:00
 
-====== programowanie ======
+====== Programowanie ======
 Created środa 05 września 2018
 
 język ludzki (mowa) :  Jeśli liczba punktów jest większa niż 50, test jest zaliczony; w przeciwnym razie nie zalicza go się.
@@ -73,3 +73,5 @@ stałej -
 
 ZŁOŻONOŚĆ PAMIĘCIOWA:
 BARDZIEJ WYDAJNE POD WZGLĘDEM UŻYCIA PAMIĘCI SĄ ALGORYTMY INTERACYJNE!!!
+
+__REKURENCJA JEST FUNKCJĄ KTÓRA POWTARZA SAMĄ SIEBIE__
