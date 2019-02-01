@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 
   <head>
 
@@ -37,7 +37,7 @@
               <a class="nav-link js-scroll-trigger" href="{{ url_for('quiz') }}">Quiz</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="{{ url_for('dodaj') }}">Dodaj pytanie</a>
+              <a class="nav-link js-scroll-trigger" href="{{ url_for('dodaj') }}">Dodaj</a>
             </li>
           </ul>
         </div>
@@ -46,8 +46,8 @@
 
     <header class="bg-primary text-white">
       <div class="container text-center">
-        <h1><center>{% block h1 %}{% endblock %}</center></h1>
-        <p class="lead">Odpowiedz na pytania i zgarnij million dolarów! $$</p>
+        <h1>{% block h1 %}{% endblock %}</h1>
+        <p class="lead">Moja pierwsza aplikacja we Flasku</p>
       </div>
     </header>
 
@@ -55,7 +55,14 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h1>Odpowiedz na pytania wybrane przez naszych ekspertów i zgarnij nagrodę.</h1>
+            {% with komunikaty = get_flashed_messages(with_categories=true) %}
+            {% if komunikaty %}
+                {% for kat, kom in komunikaty %}
+                <p class="{{ kat }}">{{ kom }}</p>
+                {% endfor %}
+            {% endif %}
+            {% endwith %}
+
             {% block tresc %}
             {% endblock %}
           </div>
@@ -64,9 +71,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark fixed-bottom">
+    <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Moja Strona 2019</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
       </div>
       <!-- /.container -->
     </footer>
