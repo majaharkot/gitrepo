@@ -4,63 +4,64 @@
 
 
 #include <iostream>
+#include <cmath>
+//funkcja podnosząca liczbę do potęgi n  pow(liczba,n)
 
 using namespace std;
 
-void dectoany (int liczba, int podstawa, int tab[])
+int cyfry[16] = {0,1,2,3,4,5,6,7,8,9,65,66,67,68,69,70};
+
+int dec2any(int liczba, int podstawa, int tab[])
  {
-        int i = 0;
+    int i = 0;
     do {
-       tab[i] = liczba % podstawa;
-       liczba = liczba / podstawa;
-       i++; 
-    }while ( liczba != 0);
+        tab[i] = liczba % podstawa;
+        liczba = liczba / podstawa;
+        i++; 
+    }while(liczba != 0);
     return i-1;
 }
 
+void any2dec()
+ {
+    char liczba[9];
+    int podstawa = 0;
+    do {
+        cout << "Podstawa [2;16]: ";
+        cin >> podstawa;
+    }while ( podstawa < 2 || podstawa > 16);
 
-void bin_licz(int tab[]) 
-{
-    int wynik = 0;
-    int potega = 1;
-    for (int x = 0; x <= 8; x++) {
-        potega = potega * 2;
-        if (x == 0) potega = 1;
-        wynik = wynik + (potega * tab[x]);
-    }
-    cout <<"\nWynik: " << wynik << endl;
-}
-
-
-void wyswietl(int tab[], int roz) 
-{
-    for(int i = 0; i < roz; i++) 
+    cout << "Podaj liczbę: ";
+    cin.getline(liczba,8); 
+        
+    //KONWERSJA JUST BEGIN
+    int liczba10 = 0;
+    int i = 0;
+    while (liczba[i] != '\0')
     {
-        cout<< tab[i] << " ";
+        liczba10 += tab[i] * pow(podstawa, ile-1-i);        
     }
-    cout << endl;
+    cout << "Wynik: "<< liczba10;
 }
-
-
-void wyswietl_poprawnie(int tab[], int roz) 
-{
-    cout << "Poprawny zapis binarny: " << endl;
-    for(int i = roz - 1; i >= 0; i--) 
-    {
-        cout<< tab[i] << " ";
-    }
-}
-
 
 int main(int argc, char **argv)
 {
-    int a = 0;
-    int rozmiar = 8;
-    int tab[rozmiar];
-    cout << "Podaj liczbę: ";
-    cin >> a;
-    wyswietl(tab, rozmiar);
-    wyswietl_poprawnie(tab, rozmiar);
-    bin_licz(tab);
+    int tab[8];   
+    int liczba, podstawa;
+    cout << "Podaj liczbę i podstawę systemu docelowego: ";
+    cin >> liczba >> podstawa;
+    int i = dec2any(liczba, podstawa, tab);
+    cout << "Wynik: ";
+    while (i > -1)
+    {
+        if(podstawa > 10 && tab[i] >10)
+            cout << (char)cyfry[tab[i]];
+            //chr - liczby na litery z kodu asci
+        else
+            cout << tab[i];
+        i--;
+    }
+    cout << endl;
+    any2dec(tab);
     return 0;
 }
