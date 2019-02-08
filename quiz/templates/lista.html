@@ -6,8 +6,9 @@
 <ol>
     {% for p in query %}
     <li>
-        {{ p.id }} {{ p.pytanie }}
+       {{ p.pytanie }}
         <a href="{{ url_for('edytuj', pid=p.id) }}" class="btn btn-primary">Edytuj</a>
+        <a href="{{ url_for('usun', pid=p.id) }}" class="btn btn-primary">Usuń</a>
     </li>
     {% endfor %}
 </ol>
