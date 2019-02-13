@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-02-12T13:52:57+01:00
+
+====== Kompresja ======
+Created wtorek 12 lutego 2019
+
+1bit  — podstawowa jednostka
+1B = 8bit
+2^10 B = 1024B = 1KB
+2^10 KB = 1024KB = 1MB
+2^10 MB = 1024MB = 1GB
+2^10 GB = 1024GB = 1TB
+
+10^3 B = 1000B = 1KB  — dla rozmiarów dysków pamięci
+ 
+przebływność podawana jest w bitach
+ilość informacji w bajtach
+
+==== Algorytmy statystyczne ====
+
