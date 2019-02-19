@@ -17,20 +17,25 @@ void szyfruj(char tekst[], int klucz)
     while(tekst[i] != '\0')
     {
         kod = (int)tekst[i] + klucz;
-        cout  << (char)kod;
-        i++;
-    }
     
-    
-
-    
+        if (tekst[i] == ' ')
+		{ 
+			kod -= klucz;
+		}
+		else if(kod > 122)
+		{
+        kod -= 26;
+		}
+		tekst[i] = char(kod);
+		cout << tekst[i];
+		i++;
+	}
 }
 
 
 int main(int argc, char **argv)
-{
-    
-    char tekst[100];
+{    
+    char tekst[MAKS];
     int klucz = 0;
     
     cout << "Wprowadź tekst do szyfrowania: ";
