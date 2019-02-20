@@ -16,18 +16,24 @@ void szyfruj(char tekst[], int klucz)
     int kod = 0;
     while(tekst[i] != '\0')
     {
-        kod = (int)tekst[i] + klucz;
+        kod = (int)tekst[i];
     
         if (tekst[i] == ' ')
 		{ 
-			kod -= klucz;
+			;
 		}
-		else if(kod > 122)
-		{
-        kod -= 26;
-		}
-		tekst[i] = char(kod);
-		cout << tekst[i];
+		else if(kod < 91) 
+        {
+            kod += klucz;
+            if(kod > 90) kod -= 26;
+        }
+        else
+        {
+            kod += klucz;
+            if(kod > 122) kod -= 26;            
+        }
+        cout << (char)kod;
+		tekst[i] = (char)kod;
 		i++;
 	}
 }
