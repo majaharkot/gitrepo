@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-02-22T07:20:29+01:00
+
+====== PHP ======
+Created piątek 22 lutego 2019
+
+Interpreter PHP działa z serwerem Apache oraz z bazą danych mariaDB lub oracle. Te trzy rzeczy tworzą serwer :
+* Linux Apache [[MySQL]] PHP
+		apt-get install apache2 libapache2-mod-php7.2 php php-gd php-sqlite3 --yes
+
+
+
