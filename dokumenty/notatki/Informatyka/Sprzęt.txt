@@ -31,6 +31,27 @@ Created środa 06 marca 2019
 			Firmware - software zapisany w ROM pisany w asemblerze
 			Asembler
 
-Jednostka arytmetyczno-logiczna (ALU) — to jedna z głównych części procesora, prowadząca proste operacje na liczbach całkowitych. 
-CPU (Central Processing Unit) = procesor : ALU (Aritmetic Logic Unit), rejestry, 64-bitowe (podstawowy rozmiar słowa
+
+===== Jednostka arytmetyczno-logiczna (ALU) =====
+— to jedna z głównych części procesora, prowadząca proste operacje na liczbach całkowitych. 
+CPU (Central Processing Unit) = procesor : ALU (Aritmetic Logic Unit), rejestry, 64-bitowe 
+
+
+__Wszystkie te urządzenia musią być polączone magistralnie__
+
+===== magistrala (ang. bus) lub szyna głowna =====
+ -– zespół linii przenoszących sygnały oraz układów wejścia-wyjścia służących do przesyłania sygnałów między połączonymi urządzeniami w systemach mikroprocesorowych. 
+
+W niemal każdej magistrali można wyróżnić trzy podstawowe szyny:
+* //sterująca (kontrolna)// – określa rodzaj operacji jaki ma być wykonany, np. zapis czy odczyt danych;
+* //adresowa (rdzeniowa)// – określa np. z jakiej komórki pamięci sygnał ma zostać odczytany lub do jakiej komórki pamięci sygnał ma zostać zapisany;
+* //danych// – tą szyną przesyłane są właściwe dane.
+
+Szerokość szyny danych (liczba linii danych, a więc równolegle przesyłanych bitów) oraz częstotliwość z jaką dane mogą być na nią podawane (najczęściej jest to __częstotliwość cyklu zegarowego__ magistrali) określają maksymalną szybkość transmisji danych na tej magistrali. 
+
+
+INPUT:  klawiatura,  mysz, karty perforowane, skaner, joystick , mikrofon, odbiornik GPS, kamera internetowa
+OUTPUT: monitor, drukarka, głośniki, słuchawki, ploter
+I/O: HDD, SSD, CD/DVD, ekran dotykowy, interfejs sieciowy
+
 
