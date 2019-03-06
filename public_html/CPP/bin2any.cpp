@@ -22,27 +22,6 @@ int dec2any(int liczba, int podstawa, int tab[])
     return i-1;
 }
 
-void any2dec()
- {
-    char liczba[9];
-    int podstawa = 0;
-    do {
-        cout << "Podstawa [2;16]: ";
-        cin >> podstawa;
-    }while ( podstawa < 2 || podstawa > 16);
-
-    cout << "Podaj liczbę: ";
-    cin.getline(liczba,8); 
-        
-    //KONWERSJA JUST BEGIN
-    int liczba10 = 0;
-    int i = 0;
-    while (liczba[i] != '\0')
-    {
-        liczba10 += tab[i] * pow(podstawa, ile-1-i);        
-    }
-    cout << "Wynik: "<< liczba10;
-}
 
 int main(int argc, char **argv)
 {
@@ -62,6 +41,5 @@ int main(int argc, char **argv)
         i--;
     }
     cout << endl;
-    any2dec(tab);
     return 0;
 }

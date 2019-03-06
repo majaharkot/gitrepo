@@ -1,0 +1,36 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-03-06T07:21:16+01:00
+
+====== Sprzęt ======
+Created środa 06 marca 2019
+
+
+== ARCHITEKTURA VON NEUMANNA ==
+{{./pasted_image.png}}
+
+===== Pamięć: =====
+* __RAM (Random Access Memory)__ — pamięć operacyjna ulotna o swobodnym dostęp
+		— system operacyjny
+		— programy użytkowe
+		— dane
+
+* Pamięć stała:
+		— HDD (Hard Disk Drive)
+		— SDD
+		— CD/DVD
+		— taśmy
+		— dyskietki (Floppy Disk Drive)
+		
+* __ROM (Read Only Memory)__ — pamięć nieulotna o swobodnym dostępie; stała (wlutowana)
+		— BIOS (Basic Input Output System) - zapisany w pamięci stałej zestaw podstawowych procedur pośredniczących pomiędzy systemem operacyjnym a sprzętem
+		— UEFI (Unified Extensible Firmware Interface) - współczesny, rozszerzony BIOS
+				- sterowniki
+				- zabezpieczenie
+			
+			Firmware - software zapisany w ROM pisany w asemblerze
+			Asembler
+
+Jednostka arytmetyczno-logiczna (ALU) — to jedna z głównych części procesora, prowadząca proste operacje na liczbach całkowitych. 
+CPU (Central Processing Unit) = procesor : ALU (Aritmetic Logic Unit), rejestry, 64-bitowe (podstawowy rozmiar słowa
+
