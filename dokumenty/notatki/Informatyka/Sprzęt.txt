@@ -55,3 +55,128 @@ OUTPUT: monitor, drukarka, głośniki, słuchawki, ploter
 I/O: HDD, SSD, CD/DVD, ekran dotykowy, interfejs sieciowy
 
 
+LAN (Local Area Network)
+Ethernet, skrętka, rj45, switch
+adres MAC  (3bajty producent, pozostałe 3 dowolne)
+
+router:
+interfejs wewnętrzny - LAN sieć lokalna
+interfejs zewnętrzny - WAN (Wide Area Network)
+
+domyślna trasa to droga routera
+
+wewnętrzny adres IP
+Eth — 192.168.3.10
+[[WiFi]] — 192.168.1.11
+
+serwer DHCP
+
+adres IP   192.168.3.21
+adresy lokalne 192.168.0.0
+adresy publiczne 79.185.91.32  - 32bity
+
+serwery DNS (Domain Name System)
+ping
+
+===== model OSI  a  model TCP/IP =====
+	  {{./pasted_image003.png?width=800}}
+
+**protokół** - język porozumiewania się klienta z serwerem definiowany w dokumentach RFC
+
+=== Najważniejsze protokoły: ===
+	**— HTTP**
+		Hyper Text Transfer Protocol; komunikacja w zakresie stron WWW; port 80
+		//Port protokołu// – pojęcie związane z protokołami używanymi w Internecie do identyfikowania procesów działających na odległych systemach. Jest to jeden z parametrów gniazda. 
+		__Adres URL:__
+		http://www.wikipedia.org/wiki/URL
+		\__/   \_______________/\_______/
+		   |                        |           	         |
+	   protokół             host    		    ścieżka
+						  (adres serwera)    do zasobu 
+		
+		__Metody HTTP:__
+	* GET - parametry przekazujemy po znaku ? 
+	* POST - przesyłanie danych w sposób niejawny, np. z formularzy
+		
+		Protokół HTTP jest //bezstanowy//. Oznacza to tyle, że każde zapytanie może być interpretowane w oderwaniu od pozostałych.Tą bezstanowość można obejść, obecnie głównie za pomocą tzw. ciasteczek.
+	**— HTTPS**
+		Hypertext Transfer Protocol Secure; szyfrowana wersja protokołu HTTP; port 443
+		
+	**— FTP**
+		File Transfer Protocol; upload aplikacji sieciowych ;port 20, 21
+		
+	— FTPS (znany także jako FTP Secure i FTP-SSL) – rozszerzenie protokołu File Transfer Protocol (FTP), umożliwiające wsparcie dla szyfrowanych protokołów Transport Layer Security (TLS) oraz Secure Sockets Layer (SSL).
+	
+	FTPS nie powinien być mylony z niekompatybilnym protokołem SSH File Transfer Protocol (SFTP), stanowiącym podsystem dla protokołu SSH. Różni się on też od protokołu Secure FTP, stosowanego jako tunelowanie FTP poprzez połączenie SSH (FTP over SSH').
+	
+	FTPS używa portu 990 TCP dla kontroli przesyłu oraz 989 TCP dla transferu danych. 
+	
+	**— SMPT**
+		Simple Mail Transfer Protocol – protokół komunikacyjny opisujący sposób przekazywania poczty elektronicznej w Internecie; port 25
+		
+	**— POP3**
+		Post Office Protocol – protokół internetowy z warstwy aplikacji pozwalający na odbiór poczty elektronicznej ze zdalnego serwera do lokalnego komputera poprzez połączenie TCP/IP
+		
+	**— IMAP** 
+		Internet Message Access Protocol – internetowy protokół pocztowy zaprojektowany jako następca POP3; port 143
+		
+
+== Kapsułkowanie lub enkapsulacja ==
+polega na upakowaniu danych z wyższej warstwy w warstwie niższej danego protokołu po stronie nadawczej, a więc przed wysłaniem pakietu telekomunikacyjnego (datagramu, ramki) w sieciach pakietowych. Po stronie odbiorczej wykonywane jest działanie odwrotne (tzw. dekapsulacja), prowadzące do wyodrębnienia danych warstwy najwyższej przenoszącej dane użytkowe (zwanej warstwą aplikacji) z danych warstw niższych. 
+												  {{./pasted_image002.png?width=800}}
+
+
+===== Domain Name System (DNS, pol. „system nazw domenowych”)  port 53 =====
+ system serwerów, protokół komunikacyjny oraz usługa obsługująca rozproszoną bazę danych adresów sieciowych. Pozwala na zamianę adresów znanych użytkownikom Internetu na adresy zrozumiałe dla urządzeń tworzących sieć komputerową. Dzięki DNS nazwa mnemoniczna, np. pl.wikipedia.org jest tłumaczona na odpowiadający jej adres IP, czyli 91.198.174.192. 
+
+__DNS__ to złożony system komputerowy oraz prawny. Zapewnia z jednej strony rejestrację nazw domen internetowych i ich powiązanie z numerami IP. Z drugiej strony realizuje bieżącą obsługę komputerów odnajdujących adresy IP odpowiadające poszczególnym nazwom.
+
+cache DNS
+
+Format komunikatu DNS:
+NAGŁÓWEK – (Header)
+ZAPYTANIE – (Question) do serwera nazw
+ODPOWIEDŹ – (Answer) zawiera rekordy będące odpowiedzią
+ZWIERZCHNOŚĆ – (Authority) wskazuje serwery zwierzchnie dla domeny
+DODATKOWA – (Additional) sekcja informacji dodatkowych 
+
+== protokół TCP (http, https, ftp, ftps, smtp, pop, imap) ==
+połączeniowy, stanowy, niezawodny
+	* zawiera segmenty
+	* jest zorientowany na połączenie: oznacza to, że program użytkowy, który chce skorzystać z protokółu TCP musi najpierw zwrócić się do odbiorcy z prośbą o uzyskanie połączenia i uzyskać jego zgodę;
+	* jest protokółem typu punkt-punkt: oznacza to, że każde połączenie TCP ma dokładnie dwa końce;
+	* zapewnia niezawodność: oznacza to, że protokół TCP zapewnia pełna niezawodność w dostarczaniu pakietów;
+	* zapewnia dwukierunkową komunikację: oznacza to, że komunikacja w połączeniu TCP odbywa się w dwu kierunkach, czyli zarówno od nadawcy do odbiorcy jak i od odbiorcy do nadawcy;
+	* zapewnia strumieniowy interfejs: oznacza to, że program może wysyłać połączeniem całą sekwencję bajtów, w konsekwencji prowadzi to do tego, że dane nie musza być dostarczane do odbiorcy w
+		kawałkach tych samych wielkości, w których zostały wysłane;
+	* zapewnia łagodne kończenie połączenia: oznacza to, ze protokół gwarantuje niezawodne dostarczenie pakietów przed zamknięciem połączenia;
+	* jest protokołem zorientowanym połączeniowo. Zanim rozpocznie się transmisja danych, dwa komunikujące się hosty przechodzą przez proces synchronizacji wirtualnego połączenia. Proces ten jest
+		znany jako "trzykrotny uścisk dłoni" (ang. three way handshake). Jest to trzy etapowy proces ustanawiania wirtualnego połączenia między nadawcą i odbiorcą.
+					> W pierwszym kroku host inicjujący (klient) wysyła segment synchronizacji (z ustawioną flagą SYN). Segment ten zawiera początkowy numer sekwencyjny dla tej sesji (ozn. x). Ustawienie bitu SYN w polu "kod" nagłówka TCP oznacza żądanie nawiązania połączenia. Numer sekwencyjny jest wartością 32-bitową.
+
+
+== protokół UPD (dns, streaming, komunikatory av, gry online) ==
+bezpołączeniowy, bezstanowy, zawodny
+
+WARSTWA TRANSPORTOWA
+zawiera databazy
+
+WARSTWA INTERNETU
+IP, adres źródłowy, adres docelowy
+	* zawiera pakiety
+__Maskarada sieci/ translacja adresów sieciowych / NAT__   adresy prywatne => adresy publiczne
+
+tablica translacji
+
+WARSTWA DOSTĘPU DO SIECI, Ethernet
+adresy MAC, 
+zawiera ramki
+	
+
+== protokół ARP ==
+protokół sieciowy, mapuje adresy ip na adresy sprzętowe
+
+== serwer DHCP ==
+protokół dynamicznego konfigurowania hostów, protokół komunikacyjny
+dostajemy: adres ip, adres bramy domyślnej (gateway), dns
+
