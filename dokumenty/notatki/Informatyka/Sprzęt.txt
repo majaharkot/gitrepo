@@ -67,7 +67,7 @@ domyślna trasa to droga routera
 
 wewnętrzny adres IP
 Eth — 192.168.3.10
-[[WiFi]] — 192.168.1.11
+WiFi — 192.168.1.11
 
 serwer DHCP
 

@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-05-10T07:35:08+02:00
+
+====== polecenia ======
+Created piątek 10 maja 2019
+
+nadanie uprawnień katalogowi gs1:  chmod 777 gs1 -R
