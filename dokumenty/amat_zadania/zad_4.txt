@@ -1,0 +1,4 @@
+﻿W pojemniku znajdowało się pełno cieczy. Wylano z niego dziesięciokrotnie
+33% jego aktualnej zawartości.
+
+Przedstaw wykres kolumnowy kolejnych stanów pojemnika.

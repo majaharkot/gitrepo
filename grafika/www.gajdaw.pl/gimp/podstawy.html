@@ -1,0 +1,1010 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                        "http://www.w3.org/TR/html4/loose.dtd">
+
+<HTML>
+
+
+<!-- Mirrored from www.gajdaw.pl/gimp/podstawy.html by HTTrack Website Copier/3.x [XR&CO'2006], Thu, 09 Feb 2006 19:56:33 GMT -->
+<HEAD>
+  <LINK REL="stylesheet" HREF="../przedmioty.css" TYPE="text/css">
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1250">
+  <META NAME="Author" Content="Włodzimierz Gajda">
+  <META NAME="Keywords" CONTENT="GIMP, grafika, komputerowa, podstawy, ćwiczenia">
+  <META NAME="Description" CONTENT="Materiały do nauki programu GIMP.">
+  <TITLE>GIMP: tworzenie grafiki na potrzeby WWW</TITLE>
+</HEAD>
+<BODY>
+
+<TABLE width="100%" BORDER="0">
+  <TR VALIGN=bottom>
+    <TD width="150" align="center">
+     <A HREF="index.html"><IMG ALT="NOWO¦CI NA STRONIE" SRC="images/szyld.gif"></A>
+    </TD>
+    <TD ALIGN="RIGHT">
+     <A HREF="http://www.gajdaw.pl/html/index.html">HTML &amp; CSS</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/php/index.html">PHP</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/szablony/index.html">Szablony</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/bd/index.html">Bazy danych</A>&nbsp;|&nbsp;
+     <A HREF="index.html">GIMP</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/cms/index.html">CMS</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/varia/index.html">Varia</A><BR>
+<IMG src="../images/blueline.jpg"><BR>
+     <A HREF="http://www.gajdaw.pl/pracI/index.html">Pracownia programowania I</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/pracII/index.html">Pracownia programowania II</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/pracIen/index.html">Laboratory of Programming I</A>
+     <BR>
+     <A HREF="http://www.gajdaw.pl/pracZ/index.html">Lab. Pr. Zaoczne</A>&nbsp;|&nbsp;     <A HREF="http://www.gajdaw.pl/ai/index.html">Aplikacje internetowe</A>     <BR>
+     <A HREF="http://www.gajdaw.pl/ak/index.html">Architektura komputerów</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/iksk/index.html">IKSK</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/sk/index.html">Sieci komputerowe</A><BR>
+     <A HREF="http://www.gajdaw.pl/soI/index.html">Systemy Operacyjne I</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/soII/index.html">Systemy Operacyjne II</A>
+     <BR>
+     <A HREF="http://www.gajdaw.pl/cpp/index.html">C++</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/pjp/index.html">Pascal</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/puk/index.html">PUK</A><BR>
+<IMG src="../images/blueline.jpg"><BR>
+     <A HREF="index.html">Co nowego?</A>&nbsp;|&nbsp;
+     <A HREF="przyklady.html">Przykłady</A>&nbsp;|&nbsp;
+     <A HREF="dopobrania.html">Do pobrania</A>
+    </TD>
+  </TR>
+</TABLE>
+
+<TABLE ALIGN=LEFT WIDTH="100%" CELLSPACING=0 CELLPADDING=0 BORDER="0">
+<TR>
+<TD VALIGN=TOP WIDTH=150 ALIGN=CENTER>
+
+<TABLE WIDTH="150" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+  <TD WIDTH="20"   HEIGHT="20" BACKGROUND="../images/przedmioty/1.jpg">&nbsp;</TD>
+  <TD WIDTH="20"   HEIGHT="20" BACKGROUND="../images/przedmioty/2.jpg">&nbsp;</TD>
+  <TD WIDTH="90"   HEIGHT="20" BACKGROUND="../images/przedmioty/2.jpg">&nbsp;</TD>
+  <TD WIDTH="20"   HEIGHT="20" BACKGROUND="../images/przedmioty/3.jpg">&nbsp;</TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/4.jpg">&nbsp;  </TD>
+  <TD WIDTH="20" HEIGHT="20" BACKGROUND="../images/przedmioty/5.jpg"><IMG SRC="../images/przedmioty/ikona.gif"></TD>  <TD ALIGN="LEFT" WIDTH="90" BACKGROUND="../images/przedmioty/5.jpg"><A HREF="index.html">Informacja</A></TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/6.jpg">&nbsp;  </TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/4.jpg">&nbsp;  </TD>
+  <TD WIDTH="20" HEIGHT="20" BACKGROUND="../images/przedmioty/5.jpg"><IMG SRC="../images/przedmioty/ikona.gif"></TD>  <TD ALIGN="LEFT" WIDTH="90" BACKGROUND="../images/przedmioty/5.jpg"><A HREF="podstawy.html">Podstawy</A></TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/6.jpg">&nbsp;  </TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/4.jpg">&nbsp;  </TD>
+  <TD WIDTH="20" HEIGHT="20" BACKGROUND="../images/przedmioty/5.jpg"><IMG SRC="../images/przedmioty/ikona.gif"></TD>  <TD ALIGN="LEFT" WIDTH="90" BACKGROUND="../images/przedmioty/5.jpg"><A HREF="selekcja.html">Selekcja</A></TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/6.jpg">&nbsp;  </TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/4.jpg">&nbsp;  </TD>
+  <TD WIDTH="20" HEIGHT="20" BACKGROUND="../images/przedmioty/5.jpg"><IMG SRC="../images/przedmioty/ikona.gif"></TD>  <TD ALIGN="LEFT" WIDTH="90" BACKGROUND="../images/przedmioty/5.jpg"><A HREF="sciezki.html">Ścieżki</A></TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/6.jpg">&nbsp;  </TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/4.jpg">&nbsp;  </TD>
+  <TD WIDTH="20" HEIGHT="20" BACKGROUND="../images/przedmioty/5.jpg"><IMG SRC="../images/przedmioty/ikona.gif"></TD>  <TD ALIGN="LEFT" WIDTH="90" BACKGROUND="../images/przedmioty/5.jpg"><A HREF="warstwy.html">Warstwy</A></TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/6.jpg">&nbsp;  </TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/4.jpg">&nbsp;  </TD>
+  <TD WIDTH="20" HEIGHT="20" BACKGROUND="../images/przedmioty/5.jpg"><IMG SRC="../images/przedmioty/ikona.gif"></TD>  <TD ALIGN="LEFT" WIDTH="90" BACKGROUND="../images/przedmioty/5.jpg"><A HREF="proste.html">Proste strony WWW</A></TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/6.jpg">&nbsp;  </TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/4.jpg">&nbsp;  </TD>
+  <TD WIDTH="20" HEIGHT="20" BACKGROUND="../images/przedmioty/5.jpg"><IMG SRC="../images/przedmioty/ikona.gif"></TD>  <TD ALIGN="LEFT" WIDTH="90" BACKGROUND="../images/przedmioty/5.jpg"><A HREF="tla.html">Tła strony WWW</A></TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/6.jpg">&nbsp;  </TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/4.jpg">&nbsp;  </TD>
+  <TD WIDTH="20" HEIGHT="20" BACKGROUND="../images/przedmioty/5.jpg"><IMG SRC="../images/przedmioty/ikona.gif"></TD>  <TD ALIGN="LEFT" WIDTH="90" BACKGROUND="../images/przedmioty/5.jpg"><A HREF="zdjeciadocwiczen.html">Zdjęcia do ćwiczeń</A></TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/6.jpg">&nbsp;  </TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/7.jpg">&nbsp;  </TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/8.jpg">&nbsp;  </TD>
+  <TD WIDTH="90"  HEIGHT="20" BACKGROUND="../images/przedmioty/8.jpg">&nbsp;  </TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/9.jpg">&nbsp;  </TD>
+</TR>
+</TABLE>
+<A HREF="http://www.gajdaw.pl/">&copy;gajdaw</A></TD>
+<TD VALIGN=TOP>
+<center><script type="text/javascript"><!--
+google_ad_client = "pub-1303481175257215";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel ="";
+google_color_border = "336699";
+google_color_bg = "FFFFFF";
+google_color_link = "0000FF";
+google_color_url = "008000.html";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="../../pagead2.googlesyndication.com/pagead/show_ads.html">
+</script></center><H1>Podstawy</H1>
+
+<H3>Instalacja i uruchomienie</H3>
+
+<P>
+Program GIMP możemy zdobyć odwiedzając witrynę
+<A href="http://www.gimp.org/">http://www.gimp.org</A>. 
+Należy  pamiętać o tym, by wraz z programem
+instalacyjnym  GIMPa  skopiować  bibliotekę GTK. Instalację
+oprogramowania  trzeba rozpocząć od biblioteki GTK.
+</P>
+
+<P>
+Poza standardowymi opcjami takimi jak docelowy folder czy tworzenie ikony na pulpicie,
+program instalacyjny umożliwia wybór wersji językowej. Po wybraniu
+polskiej wersji językowej cały interfejs GIMPa będzie przetłumaczony na język polski.
+Niestety, w obecnej wersji pomoc dołączana do programu jest dostępna jedynie w 
+języku angielskim.
+</P>
+
+<DIV class="ilustracja"><IMG src="14-artykul/ilustracje/14-1.jpg" alt=""><P class="podpis">Rys. 1. Okno główne programu GIMP.</P></DIV>
+
+<H3>Skalowanie rysunków</H3>
+
+<P>
+Pracę z GIMPem rozpoczniemy od skalowania rysunków. Operacja skalowania 
+jest przydatna m.in. przy przygotowywaniu galerii internetowej lub menu strony.
+Dysponując dużym rysunkiem chcemy na stronie umieścić jego miniaturkę. Wykonując 
+skalowanie rysunku nauczymy się także otwierać i zapisywać obraz, wyświetlać 
+menu kontekstowe obrazu, a także powiększać i pomniejszać 
+widok obrazu.
+</P>
+
+<H4>Ćwiczenie 1</H4>
+
+<P>
+Dysponujesz plikiem <SPAN class="plik">kwiatek.jpg</SPAN> 
+o wymiarach: szerokość - 800 pikseli, 
+wysokość - 600 pikseli (w skrócie: 800x600) zapisanym w formacie JPEG. 
+Przygotuj miniaturki o rozmiarach 400x300 oraz 200x150 i zapisz je do 
+plików <SPAN class="plik">kwiatek-400.jpg</SPAN> 
+oraz <SPAN class="plik">kwiatek-200.jpg</SPAN>.
+</P>
+
+<P>
+Ćwiczenie rozpoczynamy od wczytania zdjęcia z pliku <SPAN class="plik">kwiatek.jpg</SPAN>.
+Służy do tego opcja menu głównego <SPAN class="opcja">Plik | Otwórz</SPAN>.
+</P>
+
+<P>
+Podobnie jak pozostałe okienka dialogowe GIMPa 
+tak i okienko "Odczyt obrazu" różni się wizualnie od aplikacji Windows.
+Wynika to z faktu, że GIMP jest dostępny na różne platformy (m.in. Linux oraz FreeBSD)
+i operację "Odczyt obrazu" wykonuje za pośrednictwem funkcji biblioteki GTK, 
+a nie Windows API.
+Druga różnica w stosunku do innych aplikacji Windows jest taka, że w programie 
+GIMP niemal każde okienko dialogowe będzie widoczne w postaci osobnego przycisku 
+na pasku zadań.
+</P>
+
+<P>
+Obraz wyświetlany po otwarciu pliku możemy powiększać i pomniejszać wykorzystując opcje 
+<SPAN class="opcja">Widok | Powiększ</SPAN> oraz 
+<SPAN class="opcja">Widok | Pomniejsz</SPAN>  dostępne w menu kontekstowym obrazu.
+W celu wyświetlenia menu kontekstowego, należy kliknąć prawym przyciskiem myszy w 
+otwarty obraz. Jest to kolejna różnica w stosunku do rodzimych aplikacji Windows.
+Programy Corel Photo Paint oraz Adobe Photoshop zawierają większą część swoich 
+opcji w menu głównym, podczas gdy w GIMPie operacje dotyczące danego 
+obrazu są dostępne w menu kontekstowym.</P>
+
+<DIV class="ilustracja"><IMG src="14-artykul/ilustracje/14-2.jpg" alt=""><P class="podpis">Rys. 2. Plik kwiatek.jpg po pomniejszeniu do rozmiaru 33%.</P></DIV>
+
+<P>Ponieważ operacje powiększania i pomniejszania są wykonywane 
+bardzo często, więc dla wygody warto zapamiętać dwa skróty klawiszowe: 
+znak - (minus) pomniejsza widok, zaś znak = (znak równości) powiększa widok wyświetlanego obrazu.
+Belka tytułowa okna z obrazem informuje nas o stopniu powiększenia widoku 
+obrazka w stosunku do oryginału (np. 50%).
+</P>
+
+<P>Oczywiście operacje zwiększania i zmniejszania widoku nie powodują skalowania obrazu.
+Zapisanie obrazu po wykonaniu operacji "Pomniejsz" spowoduje, że 
+zapisany obraz będzie identyczny jak oryginał (tj. jego wymiary nie ulegną zmianie).
+</P>
+
+<P>Operację skalowania wykonujemy klikając opcję 
+<SPAN class="opcja">Obraz | Przeskaluj obraz</SPAN> 
+w menu kontekstowym obrazu. Okno dialogowe "Skalowanie obrazu" umożliwia 
+wybór jednostki, w jakiej podawane są wymiary obrazu, podanie nowej szerokości 
+obrazu lub wysokości oraz zmianę współczynników X i Y. Domyślnie współczynniki 
+X oraz Y są połączone, co powoduje, że obraz jest skalowany proporcjonalnie
+(zmiana wysokości z 600 na 300 spowoduje automatycznie zmianę szerokości z 800 na 400).
+Jeśli chcemy zmieniać niezależnie szerokość i wysokość obrazu należy 
+rozłączyć współczynniki X oraz Y klikając w przycisk o wyglądzie spinacza.
+</P>
+
+<DIV class="ilustracja"><IMG src="14-artykul/ilustracje/14-3.jpg" alt=""><P class="podpis">Rys. 3. Okno dialogowe "Skalowanie obrazu".</P></DIV>
+
+<P>
+Ustalmy szerokość obrazu na 200, zaś jego wysokość na 150. 
+Operację zakończmy naciskając przycisk OK.
+</P>
+
+<P>
+Pozostało nam zapisanie obrazu. Próżno szukać opcji 
+<SPAN class="opcja">Zapisz</SPAN> lub <SPAN class="opcja">Zapisz jako...</SPAN>
+w menu głównym GIMPa. Podobnie jak i poprzednio wykonywane przez nas operacje
+opcje związane z zapisem obrazu są dostępne w menu kontekstowym danego obrazu.
+Należy zatem kliknąć prawym guzikiem w przeskalowany obraz, a następnie wybrać 
+<SPAN class="opcja">Plik | Zapisz jako ...</SPAN>.
+</P>
+
+<P>
+W przypadku plików graficznych bardzo ważny jest format zapisywanego pliku.
+GIMP umożliwia dwa sposoby wyboru formatu zapisu. Po pierwsze na podstawie 
+rozszerzenia (takie są ustawienia domyślne programu). Zatem wpisanie 
+nazwy <SPAN class="plik">kwiatek-400.jpg</SPAN> spowoduje zapis pliku w formacie JPEG. 
+Druga metoda polega na wybraniu z menu domyślnego formatu.
+Dodajmy, że format plików programu GIMP ma rozszerzenie XCF. 
+Będzie to ważne w przypadku wykonywania skomplikowanych operacji graficznych.
+Zapis w formacie JPEG, GIF czy PNG (formaty stosowane na stronach WWW)
+powoduje utratę informacji takich jak: umiejscowienie prowadnic, 
+zaznaczone obszary czy warstwy obrazu. 
+</P>
+
+<DIV class="ilustracja"><IMG src="14-artykul/ilustracje/14-4.jpg" alt=""><P class="podpis">Rys. 4. Menu kontekstowe wyświetlane prawym kliknięciem w obraz.</P></DIV>
+
+<DIV class="ilustracja"><IMG src="14-artykul/ilustracje/14-5.jpg" alt=""><P class="podpis">Rys. 5. Okno dialogowe "Zapis obrazu".</P></DIV>
+
+<P>
+Po podaniu nazwy <SPAN class="plik">kwiatek-400.jpg</SPAN> i naciśnięciu przycisku OK
+pojawi się okno dialogowe "Zapis jako JPEG". Okno to umożliwia 
+zmianę parametrów pliku JPEG. 
+Zmieniając jakość obrazu suwakiem możemy zmniejszyć rozmiar pliku kosztem jakości obrazu lub 
+poprawić jakość obrazu powiększając rozmiar pliku.  Przycisk "Podgląd" umożliwia 
+podejrzenie zmian, powodowanych suwakiem "Jakość". Oczywiście należy dążyć do jak 
+najmniejszych plików. Zazwyczaj ustawienie suwaka jakości około 50 - 70 procent 
+daje optymalny efekt. Włączmy również opcję "Przyrostowy" oraz "Optymalizacja".
+Dzięki przyrostowemu zapisowi nasz obraz będzie zajmował na stronie WWW stały rozmiar
+nawet, jeśli nie został jeszcze wczytany do końca.
+</P> 
+
+<DIV class="ilustracja"><IMG src="14-artykul/ilustracje/14-6.jpg" alt=""><P class="podpis">Rys. 6. Okno dialogowe "Zapis jako JPEG".</P></DIV>
+
+<P>
+Drugą miniaturkę wykonujemy identycznie jak pierwszą, zmieniając jedynie nową 
+szerokość obrazu na 200.</P>
+
+
+<H4>Ćwiczenie 2</H4>
+
+<!--  <P>
+W drugim ćwiczeniu naszym celem jest przygotowanie stron WWW prezentujących  
+piętnaście ilustracji. Ilustracje przedstawiają przykładowe konfiguracje sieci eternet.
+Dane do ćwiczenia stanowi piętnaście plików o nazwach <SPAN class="plik">cw01.jpg</SPAN>,
+<SPAN class="plik">cw02.jpg</SPAN>, ..., <SPAN class="plik">cw15.jpg</SPAN> 
+o wymiarach 400x300 umieszczonych w folderze o nazwie <SPAN class="plik">400x300</SPAN>. 
+</P>
+-->
+
+<P>
+W drugim zajmiemy się przygotowaniem piętnastu miniatur.
+Dane do ćwiczenia stanowi piętnaście plików o nazwach <SPAN class="plik">cw01.jpg</SPAN>,
+<SPAN class="plik">cw02.jpg</SPAN>, ..., <SPAN class="plik">cw15.jpg</SPAN> 
+o wymiarach 400x300.
+Ilustracje przedstawiają przykładowe konfiguracje sieci ethernet.
+Przygotuj piętnaście miniatur o wymiarach 100x75 pikseli i zapisz je w folderze
+o nazwie 100x75.
+</P>
+
+
+<DIV class="ilustracja"><IMG src="14-artykul/ilustracje/14-7.jpg" alt=""><P class="podpis">Rys. 7. Ćwiczenie 2.</P></DIV>
+
+<!--  <P>
+Ćwiczenie rozpoczynamy od wykonania piętnastu miniaturek. Kolejno otwieramy 
+każdy z rysunków i skalujemy do rozmiaru 100x75.
+Następnie przygotowujemy piętnaście stron WWW, z których każda zawiera z lewej strony
+tabelkę  o pięciu wierszach i trzech kolumnach. W każdej komórce tabelki 3x5 
+znajduje się miniaturka o rozmiarze 100x75 będąca hiperłączem.
+Z prawej strony jest natomiast umieszczona ilustracja o rozmiarze 400x300.
+</P>  -->
+
+
+<P>
+Ćwiczenie wykonujemy następująco.
+Rozpoczynamy od utworzenia folderu o nazwie 100x75.
+Następnie kolejno otwieramy 
+każdy z rysunków i skalujemy do rozmiaru 100x75,
+po czym przeskalowany obraz zapisujemy 
+do pliku. 
+</P>
+
+<!--
+<P>
+W celu pomniejszenia obrazka z rozmiaru 400x300 do 100x75 nie należy 
+stosować atrybutu width znacznika IMG. Jeśli do skalowania obrazka stosujemy 
+atrybut width, wówczas gość odwiedzający naszą witrynę musi dłużej czekać na załadowanie strony.
+Obraz o wymiarach 400x300 zajmuje około 12 kB, natomiast obraz 100x75 jedynie 2 kB.
+Ściągnięcie menu strony zawierającej piętnaście małych obrazków wymaga ściągnięcia 
+około 30 kB (15 * 2 kB). To samo menu wykonane z dużych obrazków z parametrem width zajmuje 
+około 200 kB. 
+</P>
+-->
+
+<P>
+Ćwiczenia pierwsze i drugie zapoznały nas z otwieraniem i zapisywaniem 
+obrazów w formacie JPEG, powiększaniem i pomniejszaniem obrazów, a także z 
+operacją skalowania. Nauczyliśmy się także posługiwać menu kontekstowym.</P>
+
+<H3>Kadrowanie oraz zmiana rozmiaru obrazów</H3>
+
+<!--
+<P>
+Drugą dość podstawową umiejętnością związaną z obróbką plików graficznych
+jest przygotowywanie obrazów o zadanych rozmiarach. Projektowanie serwisu WWW
+jest o wiele łatwiejsze, jeśli obrazy mają zadane wymiary i proporcje.
+Na przykład projektując galerię rysunków, z których każdy ma rozmiar 400x300
+możemy rysunki umieścić w taki sposób, by każdy z nich był otoczony takim 
+samym marginesem z każdej strony.
+Dodanie kolejnych rysunków nie niszczy struktury strony.
+Zanim rozpoczniemy kodowanie strony w języku HTML warto jest zadać sobie trud 
+i przeskalować ilustracje do żądanego wymiaru i proporcji. 
+</P>
+-->
+
+<P>
+Drugą dość podstawową umiejętnością związaną z obróbką plików graficznych
+jest przygotowywanie obrazów o zadanych rozmiarach.
+</P>
+
+<H4>Ćwiczenie 3</H4>
+
+<P>
+Naszym zadaniem jest wycięcie fragmentów ilustracji. Dysponujemy plikiem o nazwie 
+<SPAN class="plik">zolty.jpg</SPAN> (wymiary 200x267) przedstawiającym żółty kwiat.
+Należy utworzyć następujące pliki:
+<SPAN class="plik">zolty-120-200.jpg</SPAN> o wymiarach 120x200, 
+<SPAN class="plik">zolty-150-100.jpg</SPAN> o wymiarach 150x100, 
+<SPAN class="plik">zolty-150-150.jpg</SPAN> o wymiarach 150x150, 
+<SPAN class="plik">zolty-200-30.jpg</SPAN> o wymiarach 200x30 oraz 
+<SPAN class="plik">zolty-20-267.jpg</SPAN> o wymiarach 20x267.
+Każdy z nowych plików ma przedstawiać fragment oryginalnego 
+zdjęcia z pliku <SPAN class="plik">zolty.jpg</SPAN>.
+</P>
+
+<DIV class="ilustracja"><IMG src="14-artykul/ilustracje/14-8.jpg" alt=""><P class="podpis">Rys. 8. Okno dialogowe "Informacje o kadrowaniu i zmianie rozmiaru".</P></DIV>
+
+<P>
+Wykonanie ćwiczenia rozpoczynamy od odczytania 
+pliku <SPAN class="plik">zolty.jpg</SPAN> (opcja <SPAN class="opcja">Plik | Otwórz</SPAN>).
+Następnie z menu kontekstowego obrazu wybieramy opcję 
+<SPAN class="opcja">Narzędzia | Przekształcenie | Kadrowanie i zmiana rozmiaru</SPAN>.
+Po wybraniu opcji na ekranie powinno pojawić się okno 
+dialogowe <SPAN class="opcja">Informacje o kadrowaniu i zmianie rozmiaru</SPAN>,
+zaś w oknie, w którym wyświetlany jest
+obraz <SPAN class="plik">zolty.jpg</SPAN> pojawią się cztery 
+czarne kwadraciki służące do wyboru obszaru obrazu.
+Kwadraciki lewy dolny i prawy górny umożliwiają przesuwanie selekcji, zaś 
+kwadraciki lewy górny i prawy dolny - zmianę jej rozmiarów.
+Rozmiar i umiejscowienie wybranego fragmentu możemy również modyfikować wprowadzając 
+wartości liczbowe w oknie dialogowym. Jeśli zależy nam na konkretnym rozmiarze uzyskiwanego 
+obrazu to należy w oknie dialogowym wpisać żądane wielkości szerokości i wysokości,
+po czym korzystając z narożników do przesuwania odpowiednio umiejscowić selekcję.
+</P>
+
+<DIV class="ilustracja"><IMG src="14-artykul/ilustracje/14-9.jpg" alt=""><P class="podpis">Rys. 9. Obraz zolty.jpg podczas kadrowania.</P></DIV>
+
+<P>
+Gdy selekcja jest gotowa naciskamy przycisk 
+<SPAN class="opcja">Zmień rozmiar</SPAN> 
+(okno <SPAN class="opcja">Informacje o kadrowaniu ...</SPAN>).
+Po naciśnięciu przycisku rozmiar i zawartość obrazu ulegną zmianie. Tak uzyskany obraz zapisujemy
+i zamykamy.
+Opisaną procedurę powtarzamy dla każdych zadanych wymiarów.
+</P>
+
+<P>
+Opisana metoda umożliwia nam uzyskanie obrazu o dowolnych wymiarach i proporcjach.
+Oczywiście, jeśli z obrazu prostokątnego 800x600 pikseli utworzymy kwadrat o rozmiarach
+100x100 to musi się to odbyć albo kosztem fragmentu rysunku albo jego proporcji!
+</P>
+
+<H4>Ćwiczenie 4</H4>
+
+<!--  
+<P>
+Dysponując czterema zdjęciami o wymiarach 320x240 przedstawiającymi kwiaty i owoce
+przygotuj kwadratowe miniaturki (cztery sztuki) o rozmiarach 80x80.
+Z uzyskanych obrazów utwórz strony WWW prezentujące wszystkie ilustracje, 
+przy czym "kwadraciki" 80x80 mają stanowić menu strony.    
+</P>
+-->
+
+<P>
+Dysponując czterema zdjęciami o wymiarach 320x240 przedstawiającymi kwiaty i owoce
+przygotuj kwadratowe miniaturki (cztery sztuki) o rozmiarach 80x80.
+Miniaturki przygotuj w taki sposób, by zawierały najbardziej
+atrakcyjny fragment dużej fotografii, na przykład kwiatek, porzeczkę.
+Nie zmieniaj proporcji obrazu.
+</P>
+
+<DIV class="ilustracja"><IMG src="14-artykul/ilustracje/14-10.jpg" alt=""><P class="podpis">Rys. 10. Efekt wykonania ćwiczenia 4.</P></DIV>
+
+<P>
+Ćwiczenie to, bazuje na ćwiczeniu pierwszym i trzecim. 
+Należy najpierw z każdego zdjęcia wyciąć kwadrat 
+(wizualnie atrakcyjny o dowolnych wymiarach np. 149x149).
+Następnie wycięte kwadraty należy przeskalować do rozmiaru 80x80. 
+W ten sposób uzyskamy kwadratowe miniaturki.
+</P>
+
+<H4>Ćwiczenie 5</H4>
+
+<!--  
+<P>
+Dysponując czterema zdjęciami 300x400 przedstawiającymi drzewa,
+utwórz miniaturki o wymiarach 75x100. Korzystając z uzyskanych ilustracji przygotuj
+stronę WWW zawierającą menu składające się z ilustracji o wymiarze 75x100.
+</P>
+-->
+
+<P>
+Dysponując czterema zdjęciami 300x400 przedstawiającymi drzewa,
+utwórz miniaturki o wymiarach 75x100.
+</P>
+
+
+<DIV class="ilustracja"><IMG src="14-artykul/ilustracje/14-11.jpg" alt=""><P class="podpis">Rys. 11. Efekt wykonania ćwiczenia 5.</P></DIV>
+
+<!--
+<P>
+ćwiczenia piątego wymaga jedynie umiejętności 
+opanowanych w poprzednim skalowania obrazu
+(a zatem umiejętności opanowanych w ćwiczeniu 1). Kolejno otwieramy każdą fotografię,
+skalujemy do żądanych rozmiarów i zapisujemy.
+</P>
+-->
+
+<P>
+Wykonanie ćwiczenia przebiega niemal identycznie
+jak wykonanie ćwiczenia 4.
+Kolejno otwieramy każdą fotografię,
+wycinamy ciekawy fragment o zadanych wymiarach i
+zapisujemy.
+
+Jeśli interesujący nas fragment obrazu jest 
+zbyt duży (większy niż 75x100) pikseli,
+to na początku skalujemy obraz do takich rozmiarów,
+by dany fragment mieścił się w prostokącie o wymiarach 75x100.
+W przypadku, gdy przeskalujemy obraz i nie jesteśmy zadowoleni 
+z wyniku tej operacji, należy użyć opcji <SPAN class="opcja">Edycja | Cofnij</SPAN>
+o skrócie klawiszowym Ctrl+Z.
+</P>
+
+
+<H3>Obrazy czarno-białe i jednobarwne</H3>
+
+<P>
+Ilustracje wykonywane programem GIMP mogą być kolorowe lub czarno białe.
+Ilustrację kolorową możemy zamienić na czarno białą wykonując operację 
+<SPAN class="opcja">Obraz | Tryb | Odcienie szarości</SPAN>. Po wykonaniu operacji obraz straci kolory.
+Jeśli teraz zapiszemy otrzymany obraz, wówczas będzie on czarno-biały.
+</P>
+
+<P>
+Obraz czarno-biały możemy przekształcić w obraz "jednobarwny".
+Należy w tym celu otworzyć uprzednio zapisany obraz czarno-biały,
+zmienić jego tryb na RGB (opcja <SPAN class="opcja">Obraz | Tryb | RGB</SPAN>), a następnie
+stosując okno dialogowe "Balans kolorów" (opcja <SPAN class="opcja">Obraz</SPAN>)
+ustawić odpowiednie barwy obrazu. 
+</P>
+
+<DIV class="ilustracja"><IMG src="14-artykul/ilustracje/14-12.jpg" alt=""><P class="podpis">Rys. 12. Okno dialogowe "Balans kolorów".</P></DIV>
+
+<H4>Ćwiczenie 6</H4>
+
+<P>
+Dany jest plik <SPAN class="plik">zachod.jpg</SPAN> o rozmiarach 150x200 
+przedstawiający kolorową fotografię zachodu słońca.
+Utwórz plik <SPAN class="plik">bw-zachod.jpg</SPAN> przedstawiający tę samą 
+fotografię w wersji czarno-białej. Następnie utwórz
+pliki   <SPAN class="plik">brazawy-zachod.jpg</SPAN>,
+<SPAN class="plik">zielony-zachod.jpg</SPAN>,
+<SPAN class="plik">czerwony-zachod.jpg</SPAN>,
+<SPAN class="plik">niebieski-zachod.jpg</SPAN>
+przedstawiające 
+tą samą fotografię w kolorystyce
+brązowej, zielonej, czerwonej oraz niebieskiej odpowiednio.
+</P>
+
+<DIV class="ilustracja"><IMG src="14-artykul/ilustracje/14-13.jpg" alt=""><P class="podpis">Rys. 13. Ćwiczenie 6.</P></DIV>
+
+<P>
+Ćwiczenie rozpoczynamy od wykonania obrazu czarno-białego.
+Otwieramy plik <SPAN class="plik">zachod.jpg</SPAN>,
+zmieniamy tryb na odcienie szarości i zapisujemy
+otrzymany obraz w pliku <SPAN class="plik">bw-zachod.jpg</SPAN>.
+Kolejne obrazy wykonujemy następująco. Otwieramy obraz czarno-biały, 
+zmieniamy tryb na RGB, w okienku dialogowym <SPAN class="opcja">Balans kolorów</SPAN> 
+ustawiamy odpowiedni odcień obrazu, po czym uzyskany obraz zapisujemy.
+</P>
+
+<H4>Ćwiczenie 7</H4>
+
+<P>
+Dysponując obrazem <SPAN class="plik">zaglowki.jpg</SPAN> o rozmiarach 80x533 
+przedstawiającym kilka żaglówek,
+przygotuj osiem obrazów o nazwach <SPAN class="plik">zaglowki-1.jpg</SPAN>, ..., 
+<SPAN class="plik">zaglowki-8.jpg</SPAN> przedstawiających 
+wycinek obrazu <SPAN class="plik">zaglowki.jpg</SPAN>. Każdy wycinek ma 
+prezentować ten sam fragment obrazu 
+oryginalnego. Wszystkie wycinki mają mieć rozmiar 150x150. Przygotowane obrazy 
+mają się różnić odcieniem.
+</P>
+
+<DIV class="ilustracja"><IMG src="14-artykul/ilustracje/14-14.jpg" alt=""><P class="podpis">Rys. 14. Ćwiczenie 7.</P></DIV>
+
+<P>
+Ćwiczenie siódme wykorzystuje umiejętność skalowania obrazu poznaną w ćwiczeniu 3 oraz
+przygotowywanie ilustracji jednobarwnych z ćwiczenia 6.
+Wykonanie ćwiczenia rozpoczynamy od wycięcia fragmentu 150x150 z ilustracji oryginalnej.
+Następnie obraz o rozmiarach 150x150 przekształcamy w tryb odcienie szarości i 
+zapisujemy do pliku. Kilkukrotnie otwieramy plik czarno-biały, zmieniamy tryb na RGB, zmieniamy 
+odcień i zapisujemy.
+</P>
+
+<H3>Wygładzanie brzegu obrazu</H3>
+
+<P>
+Kolejnym efektem, jaki opanujemy będzie wygładzanie brzegu obrazu.
+Efekt ten przede wszystkim zapozna nas z narzędziem selekcji.
+W programie GIMP aktywnym obszarem jest fragment wybrany przy pomocy narzędzi 
+selekcji. Narzędzi selekcji jest kilka (selekcja prostokątna, eliptyczna czy z wolnej ręki).
+Wszelkie operacje edytorskie, takie jak rysowanie po obrazie czy wlewanie farby
+działają w stosunku do wybranego obszaru. Efekt jest taki, że farba "wlewana"
+w obraz wypełnia jedynie obszary objęte selekcją.
+Najprostszym przykładem selekcji jest wybranie całego obrazu 
+(opcja <SPAN class="opcja">Zaznaczenie | Wszystko</SPAN>).
+Wówczas możemy rysować po dowolnym fragmencie obrazu.
+Selekcję możemy zmniejszyć. Służy do tego opcja <SPAN class="opcja">Zaznaczenie | Zmniejsz</SPAN>.
+Zmniejszając selekcję podajemy liczbę pikseli, o jaką selekcja ma zostać pomniejszona.
+Opcja <SPAN class="opcja">Zaznaczenie | Odwróć</SPAN> umożliwia zmianę obszaru zaznaczonego tak, 
+by to, co było zaznaczone stało się niezaznaczone, zaś obszar uprzednio niezaznaczony stał
+się zaznaczony. Wreszcie operacja <SPAN class="opcja">Zaznaczenie | Wygładź zaznaczenie</SPAN> 
+wygładza zaznaczenie.
+</P>
+
+<P>
+Wykorzystując powyższe operacje dotyczące zaznaczenia oraz operację 
+wypełniania kolorem możemy brzeg rysunku zalać farbą w taki sposób, by krawędź była
+płynnie wtopiona w tło.
+</P>
+
+<H4>Ćwiczenie 8</H4>
+
+<!--
+<P>
+Przekształć ilustrację zapisaną w pliku <SPAN class="plik">zachod-1.jpg</SPAN> w taki sposób, 
+by po umieszczeniu na stronie WWW krawędź ilustracji była płynnie wtopiona w tło.
+</P>
+-->
+
+<P>
+Przekształć ilustrację zapisaną w pliku <SPAN class="plik">zachod-1.jpg</SPAN> w taki sposób, 
+by brzeg ilustracji płynnie przechodził w biały kolor.
+</P>
+
+<DIV class="ilustracja"><IMG src="14-artykul/ilustracje/14-15.jpg" alt=""><P class="podpis">Rys. 15. Ćwiczenie 8.</P></DIV>
+
+<P>
+Rozpoczynamy otwierając obraz <SPAN class="plik">zachod-1.jpg</SPAN>.
+Po otwarciu zaznaczamy cały obraz.
+Wykorzystujemy do tego operację <SPAN class="opcja">Zaznaczenie | Wszystko</SPAN>. 
+Warto zapamiętać skrót klawiszowy Ctrl+A. Następnie zmniejszamy zaznaczenie o 20 pikseli:
+opcja <SPAN class="opcja">Zaznaczenie | Zmniejsz</SPAN>.
+Teraz odwracamy zaznaczenie: <SPAN class="opcja">Zaznaczenie | Odwróć</SPAN>
+(skrót klawiszowy Ctrl+I). Wreszcie wygładzamy zaznaczenie:
+<SPAN class="opcja">Zaznaczenie | Wygładź</SPAN>. Podajmy promień wygładzania 20. 
+Teraz należy uzyskane zaznaczenie zalać białą farbą wykorzystując 
+opcję <SPAN class="opcja">Wypełnianie kubełkiem</SPAN> dostępną w menu kontekstowym obrazu
+<SPAN class="opcja">Narzędzia | Rysowanie</SPAN>.
+Kolor wypełnienia zmieniamy na biały stosując 
+<SPAN class="opcja">Kolor narzędzia i tła</SPAN> - przyciski
+dostępne w lewym dolnym rogu okna głównego GIMPa. 
+Uzyskany obraz zapisujemy do pliku. 
+</P>
+
+<H4>Ćwiczenie 9</H4>
+
+<P>
+Dane są cztery zdjęcia zachodów słońca. Przygotuj 
+kwadratowe (200x200) ilustracje
+zawierające fragmenty zdjęć oryginalnych.
+Przygotowane ilustracje powinny mieć wygładzone krawędzie.
+</P>
+
+<DIV class="ilustracja"><IMG src="14-artykul/ilustracje/14-24.jpg" alt=""><P class="podpis">Rys. 24. Zachody słońca.</P></DIV>
+
+<P>Ćwiczenie to opiera się o poprzednio wykonane ćwiczenia związane ze 
+skalowaniem i zmianą rozmiaru obrazu. Prace rozpoczynamy przygotowując 
+obrazy kwadratowe. Następnie, każdy obraz przekształcamy 
+według metody opisanej w ćwiczeniu 8.
+</P>
+
+<H4>Ćwiczenie 10</H4>
+
+<P>
+Dane jest zdjęcie o rozmiarach 600x400 przedstawiające kwiat.
+Przygotuj dwie kwadratowe miniaturki (100x100) o wygładzonych krawędziach.
+Przygotowane ilustracje powinny być jednobarwne.
+</P>
+
+<DIV class="ilustracja"><IMG src="14-artykul/ilustracje/14-16.jpg" alt=""><P class="podpis">Rys. 16. Ćwiczenie 10 łączy wszystkie poznane do tej pory umiejętności.</P></DIV>
+
+<P>
+Ćwiczenie to łączy wszystkie do tej pory poznane efekty. W celu wykonania 
+ćwiczenia należy kolejno:
+</P>
+
+<UL>
+<LI>otworzyć obraz oryginalny,</LI>
+<LI>wyciąć z obrazu oryginalnego interesujący nas kwadratowy fragment (dowolnych rozmiarów; np. 250x250),</LI>
+<LI>przeskalować otrzymany obraz kwadratowy do rozmiaru 100x100,</LI>
+
+
+<LI>wykonać płynny brzeg obrazu
+  <UL>
+  <LI>zaznaczyć cały obraz,</LI>
+  <LI>zmniejszyć zaznaczenie,</LI>
+  <LI>odwrócić zaznaczenie,</LI>
+  <LI>wygładzić zaznaczenie,</LI>
+  <LI>wlać farbę koloru tła (np. białą) w zaznaczenie,</LI>
+  </UL>
+</LI>
+
+
+<LI>przekształcić obraz w czarno-biały i zapisać.</LI>
+</UL>
+
+<P>Dysponując czarno-białym kwadratem przygotowujemy dwa końcowe rysunki. 
+Należy dwukrotnie wykonać poniższe kroki:</P>
+
+<UL>
+<LI>otworzyć obraz czarno-biały,</LI>
+<LI>przekształcić obraz w kolorowy i odpowiednio ustawić odcień rysunku,</LI>
+<LI>zapisać otrzymany obraz.</LI>
+</UL>
+
+<H3>Obrazy rzucające cień</H3>
+
+<P>
+Kolejny etap naszej pracy w GIMPie wzbogaci nasze ilustracje o cień.
+Jest to bardzo często spotykany efekt.
+Wykonanie tego efektu jest stosunkowo skompilowane, bo wymaga znajomości warstw.
+Każdy obraz otwarty w programie GIMP składa się z warstw.
+Domyślnie, obraz po otwarciu posiada jedną warstwę (obraz w formacie JPEG).
+Jeśli otworzony obraz poddamy efektowi rzucania cienia (z menu kontekstowego należy 
+wybrać <SPAN class="opcja">Script-Fu | Cień | Rzucany cień</SPAN>)
+wówczas cień dodany do naszego rysunku
+zostanie umieszczony na osobnej warstwie. Przed zapisaniem obrazu do pliku
+musimy dodać do obrazu warstwę białą (ewentualnie o innym kolorze - 
+będzie to kolor tła rysunku), przesunąć ją na spód i połączyć wszystkie warstwy. 
+W ten sposób nasz obraz znowu stanie się płaski, zaś jego  fragmenty 
+niewypełnione staną się białe. Warstwami obrazu zarządzamy poprzez okno dialogowe
+<SPAN class="opcja">Warstwy, kanały i ścieżki</SPAN> dostępne 
+w menu kontekstowym (<SPAN class="opcja">Warstwy | Warstwy, kanały i ścieżki</SPAN>).
+</P>
+
+<DIV class="ilustracja"><IMG src="14-artykul/ilustracje/14-17.jpg" alt=""><P class="podpis">Rys. 17. Okno dialogowe "Script-FU: Cień/Rzucany cień"</P></DIV>
+
+<DIV class="ilustracja"><IMG src="14-artykul/ilustracje/14-18.jpg" alt=""><P class="podpis">Rys. 18. Okno zarządzające warstwami.</P></DIV>
+
+<P>
+Nowe warstwy do obrazu dodajemy przyciskiem <SPAN class="opcja">Nowa warstwa</SPAN>.
+Kolejność warstw 
+natomiast zmieniamy przyciskami <SPAN class="opcja">Obniża warstwę</SPAN> lub
+<SPAN class="opcja">Podnosi warstwę</SPAN>.
+Przyciski <SPAN class="opcja">Obniża warstwę</SPAN>, <SPAN class="opcja">Podnosi warstwę</SPAN>
+oraz <SPAN class="opcja">Nowa warstwa</SPAN> są dostępne w oknie 
+dialogowym <SPAN class="opcja">Warstwy, kanały i ścieżki</SPAN>.
+</P>
+
+<DIV class="ilustracja"><IMG src="14-artykul/ilustracje/14-19.jpg" alt=""><P class="podpis">Rys. 19. Okno dialogowe "Opcje nowej warstwy".</P></DIV>
+
+<P>
+W celu połączenia wszystkich warstw obrazu w jedną warstwę należy
+wybrać opcję <SPAN class="opcja">Warstwy | Spłaszcz obraz</SPAN> z menu kontekstowego obrazu.
+</P>
+
+<H4>Ćwiczenie 11</H4>
+
+<P>
+Dane są dwa obrazy: <SPAN class="plik">maszyny-1.jpg</SPAN>, <SPAN class="plik">pociag-1.jpg</SPAN>. 
+Dodaj do obrazów efekt rzucanego cienia.
+</P>
+
+<DIV class="ilustracja"><IMG src="14-artykul/ilustracje/14-23.jpg" alt=""><P class="podpis">Rys. 23. Ilustracja rzucająca cień.</P></DIV>
+
+<P>
+Bezpośrednio po otwarciu obrazu wykonaj operację 
+<SPAN class="opcja">Script-Fu | Cień | Rzucany cień</SPAN>. 
+Wywołanie tej opcji spowoduje wyświetlenie okna dialogowego 
+<SPAN class="opcja">Script-Fu: Cień/Rzucany cień</SPAN>. W oknie tym ustawiamy 
+parametry cienia, po czym naciskamy przycisk OK.
+Uzyskany obraz będzie się składał z dwóch warstw. 
+By się o tym przekonać należy wyświetlić okno dialogowe 
+<SPAN class="opcja">Warstwy, kanały, ścieżki </SPAN>
+(opcja <SPAN class="opcja">Warstwy | Warstwy, kanały i ścieżki</SPAN> menu kontekstowego obrazu).
+W oknie warstw dodajemy do obrazu nową warstwę.
+Służy do tego przycisk: <SPAN class="opcja">Nowa warstwa</SPAN>.
+Niech nowa warstwa będzie biała. Decyduje o tym przycisk 
+<SPAN class="opcja">typ wypełnienia warstwy</SPAN> okna właściwości nowej  warstwy.
+Może się okazać, że teraz nasz obraz jest cały biały. 
+Jeśli biała warstwa znajduje się na górze, to będzie ona 
+przysłaniała wszystkie inne warstwy. Oczywiście warstwy możemy 
+dowolnie przesuwać do dołu i do góry. Służą do tego 
+przyciski <SPAN class="opcja">Obniża warstwę</SPAN> 
+oraz <SPAN class="opcja">Podnosi warstwę</SPAN> dostępne w 
+oknie <SPAN class="opcja">Warstwy, kanały i ścieżki</SPAN>.
+Przesuńmy białą warstwę na spód, a następnie scalmy wszystkie widoczne warstwy
+(opcja <SPAN class="opcja">Warstwy | Spłaszcz obraz</SPAN>).
+Po połączeniu warstw zapisujemy obraz do pliku.
+Wykonanie drugiej ilustracji przebiega identycznie.
+</P>
+
+<H4>Ćwiczenie 12</H4>
+
+<P>
+Znajdź w Internecie dwa zdjęcia samochodów i jedno zdjęcie samolotu.
+Przekształć tak każdy z danych obrazów, by przedstawiał wyłącznie
+samolot lub samochód. Każdy z uzyskanych obrazów przyozdób cieniem.
+</P>
+
+<DIV class="ilustracja"><IMG src="14-artykul/ilustracje/14-20.jpg" alt=""><P class="podpis">Rys. 20. Ćwiczenie 12. Dodajemy cień do kilku wyciętych ilustracji.</P></DIV>
+
+<P>
+Ćwiczenie to wymaga wycięcia fragmentu rysunku 
+(to ćwiczyliśmy w ćwiczeniu trzecim). Następnie należy otrzymany obraz 
+przyozdobić cieniem sposobem opisanym w zadaniu 11.
+</P>
+
+<H3>Połączenie poznanych operacji</H3>
+
+<P>
+Dzisiejsze spotkanie z GIMPem zapoznało nas z podstawowymi operacjami, 
+jakie grafik komputerowy musi umieć wykonać na obrazie takie jak skalowanie, 
+zmiana rozmiarów czy kolorów obrazu.
+Tabela 1 przedstawia listę wszystkich operacji.
+</P>
+
+
+
+<DIV>
+
+
+
+<TABLE border="1"><TR><TD><STRONG>Funkcja</STRONG></TD><TD><STRONG>Opcja menu</STRONG></TD><TD><STRONG>Klawisz skrótu</STRONG></TD></TR>
+
+
+
+<TR><TD>Otwieranie obrazu:</TD>
+
+<TD>Plik | Otwórz</TD>
+
+<TD>Ctrl-O</TD>
+
+</TR>
+
+<TR><TD>Zapisywanie obrazu:</TD>
+
+<TD>Plik | Zapisz</TD>
+
+<TD>Ctrl-S</TD>
+
+</TR>
+
+<TR><TD>Powiększanie obrazu:</TD>
+
+<TD>Widok | Powiększ</TD>
+
+<TD>=</TD>
+
+</TR>
+
+<TR><TD>Pomniejszanie obrazu:</TD>
+
+<TD>Widok | Pomniejsz</TD>
+
+<TD>-</TD>
+
+</TR>
+
+<TR><TD>Skalowanie obrazu:</TD>
+
+<TD>Obraz | Przeskaluj obraz</TD>
+
+<TD>&nbsp;</TD>
+
+</TR>
+
+<TR><TD>Kadrowanie, zmiana rozmiaru:</TD>
+
+<TD>Narzędzia | Przekształcenie | Kadrowanie lub zmiana rozmiaru obrazu</TD>
+
+<TD>Ctrl-C</TD>
+
+</TR>
+
+<TR><TD>Zamiana obrazu w czarno-biały:</TD>
+
+<TD>Obraz | Tryb | Odcienie szarości</TD>
+
+<TD>Alt-G</TD>
+
+</TR>
+
+<TR><TD>Zamiana obrazu w kolorowy:</TD>
+
+<TD>Obraz | Tryb | RGB</TD>
+
+<TD>Alt-R</TD>
+
+</TR>
+
+<TR><TD>Balans kolorów:</TD>
+
+<TD>Obraz | Kolory | Balans kolorów</TD>
+
+<TD>&nbsp;</TD>
+
+</TR>
+
+<TR><TD>Zaznaczenie całego obrazu:</TD>
+
+<TD>Zaznaczenie | Wszystko</TD>
+
+<TD>Ctrl-A</TD>
+
+</TR>
+
+<TR><TD>Zmniejszanie zaznaczenia:</TD>
+
+<TD>Zaznaczenie | Zmniejsz</TD>
+
+<TD>&nbsp;</TD>
+
+</TR>
+
+<TR><TD>Odwrócenie zaznaczenia:</TD>
+
+<TD>Zaznaczenie | Odwróć</TD>
+
+<TD>Ctrl-I</TD>
+
+</TR>
+
+<TR><TD>Wygładzanie zaznaczenia:</TD>
+
+<TD>Zaznaczenie | Wygładź zaznaczenie</TD>
+
+<TD>&nbsp;</TD>
+
+</TR>
+
+<TR><TD>Wypełnianie kubełkiem:</TD>
+
+<TD>Narzędzia | Rysowanie | Wypełnianie kubełkiem</TD>
+
+<TD>&nbsp;</TD>
+
+</TR>
+
+<TR><TD>Rzucanie cienia:</TD>
+
+<TD>Script-Fu | Cień | Rzucany cień</TD>
+
+<TD>&nbsp;</TD>
+
+</TR>
+
+<TR><TD>Zarządzanie warstwami obrazu:</TD>
+
+<TD>Warstwy | Warstwy, kanały i ścieżki</TD>
+
+<TD>&nbsp;</TD>
+
+</TR>
+
+<TR><TD>Dodawanie nowej warstwy:</TD>
+
+<TD>Nowa warstwa (okno "Warstwy, kanały i ścieżki")</TD>
+
+<TD>&nbsp;</TD>
+
+</TR>
+
+<TR><TD>Spłaszczenie obrazu:</TD>
+
+<TD>Warstwy | Spłaszcz obraz</TD>
+
+<TD>&nbsp;</TD>
+
+</TR>
+
+</TABLE>
+
+<P class="podpis">Tabela 1. Poznane funkcje programu GIMP.</P>
+
+</DIV>
+
+
+
+<P>
+Warto również pamiętać, że uaktywnienie menu kontekstowego obrazu
+osiągniemy klikając prawym przyciskiem myszy w rysunek.
+</P>
+
+<P>
+Na zakończenie wykonajmy samodzielnie dwa ćwiczenia wykorzystujące 
+wszystkie poznane możliwości programu GIMP.
+</P>
+
+<H4>Ćwiczenie 13</H4>
+
+<!--
+<P>
+Dysponujesz czterema fotografiami zapisanymi w formacie JPEG przedstawiającymi zwierzęta.
+Przygotuj strony WWW, które prezentują cztery posiadane ilustracje.
+Każda strona powinna zawierać menu. Elementami menu mają być kwadratowe, jednobarwne 
+obrazy o rozmytym brzegu. Ilustracja prezentowana poniżej menu powinna być kwadratowa. 
+Należy ją ozdobić cieniem.
+</P>
+-->
+
+<P>
+Znajdź w Internecie cztery dowolne fotografie zwierząt,
+a następnie wykonaj na nich efekty widoczne na rysunku 21.
+Każda ilustracja ma posłużyć do przygotowania dwóch plików.
+Pierwszy z nich jest kwadratem o wymiarach 400x400 pikseli.
+Rysunek ma rzucać cień.
+Drugi z rysunków ma być jednobarwna miniaturką o wymiarach 100x100
+o rozmytym brzegu.
+</P>
+
+<!--
+<P>
+Strony będące efektem wykonania ćwiczenia umieszczone na płycie CD, zawierają 
+w swojej treści skrypty JvaScript. W ten sposób uzyskujemy efekt 
+"dynamicznego menu": rusz myszki powoduje zmiane obrazów widocznych na stronie.  
+Szczegółowy opis skryptów JavaScript koniecznych do wymiany obrazów 
+został opublikowany w artykule "Dynamiczne menu w CSS i JavaScript" w lipcowym numerze MI (2003/07).
+</P>
+-->
+
+<DIV class="ilustracja"><IMG src="14-artykul/ilustracje/14-21.jpg" alt=""><P class="podpis">Rys. 21. Ćwiczenie 13 pt. "Zwierzęta" łączy wszystkie poznane efekty.</P></DIV>
+
+<H4>Ćwiczenie 14</H4>
+
+<!--
+<P>
+Przygotuj siedem ilustracji dotyczących środków komunikacji. 
+Menu powinno składac się z kwadratowych jednobarwnych ilustracji. 
+</P>
+-->
+
+<P>
+Przygotuj siedem ilustracji dotyczących środków komunikacji. 
+Wyszukaj w Internecie pliki przedstawiające okręt, rakietę, itd.
+Każdy rysunek przekształć, by był kwadratową, jednobarwną miniaturką 150x150.
+</P>
+
+<DIV class="ilustracja"><IMG src="14-artykul/ilustracje/14-22.jpg" alt=""><P class="podpis">Rys. 22. Ćwiczenie 14 pt. "Transport".</P></DIV>
+
+</TD>
+</TR>
+</TABLE>
+</BODY>
+
+<!-- Mirrored from www.gajdaw.pl/gimp/podstawy.html by HTTrack Website Copier/3.x [XR&CO'2006], Thu, 09 Feb 2006 19:56:33 GMT -->
+</HTML>
+
+
+

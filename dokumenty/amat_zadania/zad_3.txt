@@ -1,0 +1,7 @@
+﻿W pliku tekstowym telefony.txt znajdują się nazwiska i numery telefonów
+pewnej liczby abonamentów. Dane zapisane są w ten sposób, że w każdym
+kolejnym wierszu pliku umieszczone jest nazwisko, imię i 6-cyfrowy numer
+telefonu w formie xx-xx-xx.
+
+Ilu jest wszystkich abonamentów, u których pierwsza i ostatnia cyfra
+numeru telefonu są jednakowe?

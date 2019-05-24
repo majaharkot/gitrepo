@@ -1,0 +1,8 @@
+W pliku tekst.txt znajduje się pewien zaszyfrowany tekst.
+Wiadomo, że szyfrowanie polegało na zastąpieniu każdej z liter alfabetu
+ustaloną inną. Do tej pory odkryto też, że napis xve{e oznacza trawa.
+
+Odczytaj cały zakodowany tekst. Tekst nie posiada polskich liter.
+
+Wyświetl tablicę znaków ANSI od kodu 32 (spacja) do 255 w arkuszu kalkulacyjnym
+funkcja tekstowa ZNAK

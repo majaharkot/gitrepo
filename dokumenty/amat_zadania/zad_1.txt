@@ -1,0 +1,5 @@
+Plik tekstowy imiona.txt zawiera imiona oddzielone spacjami.
+Oblicz ile w tym zbiorze znajduje się imion rozpoczynających się na literę Z.
+
+Otwórz plik w arkusz kalkulacyjnym, wybierając opcje z SEPARATORAMI
+i ustawiając rodzaj na SPACJĘ, tak aby każde z imion zostało umieszczone w osobnej komórce.

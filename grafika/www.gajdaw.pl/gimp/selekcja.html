@@ -1,0 +1,766 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                        "http://www.w3.org/TR/html4/loose.dtd">
+
+<HTML>
+
+
+<!-- Mirrored from www.gajdaw.pl/gimp/selekcja.html by HTTrack Website Copier/3.x [XR&CO'2006], Thu, 09 Feb 2006 19:56:33 GMT -->
+<HEAD>
+  <LINK REL="stylesheet" HREF="../przedmioty.css" TYPE="text/css">
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1250">
+  <META NAME="Author" Content="Włodzimierz Gajda">
+  <META NAME="Keywords" CONTENT="GIMP, selekcja, zaznaczenie, grafika, komputerowa, podstawy, ćwiczenia">
+  <META NAME="Description" CONTENT="Materiały do nauki programu GIMP.">
+  <TITLE>GIMP: narzędzia selekcji</TITLE>
+</HEAD>
+<BODY>
+
+<TABLE width="100%" BORDER="0">
+  <TR VALIGN=bottom>
+    <TD width="150" align="center">
+     <A HREF="index.html"><IMG ALT="NOWO¦CI NA STRONIE" SRC="images/szyld.gif"></A>
+    </TD>
+    <TD ALIGN="RIGHT">
+     <A HREF="http://www.gajdaw.pl/html/index.html">HTML &amp; CSS</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/php/index.html">PHP</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/szablony/index.html">Szablony</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/bd/index.html">Bazy danych</A>&nbsp;|&nbsp;
+     <A HREF="index.html">GIMP</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/cms/index.html">CMS</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/varia/index.html">Varia</A><BR>
+<IMG src="../images/blueline.jpg"><BR>
+     <A HREF="http://www.gajdaw.pl/pracI/index.html">Pracownia programowania I</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/pracII/index.html">Pracownia programowania II</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/pracIen/index.html">Laboratory of Programming I</A>
+     <BR>
+     <A HREF="http://www.gajdaw.pl/pracZ/index.html">Lab. Pr. Zaoczne</A>&nbsp;|&nbsp;     <A HREF="http://www.gajdaw.pl/ai/index.html">Aplikacje internetowe</A>     <BR>
+     <A HREF="http://www.gajdaw.pl/ak/index.html">Architektura komputerów</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/iksk/index.html">IKSK</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/sk/index.html">Sieci komputerowe</A><BR>
+     <A HREF="http://www.gajdaw.pl/soI/index.html">Systemy Operacyjne I</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/soII/index.html">Systemy Operacyjne II</A>
+     <BR>
+     <A HREF="http://www.gajdaw.pl/cpp/index.html">C++</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/pjp/index.html">Pascal</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/puk/index.html">PUK</A><BR>
+<IMG src="../images/blueline.jpg"><BR>
+     <A HREF="index.html">Co nowego?</A>&nbsp;|&nbsp;
+     <A HREF="przyklady.html">Przykłady</A>&nbsp;|&nbsp;
+     <A HREF="dopobrania.html">Do pobrania</A>
+    </TD>
+  </TR>
+</TABLE>
+
+<TABLE ALIGN=LEFT WIDTH="100%" CELLSPACING=0 CELLPADDING=0 BORDER="0">
+<TR>
+<TD VALIGN=TOP WIDTH=150 ALIGN=CENTER>
+
+<TABLE WIDTH="150" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+  <TD WIDTH="20"   HEIGHT="20" BACKGROUND="../images/przedmioty/1.jpg">&nbsp;</TD>
+  <TD WIDTH="20"   HEIGHT="20" BACKGROUND="../images/przedmioty/2.jpg">&nbsp;</TD>
+  <TD WIDTH="90"   HEIGHT="20" BACKGROUND="../images/przedmioty/2.jpg">&nbsp;</TD>
+  <TD WIDTH="20"   HEIGHT="20" BACKGROUND="../images/przedmioty/3.jpg">&nbsp;</TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/4.jpg">&nbsp;  </TD>
+  <TD WIDTH="20" HEIGHT="20" BACKGROUND="../images/przedmioty/5.jpg"><IMG SRC="../images/przedmioty/ikona.gif"></TD>  <TD ALIGN="LEFT" WIDTH="90" BACKGROUND="../images/przedmioty/5.jpg"><A HREF="index.html">Informacja</A></TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/6.jpg">&nbsp;  </TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/4.jpg">&nbsp;  </TD>
+  <TD WIDTH="20" HEIGHT="20" BACKGROUND="../images/przedmioty/5.jpg"><IMG SRC="../images/przedmioty/ikona.gif"></TD>  <TD ALIGN="LEFT" WIDTH="90" BACKGROUND="../images/przedmioty/5.jpg"><A HREF="podstawy.html">Podstawy</A></TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/6.jpg">&nbsp;  </TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/4.jpg">&nbsp;  </TD>
+  <TD WIDTH="20" HEIGHT="20" BACKGROUND="../images/przedmioty/5.jpg"><IMG SRC="../images/przedmioty/ikona.gif"></TD>  <TD ALIGN="LEFT" WIDTH="90" BACKGROUND="../images/przedmioty/5.jpg"><A HREF="selekcja.html">Selekcja</A></TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/6.jpg">&nbsp;  </TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/4.jpg">&nbsp;  </TD>
+  <TD WIDTH="20" HEIGHT="20" BACKGROUND="../images/przedmioty/5.jpg"><IMG SRC="../images/przedmioty/ikona.gif"></TD>  <TD ALIGN="LEFT" WIDTH="90" BACKGROUND="../images/przedmioty/5.jpg"><A HREF="sciezki.html">Ścieżki</A></TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/6.jpg">&nbsp;  </TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/4.jpg">&nbsp;  </TD>
+  <TD WIDTH="20" HEIGHT="20" BACKGROUND="../images/przedmioty/5.jpg"><IMG SRC="../images/przedmioty/ikona.gif"></TD>  <TD ALIGN="LEFT" WIDTH="90" BACKGROUND="../images/przedmioty/5.jpg"><A HREF="warstwy.html">Warstwy</A></TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/6.jpg">&nbsp;  </TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/4.jpg">&nbsp;  </TD>
+  <TD WIDTH="20" HEIGHT="20" BACKGROUND="../images/przedmioty/5.jpg"><IMG SRC="../images/przedmioty/ikona.gif"></TD>  <TD ALIGN="LEFT" WIDTH="90" BACKGROUND="../images/przedmioty/5.jpg"><A HREF="proste.html">Proste strony WWW</A></TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/6.jpg">&nbsp;  </TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/4.jpg">&nbsp;  </TD>
+  <TD WIDTH="20" HEIGHT="20" BACKGROUND="../images/przedmioty/5.jpg"><IMG SRC="../images/przedmioty/ikona.gif"></TD>  <TD ALIGN="LEFT" WIDTH="90" BACKGROUND="../images/przedmioty/5.jpg"><A HREF="tla.html">Tła strony WWW</A></TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/6.jpg">&nbsp;  </TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/4.jpg">&nbsp;  </TD>
+  <TD WIDTH="20" HEIGHT="20" BACKGROUND="../images/przedmioty/5.jpg"><IMG SRC="../images/przedmioty/ikona.gif"></TD>  <TD ALIGN="LEFT" WIDTH="90" BACKGROUND="../images/przedmioty/5.jpg"><A HREF="zdjeciadocwiczen.html">Zdjęcia do ćwiczeń</A></TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/6.jpg">&nbsp;  </TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/7.jpg">&nbsp;  </TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/8.jpg">&nbsp;  </TD>
+  <TD WIDTH="90"  HEIGHT="20" BACKGROUND="../images/przedmioty/8.jpg">&nbsp;  </TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/9.jpg">&nbsp;  </TD>
+</TR>
+</TABLE>
+<A HREF="http://www.gajdaw.pl/">&copy;gajdaw</A></TD>
+<TD VALIGN=TOP>
+<center><script type="text/javascript"><!--
+google_ad_client = "pub-1303481175257215";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel ="";
+google_color_border = "336699";
+google_color_bg = "FFFFFF";
+google_color_link = "0000FF";
+google_color_url = "008000.html";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="../../pagead2.googlesyndication.com/pagead/show_ads.html">
+</script></center><H1>Narzędzia selekcji obszaru</H1>
+
+<P>Narzędzia selekcji obszaru służą do wskazania 
+fragmentu rysunku, na którym będą wykonywane operacje edytorskie.
+Kopiowanie fragmentów, wypełnianie farbą, malowanie pędzlem,
+rozmywanie, rzucanie cienia - te i wiele innych operacji
+dotyczy wybranego fragmentu obrazu.
+Umiejętność zaznaczenia konkretnego obszaru rysunku
+warunkuje efektywność naszej pracy z programem GIMP.
+</P>
+
+<P>W poprzednim odcinku nauczyliśmy się zaznaczać cały rysunek 
+(opcja: "Zaznaczenie -> Wszystko"). Operacją odwrotną jest usunięcie 
+zaznaczenie: "Zaznaczenie -> Brak".
+Skróty klawiszowe Ctrl-A oraz Ctrl-Shift-A służą do zaznaczenia całego 
+rysunku oraz do usunięcia zaznaczenia.
+</P>
+
+
+<H3>Zaznaczanie obszaru</H3>
+
+<P>Narzędzia służące do zaznaczania obszaru są dostępne 
+w oknie głównym programu GIMP. Jest to pierwsza seria przycisków,
+służąca do wykonywania następujących czynności: 
+</P>
+
+<UL>
+<LI>zaznaczanie prostokątnych obszarów (klawisz skrótu: r)</LI>
+<LI>zaznaczanie eliptycznych obszarów (klawisz skrótu: e)</LI>
+<LI>odręczne zaznaczanie obszarów (klawisz skrótu: f)</LI>
+<LI>zaznaczanie sąsiadujących obszarów  (klawisz skrótu: z)</LI>
+</UL>
+
+<P>Powyższe opcje znajdziemy również w menu podręcznym 
+rysunku.  Na przykład zaznaczenie prostokątne 
+uaktywnimy klikając: "Narzędzia -> Zaznaczenie -> Zaznaczenie prostokątne",
+zaś zaznaczenie eliptyczne 
+"Narzędzia -> Zaznaczenie -> Zaznaczenie eliptyczne". Warto zapamiętać 
+skróty klawiszowe wymienione powyżej: r, e, f oraz z.
+</P>
+
+<H4>Ćwiczenie 1</H4>
+
+<P>Przygotuj ilustrację o wymiarach 256x256 przedstawiającą 
+czerwony prostokąt, zielony owal oraz 
+niebieski rysunek w kształcie liścia.</P>
+
+<P>Ćwiczenie rozpoczynamy od utworzenia nowego, pustego 
+rysunku (opcja "Plik -> Nowy"). Następnie wybieramy narzędzie "Zaznaczenie prostokątne".
+Korzystając z metody ciągnij-upuść rozciągamy wewnątrz rysunku prostokąt.
+Widoczny prostokąt jest aktywnym obszarem rysunku. Jeśli teraz 
+użyjemy narzędzia do wypełniania kolorem lub deseniem 
+("Narzędzia -> Rysowanie -> Wypełnianie kubełkiem"), wówczas
+wlany kolor wypełni wyłącznie zaznaczony przez nas prostokąt.
+
+Kolor narzędzia "Wypełnianie kolorem lub deseniem" ustalamy 
+wykorzystując kontrolki "Kolor narzędzia i tła" dostępne w lewym dolnym 
+rogu okna programu GIMP.
+</P>
+
+<P>Po ustaleniu koloru czerwonego klikamy w zaznaczony prostokąt. 
+Prostokąt powinien zostać wypełniony kolorem czerwonym.
+</P>
+
+<P>Następnie zmieniamy narzędzie na "Zaznaczenie eliptycznych obszarów".
+Zaznaczamy na rysunku elipsę, zmieniamy kolor wypełnienia na zielony, 
+włączamy narzędzie "Wypełnianie kolorem lub deseniem" i klikamy w elipsę.
+Powinniśmy otrzymać zieloną elipsę.
+</P>
+
+<P>Ostatni etap pracy to odręczne narysowane liścia. Włączamy narzędzie 
+"Odręczne zaznaczanie obszarów", po czym rysujemy listek. Ponownie 
+zmieniamy kolor wypełnienia na niebieski, uaktywniamy narzędzie "Wypełnianie kolorem lub deseniem"
+i klikamy w listek. Efekt naszej pracy przedstawiono na rysunku 1.
+</P>
+
+<DIV class="ilustracja"><IMG src="16-artykul/ilustracje/16-1.jpg" alt=""><P class="podpis">Rys. 1. Użycie narzędzi do selekcji prostokątnej, eliptycznej i odręcznej.</P></DIV>
+
+
+<P>Podczas korzystania z narzędzi do selekcji prostokątnej oraz eliptycznej bardzo
+ważne są klawisze Shift oraz Ctrl. Klawisze te posiadają podwójne znaczenie,
+co często doprowadza początkujących użytkowników do frustracji.
+Po pierwsze klawisze te umożliwiają tworzenie obszarów kwadratowych i okrągłych, po drugie 
+służą do tworzenia sumy obszarów, różnicy i części wspólnej.
+O działaniu klawiszy Shift oraz Ctrl decyduje moment ich naciśnięcia.
+Jeśli najpierw naciśniemy klawisz myszki, a później klawisz Shift lub Ctrl wówczas 
+zmieniamy kształt zaznaczenia (zamiast prostokąta otrzymamy kwadrat; zamiast elipsy otrzymamy koło).
+Jeśli natomiast najpierw naciśniemy klawisz Shift lub Ctrl, a dopiero później klawisz myszki,
+wówczas tworzymy sumę lub różnicę zaznaczeń. Zapamiętajmy zatem, że klawisze Ctrl oraz Shift 
+służą zarówno do tworzenia sumy, różnicy, części wspólnej zaznaczeń jak i do modyfikacji 
+kształtu selekcji.
+</P>
+
+
+<H4>Ćwiczenie 2</H4>
+
+<P>Przygotuj ilustrację o wymiarach 256x256 przedstawiającą 
+dwa kwadraty, prostokąt oraz dwa koła i elipsę wypełnione dowolnym kolorem.
+</P>
+
+<P>Po utworzeniu nowego rysunku, tworzymy selekcję kwadratową. W tym celu wybieramy narzędzie 
+do selekcji prostokątnej. Zaznaczamy dowolny kształt prostokątny, a następnie 
+(ciągle trzymając klawisz myszki) naciskamy klawisz Shift i przesuwamy myszkę.
+Wybrany obszar powinien przybrać kształt kwadratu. Tak zaznaczony obszar wypełniamy dowolnym kolorem farby.
+</P>
+
+<P>Następnie ponownie wybieramy narzędzie do selekcji prostokątnej i zaznaczamy dowolny prostokąt.
+Trzymając jeszcze klawisz myszki naciskamy klawisz Ctrl. Kształt prostokąta zostanie tak
+zmodyfikowany, że jego środek ciężkości wypadnie w miejscu wskazywanym przez myszkę 
+podczas rozpoczęcia operacji zaznaczania. Uzyskany obszar wypełniamy dowolnym kolorem.
+</P>
+
+<P>Ponownie zmieniamy narzędzie na selekcję prostokątną. Tym razem, podczas 
+zaznaczania obszaru prostokątnego naciskamy oba klawisze: Ctrl oraz Shift.
+Zaznaczany obszar powinien przyjąć kształt kwadratu, zaś jego środek 
+powinien wypadać w punkcie początkowo wskazywanym przez myszkę. Zaznaczony 
+kwadrat wypełniamy dowolnym kolorem.
+</P>
+
+<P>Klawisze Ctrl oraz Shift w podobny sposób modyfikują działanie 
+narzędzia do selekcji eliptycznej. Naciskając Shift uzyskamy obszar okrągły.
+Klawisz Ctrl zmienia środek elipsy. Nowym środkiem staje się punkt, 
+od którego rozpoczęliśmy zaznaczenie obszaru. Oczywiście podobnie 
+jak w przypadku selekcji prostokątnej możemy nacisnąć równocześnie 
+klawisze Shift oraz Ctrl. Uzyskamy wówczas koło o zadanym środku.
+</P>
+
+<P>UWAGA: należy pamiętać, by najpierw rozpocząć operację zaznaczania obszaru 
+(tj. najpierw nacisnąć lewy klawisz myszki), a dopiero później 
+nacisnąć klawisze Shift lub Ctrl.</P>
+
+<P>Wykorzystując opisane działanie klawiszy Ctrl oraz Shift w stosunku do selekcji 
+eliptycznej kończymy ćwiczenie 2 rysując dwa koła i jedną elipsę.</P>
+
+<DIV class="ilustracja"><IMG src="16-artykul/ilustracje/16-2.jpg" alt=""><P class="podpis">Rys. 2. Klawisze Shift oraz Ctrl umożliwiają selekcję kwadratów i kół, oraz zmianę środka zaznaczanego obszaru.</P></DIV>
+
+
+
+<H3>Suma, różnica oraz część wspólna zaznaczonych obszarów</H3>
+
+<P>Poznane przez nas przed chwilą klawisze Ctrl oraz Shift posiadają 
+jeszcze jedną ważną funkcję. Umożliwiają tworzenie 
+złożonych obszarów składających się z wielu okręgów czy kwadratów.
+Klawisz Shift umożliwia tworzenie sumy zaznaczeń, 
+klawisz Ctrl służy do wykonania różnicy zaznaczeń.
+Naciśnięcie obydwu klawiszy Ctrl oraz Shift spowoduje wykonanie operacji
+części wspólnej na zaznaczeniach.
+</P>
+
+<P>W celu wykonania jednej z powyższych operacji należy najpierw
+nacisnąć klawisze Shift lub Ctrl a dopiero potem nacisnąć klawisz myszki.
+Po rozpoczęciu przesuwania myszki możemy już klawisze Ctrl oraz Shift puścić,
+gdyż  w tym momencie ich przytrzymanie modyfikuje kształt 
+zaznaczenia (otrzymujemy koło lub kwadrat).
+</P>
+
+<H4>Ćwiczenie 3</H4>
+<P>Wykonaj rysunek prezentujący krzyżyk, oraz drabinkę. Rysunek wykonaj wykorzystując 
+operacje sumy oraz różnicy zaznaczeń prostokątnych.</P>
+
+<DIV class="ilustracja"><IMG src="16-artykul/ilustracje/16-3.jpg" alt=""><P class="podpis">Rys. 3. Suma i różnica zaznaczeń prostokątnych.</P></DIV>
+
+<P>Po utworzeniu nowego rysunku zaznaczamy prostokątny obszar, 
+który będzie stanowił belkę krzyża. Gdy na rysunku jest widoczne zaznaczenie prostokątne,
+natomiast aktywnym narzędziem jest selekcja prostokątna naciskamy klawisz Shift.
+Jeśli teraz poruszymy wskazówką myszki (bez naciskania przycisku), wówczas 
+obok wskaźnika myszki powinien się pojawić znak plus.
+Trzymając klawisz Shift zaznaczamy obszar, który będzie stanowił belkę krzyża.
+Po rozpoczęciu zaznaczania (czyli po naciśnięci klawisza myszki) należy 
+zwolnić klawisz Shift.  W momencie, gdy kształt krzyża jest zadowalający 
+zwalniamy klawisz myszki. Otrzymane zaznaczenie powinno być połączeniem 
+obydwu zaznaczonych prostokątów. Otrzymane zaznaczenie wypełniamy 
+dowolnym kolorem farby.
+</P>
+
+<P>W podobny sposób rysujemy drabinkę. Najpierw zaznaczamy duży prostokąt.
+Następnie przyciskamy klawisz Ctrl i przesuwamy wskaźnik myszki (bez naciskania przycisków myszki).
+Obok wskazówki myszki pojawi się znak minus informujący nas o tym, że 
+będziemy wykonywali różnicę zaznaczeń.
+Trzymając klawisz Ctrl rozpoczynamy operację zaznaczania. 
+Po rozpoczęciu operacji zaznaczania (tj. po naciśnięciu lewego przycisku myszki) zwalniamy 
+klawisz Ctrl. Po ustaleniu żądanego rozmiaru prostokąta zwalniamy klawisz myszki.
+
+Operację tą powtarzamy kilkukrotnie (tj. z oryginalnego kwadratu wycinamy kilka prostokątów), 
+po czym uzyskane zaznaczenie wypełniamy dowolnym kolorem.
+</P>
+
+<P>Efekt naszej pracy jest widoczny na rysunku 3.</P>
+
+<H4>Ćwiczenie 4</H4>
+<P>Wykonaj rysunek prezentujący operacje sumy oraz różnicy zaznaczeń eliptycznych.
+</P>
+
+
+<P>Ćwiczenie to wykonujemy niemal identycznie jak poprzednie.
+Zatem po zaznaczeniu dużej elipsy, wycinamy oczy. W tym celu 
+wykorzystujemy klawisz Ctrl, po naciśnięciu którego, powinniśmy ujrzeć minus
+obok wskaźnika myszy (pamiętajmy o przesunięciu myszki!).
+Po wycięciu oczu selekcję malujemy w paski korzystając z 
+narzędzia "Malowanie rozmytymi pociągnięciami pędzla".
+</P>
+
+<P>Połączone koła uzyskujemy wykonując operację sumy zaznaczeń
+dla dwóch kół. Zwróćmy uwagę, że w tym przypadku należy wykorzystać klawisz 
+Shift podwójnie: do wykonania sumy zaznaczeń oraz do zmiany kształtu zaznaczenia 
+z elipsy na okrąg!</P>
+
+<DIV class="ilustracja"><IMG src="16-artykul/ilustracje/16-4.jpg" alt=""><P class="podpis">Rys. 4. Suma i różnica zaznaczeń eliptycznych.</P></DIV>
+
+<P>Kolejne ćwiczenie zapozna nas z bardzo ważnym narzędziem nazwanym
+"Zaznaczanie sąsiadujących obszarów". Jest ono niezmiernie przydatne w sytuacjach,
+gdy chcemy dokonać selekcji fragmentu rysunku na podstawie koloru.</P>
+
+
+<H4>Ćwiczenie 5</H4>
+
+<P>Pomaluj wszystkie figury z rysunku 1 żółtym kolorem.</P>
+
+<DIV class="ilustracja"><IMG src="16-artykul/ilustracje/16-5.jpg" alt=""><P class="podpis">Rys. 5. Rysunek z ćw. 1 przemalowany na żółto.</P></DIV>
+
+<P>Cała trudność ćwiczenia piątego polega na zaznaczeniu 
+kilku niespójnych obszarów o zadanych kolorach czerwonym, 
+zielonym i niebieskim. Wybierzmy z menu narzędzie "Zaznaczanie sąsiadujących obszarów."
+Jeśli teraz klikniemy wewnątrz czerwonego prostokąta, 
+spowoduje to selekcję obszaru niemal identycznego z prostokątem.
+Różnice wynikają ze stosowanego formatu zapisu. Otóż podczas konwersji do formatu JPEG
+nasz obraz ulega kompresji stratnej (jakość obrazu i stopień kompresji 
+regulujemy odpowiednim suwakiem w okienku dialogowym "Zapis jako JPEG").
+Po wykonaniu kompresji na naszym obrazku pojawiły się piksele 
+o kolorze różnym  od zastosowanego przez nas do wypełnienia obszaru.
+Tak naprawdę nasz rysunek powinien zawierać jedynie cztery kolory:
+biały, czerwony, zielony oraz niebieski, a jeśli go powiększymy odpowiednio 
+to zauważymy gdzieniegdzie bladoszare piksele.
+</P>
+
+<P>Zapamiętajmy zatem, że jeśli istnieje ryzyko, że będziemy musieli poprawić nasz rysunek
+to koniecznie należy oryginał zapisać w formacie XCF. </P>
+
+<P>Powróćmy do ćwiczenia. Do zaznaczonego obszaru prostokątnego chcemy teraz 
+dodać fragment owalny  wypełniony kolorem zielonym. Pamiętając, że klawisz Shift 
+wykonuje operację sumy na selekcjach wystarczy nacisnąć Shift,  a następnie 
+kliknąć wewnątrz elipsy. W identyczny sposób dodajemy do naszego zaznaczenia 
+niebieski listek: naciskamy klawisz Shift, a następnie klikamy wewnątrz niebieskiego listka.</P>
+
+<P>W ten sposób wykonaliśmy niespójne zaznaczenie obejmujące swoim zasięgiem
+trzy figury. Jeśli teraz chcemy pomalować zaznaczony obszar na żółto wystarczy użyć 
+"kubełka" do wypełniania farbą (operacja "Wypełnianie kolorem lub deseniem"
+posiada skrót klawiszowy Shift-B).
+</P>
+
+<H4>Ćwiczenie 6</H4>
+<P>Pomaluj figury z ćwiczenia 2 na kolor niebieski.</P>
+
+<DIV class="ilustracja"><IMG src="16-artykul/ilustracje/16-6.jpg" alt=""><P class="podpis">Rys. 6. Rysunek z ćw. 2 przemalowany na niebiesko.</P></DIV>
+
+<P>Wykonajmy to ćwiczenie w nieco inny sposób niż ćwiczenie poprzednie.
+Wybierzmy narzędzie "Zaznaczanie sąsiadujących obszarów". Lecz tym razem zamiast 
+klikać w figury kliknijmy w białe tło. Otrzymana selekcja będzie obejmowała cały 
+rysunek za wyjątkiem trzech kolorowych figur. Jeśli teraz odwrócimy selekcję
+(operacja "Zaznaczenie -> Odwróć zaznaczenie" posiada skrót klawiszowy Ctrl - I)
+wówczas selekcja obejmie mniej więcej nasze trzy figury. Podobnie jak w 
+poprzednim przypadku selekcja nie jest dokładna, ponieważ otworzony obraz 
+był zapisany w formacie JPEG i zawiera piksele o delikatnym szarawym, zielonkawym, czerwonawym i niebieskawym odcieniu.
+</P>
+
+<P>Pierwsze sześć ćwiczeń stanowi abecadło jeśli chodzi o wykorzystanie 
+narzędzi selekcji. Sprawne posługiwanie się narzędziami do zaznaczania obszaru
+oraz klawiszami Ctrl i Shift jest konieczne, jeśli chcemy
+wykorzystać GIMPa do zadań webmasterskich.</P>
+
+
+<H3>Linijki i prowadnice</H3>
+
+<P>Wykonanie ćwiczeń od pierwszego do szóstego wymagało zaznaczania 
+niemalże dowolnych fragmentów. Nie było dla nas istotne ani dokładne położenie selekcji
+ani jej rozmiar. Oczywiście przygotowywanie elementów graficznych na strony WWW
+będzie nas wielokrotnie zmuszało do uzyskania selekcji o zadanym rozmiarze 
+i usytuowanej w konkretnym miejscu rysunku (z dokładnością do piksela).
+W jaki zatem sposób umiejscowić naszą selekcję i ustalić jej rozmiar?
+Służą do tego prowadnice. Prowadnice są linijkami, które dodajemy do rysunku.
+W przygotowanej ilustracji nie są one oczywiście widoczne. Prowadnice służą do 
+dokładnego pozycjonowania różnych elementów naszej kompozycji graficznej
+m.in. selekcji, warstw czy ścieżek.
+</P>
+
+<P>Na rysunku 7 widoczne są linijki. Umieszczenie prowadnic na naszym 
+rysunku wykonujemy następująco. Należy kliknąć lewym przyciskiem myszki na linijce
+i przeciągnąć kursor myszy (cały czas trzymamy guzik myszki) na obszar rysunku. 
+Tak jak byśmy chcieli przesunąć linijkę. W miejscu, w którym zwolnimy klawisz 
+myszki  pojawi się na rysunku przerywana linia. Jest to właśnie prowadnica.
+Prowadnice poziome uzyskujemy korzystając z poziomej linijki, natomiast 
+prowadnice pionowe - z pionowej.
+Zarówno linijki jak i prowadnice możemy ukryć wykorzystując opcję
+"Widok -> Linijki" oraz  "Widok -> Prowadnice". Opcje te posiadają skróty 
+Ctrl-Shift-R oraz Ctrl-Shift-T.
+</P>
+
+<DIV class="ilustracja"><IMG src="16-artykul/ilustracje/16-7.jpg" alt=""><P class="podpis">Rys. 7. Okno rysunku ze wskazanymi linijkami.</P></DIV>
+
+<P>Raz ustawioną prowadnicę możemy dowolnie przesuwać. W tym celu należy użyć 
+narzędzia "Przesuwanie warstw oraz zaznaczeń" aktywowanego skrótem klawiszowym m. </P>
+
+<P>Przesunięcie prowadnicy na linijkę powoduje jej usunięcie.
+Jeśli chcemy umiejscowić prowadnicę z dokładnością do piksela to 
+z pomocą przyjdzie nam poznana już operacja powiększania i pomniejszania 
+widoku rysunku (klawisze - oraz =). W prawym dolnym rogu okna rysunku
+wyświetlane są współrzędne bieżącego położenia kursora myszki.
+Rysunek 8 przedstawia okno z ustawioną jedną prowadnicą 
+i wskazanym miejscem, w którym wyświetlane są współrzędne 
+kursora myszki.
+</P>
+
+<DIV class="ilustracja"><IMG src="16-artykul/ilustracje/16-8.jpg" alt=""><P class="podpis">Rys. 8. Prowadnica i współrzędne kursora myszki.</P></DIV>
+
+<P>Dodatkowo do upewnienia się, że prowadnica wypada 
+w zaplanowanym miejscu możemy użyć narzędzia "Mierzenie odległości i kątów"
+(prawy dolny guzik w oknie głównym programu GIMP).
+Wykorzystując to narzędzie możemy sprawdzić, czy odległość między prowadnicami 
+jest zgodna z naszymi oczekiwaniami.
+Przykład pomiaru jest przedstawiony na rysunku 9.
+</P>
+
+<DIV class="ilustracja"><IMG src="16-artykul/ilustracje/16-9.jpg" alt=""><P class="podpis">Rys. 9. Wyniki pomiaru odległości dwóch prowadnic.</P></DIV>
+
+
+
+
+<H4>Ćwiczenie 7</H4>
+<P>Wykonaj logo przedstawiające żółte i czarne kwadraty.
+Wynik pracy zapisz w formatach XCF, JPEG oraz PNG.</P>
+
+<P>Wynikiem naszej pracy ma być ilustracja widoczna na rysunku 10.
+Swoją pracę rozpoczynamy od utworzenia nowego rysunku o rozmiarach 30x30 pikseli.
+Następnie do rysunku dodajemy prowadnice. Ustalamy dwie prowadnice pionowe
+oraz dwie prowadnice poziome tak, by rysunek był podzielony na kwadraty o 
+rozmiarze 10x10 pikseli. Rysunek 9 pokazuje, co powinniśmy otrzymać.
+</P>
+
+<P>Teraz przystępujemy do dokonania selekcji fragmentu rysunku. Chcemy zaznaczyć 
+trzy kwadraty leżące na przekątnej i pomalować je na żółto (patrz rysunek 10).</P>
+
+<P>Wybieramy narzędzie do selekcji prostokątnej i zaznaczamy pierwszy kwadrat.
+Następnie naciskamy klawisz Shift i zaznaczamy drugi kwadrat. W podobny sposób 
+do otrzymanej selekcji dodajemy trzeci kwadrat.</P>
+
+<P>Jeśli teraz wyłączymy widoczność prowadnic (Ctrl-Shift-T), wówczas powinniśmy 
+ujrzeć selekcję obejmującą trzy kwadraty. Selekcję wypełniamy kolorem żółtym.</P>
+
+<P>Następnie odwracamy selekcję (Ctrl-I). Teraz selekcja obejmuje biały obszar naszego rysunku.
+Selekcję wypełniamy kolorem czarnym.
+</P>
+
+<P>Uzyskany obraz zapisujemy w formacie XCF. Pamiętajmy, że zapisanie obrazu w jakimkolwiek 
+innym formacie spowoduje utratę prowadnic i selekcji! Jeśli dysponujemy obrazem w formacie XCF 
+to oczywiście bez trudu możemy uzyskać obraz w innym formacie. Wystarczy otworzyć nasz 
+obraz i wykonać operacje "Zapisz jako...". Zapiszmy wykonany rysunek dodatkowo w formatach JPEG oraz PNG.</P>
+
+<P>Jeśli porównamy rozmiary otrzymanych plików to okaże się, że plik PNG jest mniejszy.
+Ponadto jakość obrazu zapisanego w pliku PNG będzie lepsza.
+Zapamiętajmy zatem, by rysunki przedstawiające figury geometryczne powypełniane kilkoma 
+kolorami zapisywać w formacie PNG. Format JPEG sprawdza się w stosunku do fotografii.</P>
+
+<P>Rysunek 11 przedstawia ćwiczenie 7 i dwa rysunki w formacie PNG oraz JPEG.</P>
+
+<DIV class="ilustracja"><IMG src="16-artykul/ilustracje/16-10.jpg" alt=""><P class="podpis">Rys. 10. Logo z ćwiczenia 7 z widocznymi prowadnicami.</P></DIV>
+
+<DIV class="ilustracja"><IMG src="16-artykul/ilustracje/16-11.jpg" alt=""><P class="podpis">Rys. 11. Żółto-czarne logo.</P></DIV>
+
+
+<H4>Ćwiczenie 8</H4>
+<P>Wykonaj rysunki przedstawiające znaki lotnictwa japońskiego, 
+polskiego oraz RAFu. Wynik pracy zapisz w formatach XCF, JPEG oraz PNG.</P>
+
+<DIV class="ilustracja"><IMG src="16-artykul/ilustracje/16-12.jpg" alt=""><P class="podpis">Rys. 12. Godła lotnictwa polskiego, japońskiego i alianckiego.</P></DIV>
+
+<P>Wykonanie godła lotnictwa polskiego rozpoczynamy od ustawienia prowadnic.
+Rysunek o wymiarach 30x30 pikseli dzielimy prowadnicami na fragmenty zgodnie z rysunkiem 13.
+Po ustaleniu położenia prowadnic zaznaczamy obszar przeznaczony na kolor czerwony. 
+Wykorzystujemy w tym celu narzędzie do selekcji prostokątnej i klawisz Shift 
+służący do tworzenia sumy selekcji. Dodajemy kolejne prostokąty i kwadraty aż 
+do uzyskania selekcji obejmującej cały czerwony obszar rysunku.
+Następnie selekcję wypełniamy kolorem czerwonym, a sam obraz zapisujemy do 
+plików XCF, PNG oraz JPEG.
+</P>
+
+<P>Godło lotnictwa japońskiego to po prostu czerwone koło na białym tle.
+Utwórzmy obraz o rozmiarze 31x31 pikseli, następnie dodajmy prowadnice poziomą
+w odległości 15 pikseli od górnej krawędzi rysunku oraz prowadnicę pionową w 
+odległości 15 pikseli od lewej krawędzi obrazu.</P>
+
+<P>Teraz wykonujemy selekcje eliptyczną rozpoczynając od punktu 
+przecięcia prowadnic. W trakcie rozpinania eliptycznej selekcji naciskamy klawisze Ctrl oraz Shift.
+Nasza selekcja powinna przybrać kształt koła o środku w punkcie przecięcia prowadnic.
+Jeśli rozepniemy selekcję aż do brzegu rysunku to powinniśmy zauważyć,
+że selekcja z każdej strony dotyka krawędzi obrazu. Innym słowy selekcja jest 
+umiejscowiona w środku rysunku. Selekcję wypełniamy czerwona farbą.
+</P>
+
+<P>Godło lotnictwa alianckiego wykonujemy identycznie jak godło japońskie.
+Ponieważ godło aliantów zawiera pierścienie niebieski, biały i czerwony,
+zatem musimy trzykrotnie powtórzyć selekcję, za każdym razem zmniejszając jej promień.</P>
+
+<DIV class="ilustracja"><IMG src="16-artykul/ilustracje/16-13.jpg" alt=""><P class="podpis">Rys. 13. Prowadnice do rysunku godła polskiego lotnictwa.</P></DIV>
+
+
+<H3>Modyfikacja kształtu selekcji</H3>
+
+<P>Potrafimy już zaznaczyć dowolny kształt składający się z prostokątów, 
+kwadratów, elips i okręgów. Następny etap nauki to dokonywanie przekształceń selekcji.
+Jedno z przekształceń już się pojawiło w dzisiejszej serii ćwiczeń: 
+odwrócenie zaznaczenia ("Zaznaczenie -> Odwróć zaznaczenie", skrót Ctrl-I).</P>
+
+<P>Kolejnymi operacjami, jakie możemy wykonać na selekcjach są:</P>
+<UL>
+<LI>zwiększanie zaznaczonego obszaru</LI>
+<LI>zmniejszanie zaznaczonego obszaru</LI>
+<LI>wygładzanie kształtu zaznaczonego obszaru</LI>
+<LI>wyostrzenie kształtu zaznaczonego obszaru</LI>
+</UL>
+
+<P>Wszystkie powyższe operacje znajdziemy w menu kontekstowym obrazu w 
+opcji "Zaznaczenie". Oczywiście każde z powyższych przekształceń możemy wykonywać 
+bez względu na to, w jaki sposób selekcja została osiągnięta.</P>
+
+<P>Poniższe dwa ćwiczenia demonstrują użycie wybranych operacji przekształcania selekcji.</P>
+
+<H4>Ćwiczenie 9</H4>
+
+<P>Wykorzystując operację zmniejszania zaznaczenia wykonaj rysunek nr 14.
+Wynik pracy zapisz w formacie PNG
+</P>
+
+<DIV class="ilustracja"><IMG src="16-artykul/ilustracje/16-14.jpg" alt=""><P class="podpis">Rys. 14. Przykład użycia operacji zmniejszania zaznaczenia.</P></DIV>
+
+<P>Utwórzmy kwadratowy rysunek o wymiarach 30x30 pikseli.
+Następnie zaznaczmy cały rysunek (klawisz Ctrl-A).
+Zaznaczony rysunek wypełniamy kolorem czerwony.
+Następnie zmniejszamy zaznaczenie: "Zaznaczenie -> Zmniejsz"
+o 5 pikseli. Uzyskane zmniejszone zaznaczenie wypełniamy kolorem czarnym.
+Operacje zmniejszania zaznaczenia i wypełniania kolorem powtarzamy żądaną liczbę razy.</P>
+
+<H4>Ćwiczenie 10</H4>
+<P>Dysponujesz fotografią przedstawiającą zachód słońca.
+Wykorzystując operację wygładzania selekcji wykonaj rysunek przedstawiający 
+kwadratowy fragment oryginalnej fotografii. Niech brzeg nowopowstałego obrazu
+wtapia się w tło.</P>
+
+<DIV class="ilustracja"><IMG src="16-artykul/ilustracje/16-15.jpg" alt=""><P class="podpis">Rys. 15. Obraz wtopiony w tło przy pomocy wygładzania selekcji.</P></DIV>
+
+<P>Po otworzeniu danego rysunku zaznaczamy na środku w dowolnym miejscu kwadrat.
+Uzyskaną selekcję wygładzamy wybierając opcje "Zaznaczenie -> Wygładź". 
+Jako promień wygładzania podajmy dużą wartość np. 30.
+Następnie odwracamy zaznaczenie. Na koniec otrzymane zaznaczenie wypełniamy 
+kolorem tła stosują "kubełek" do wlewania farby. </P>
+
+
+<H3>Podsumowanie</H3>
+<P>Drugi odcinek spotkań z GIMPem zapoznał nas z narzędziami selekcji,
+linijkami oraz prowadnicami. Tabela 1 przedstawia listę
+wszystkich operacji niezbędnych do wykonania opisanych ćwiczeń.</P>
+
+
+
+<DIV>
+
+
+
+<TABLE border="1"><TR><TD><STRONG>Funkcja</STRONG></TD><TD><STRONG>Opcja menu</STRONG></TD><TD><STRONG>Klawisz skrótu</STRONG></TD></TR>
+
+
+
+<TR><TD>Zaznaczanie prostokątne:</TD>
+
+<TD>Narzędzia->Zaznaczenie->Zaznaczenie prostokątne</TD>
+
+<TD>r</TD>
+
+</TR>
+
+<TR><TD>Zaznaczanie eliptyczne:</TD>
+
+<TD>Narzędzia->Zaznaczenie->Zaznaczenie eliptyczne</TD>
+
+<TD>e</TD>
+
+</TR>
+
+<TR><TD>Zaznaczanie odręczne:</TD>
+
+<TD>Narzędzia->Zaznaczenie->Zaznaczenie odręczne</TD>
+
+<TD>f</TD>
+
+</TR>
+
+<TR><TD>Zaznaczanie rozmyte:</TD>
+
+<TD>Narzędzia->Zaznaczenie->Zaznaczenie rozmyte</TD>
+
+<TD>z</TD>
+
+</TR>
+
+<TR><TD>Wypełnianie kubełkiem:</TD>
+
+<TD>Narzędzia->Rysowanie->Wypełnianie kubełkiem</TD>
+
+<TD>Shift-B</TD>
+
+</TR>
+
+<TR><TD>Rysowanie pędzlem:</TD>
+
+<TD>Narzedzia->Rysowanie->Pędzel</TD>
+
+<TD>P</TD>
+
+</TR>
+
+<TR><TD>Odwracanie zaznaczenia:</TD>
+
+<TD>Narzędzia->Zaznaczenie->Odwróć</TD>
+
+<TD>Ctrl-I</TD>
+
+</TR>
+
+<TR><TD>Zwiększenie zaznaczenia:</TD>
+
+<TD>Narzędzia->Zaznaczenie->Powiększ</TD>
+
+<TD>&nbsp;</TD>
+
+</TR>
+
+<TR><TD>Zmniejszenie zaznaczenia:</TD>
+
+<TD>Narzędzia->Zaznaczenie->Zmniejsz</TD>
+
+<TD>&nbsp;</TD>
+
+</TR>
+
+<TR><TD>Wygładzanie zaznaczenia:</TD>
+
+<TD>Narzędzia->Zaznaczenie->Wygładź</TD>
+
+<TD>&nbsp;</TD>
+
+</TR>
+
+<TR><TD>Wyostrzanie zaznaczenia:</TD>
+
+<TD>Narzędzia->Zaznaczenie->Wyostrz</TD>
+
+<TD>&nbsp;</TD>
+
+</TR>
+
+<TR><TD>Widok linijek:</TD>
+
+<TD>Widok->Linijki</TD>
+
+<TD>Ctrl-Shift-R</TD>
+
+</TR>
+
+<TR><TD>Widok prowadnic:</TD>
+
+<TD>Widok->Prowadnice</TD>
+
+<TD>Ctrl-Shift-T</TD>
+
+</TR>
+
+<TR><TD>Widok zaznaczenia:</TD>
+
+<TD>Widok->Zaznaczenie</TD>
+
+<TD>Ctrl-T</TD>
+
+</TR>
+
+<TR><TD>Przesuwanie warstw i zaznaczeń:</TD>
+
+<TD>Narzędzia->Przekształcenie->Przesuń</TD>
+
+<TD>m</TD>
+
+</TR>
+
+<TR><TD>Mierzenie odległości i kątów</TD>
+
+<TD>(operacja dostępna z okienka programu GIMP)</TD>
+
+<TD>&nbsp;</TD>
+
+</TR>
+
+</TABLE>
+
+<P class="podpis">Tabela 1. Poznane funkcje programu GIMP.</P>
+
+</DIV>
+
+
+
+<P>Po oswojeniu się z tym, że niemal wszystkie operacje związane z otworzonym rysunkiem 
+wykonujemy za pomocą menu kontekstowego kolejnym wyzwaniem jest działanie 
+klawiszy Ctrl oraz Shift w stosunku do selekcji.
+Uważne, kilkukrotne wykonanie ćwiczeń 1-6 powinno w tym pomóc.
+</P>
+
+<P>Na koniec zwróćmy uwagę na pewne potknięcia GIMPa.</P>
+
+
+<P>Dwa narzędzia w programie GIMP mają dwie różne nazwy w różnych miejscach.
+Narzędzie do wypełniania kolorem nazywa się w menu "Narzędzia -> Rysowanie -> Wypełnianie kubełkiem", 
+natomiast podpowiedź (ang. hint) pojawiająca się po wskazaniu kursorem 
+myszki odpowiedniego guzika w oknie głównym GIMPa brzmi "Wypełnianie kolorem lub deseniem".
+Podobnie, hint operacji "Narzędzia -> Zaznaczenie -> Zaznaczenie rozmyte" brzmi
+"Zaznaczanie sąsiadujących obszarów".
+</P>
+
+<P>Zwróćmy również uwagę, że skróty klawiszowe operacji selekcji prostokątnej, eliptycznej
+czy z wolnej ręki są napisane w menu błędnie dużymi literami.
+Poprawne skróty to: r, e, f, z.
+</P>
+</TD>
+</TR>
+</TABLE>
+</BODY>
+
+<!-- Mirrored from www.gajdaw.pl/gimp/selekcja.html by HTTrack Website Copier/3.x [XR&CO'2006], Thu, 09 Feb 2006 19:56:33 GMT -->
+</HTML>
+
+
+

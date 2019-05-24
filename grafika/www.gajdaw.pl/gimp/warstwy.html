@@ -1,0 +1,1164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                        "http://www.w3.org/TR/html4/loose.dtd">
+
+<HTML>
+
+
+<!-- Mirrored from www.gajdaw.pl/gimp/warstwy.html by HTTrack Website Copier/3.x [XR&CO'2006], Thu, 09 Feb 2006 19:56:35 GMT -->
+<HEAD>
+  <LINK REL="stylesheet" HREF="../przedmioty.css" TYPE="text/css">
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1250">
+  <META NAME="Author" Content="Włodzimierz Gajda">
+  <META NAME="Keywords" CONTENT="GIMP, ścieżki, grafika, komputerowa, podstawy, ćwiczenia">
+  <META NAME="Description" CONTENT="Materiały do nauki programu GIMP.">
+  <TITLE>GIMP: warstwy</TITLE>
+</HEAD>
+<BODY>
+
+<TABLE width="100%" BORDER="0">
+  <TR VALIGN=bottom>
+    <TD width="150" align="center">
+     <A HREF="index.html"><IMG ALT="NOWO¦CI NA STRONIE" SRC="images/szyld.gif"></A>
+    </TD>
+    <TD ALIGN="RIGHT">
+     <A HREF="http://www.gajdaw.pl/html/index.html">HTML &amp; CSS</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/php/index.html">PHP</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/szablony/index.html">Szablony</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/bd/index.html">Bazy danych</A>&nbsp;|&nbsp;
+     <A HREF="index.html">GIMP</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/cms/index.html">CMS</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/varia/index.html">Varia</A><BR>
+<IMG src="../images/blueline.jpg"><BR>
+     <A HREF="http://www.gajdaw.pl/pracI/index.html">Pracownia programowania I</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/pracII/index.html">Pracownia programowania II</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/pracIen/index.html">Laboratory of Programming I</A>
+     <BR>
+     <A HREF="http://www.gajdaw.pl/pracZ/index.html">Lab. Pr. Zaoczne</A>&nbsp;|&nbsp;     <A HREF="http://www.gajdaw.pl/ai/index.html">Aplikacje internetowe</A>     <BR>
+     <A HREF="http://www.gajdaw.pl/ak/index.html">Architektura komputerów</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/iksk/index.html">IKSK</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/sk/index.html">Sieci komputerowe</A><BR>
+     <A HREF="http://www.gajdaw.pl/soI/index.html">Systemy Operacyjne I</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/soII/index.html">Systemy Operacyjne II</A>
+     <BR>
+     <A HREF="http://www.gajdaw.pl/cpp/index.html">C++</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/pjp/index.html">Pascal</A>&nbsp;|&nbsp;
+     <A HREF="http://www.gajdaw.pl/puk/index.html">PUK</A><BR>
+<IMG src="../images/blueline.jpg"><BR>
+     <A HREF="index.html">Co nowego?</A>&nbsp;|&nbsp;
+     <A HREF="przyklady.html">Przykłady</A>&nbsp;|&nbsp;
+     <A HREF="dopobrania.html">Do pobrania</A>
+    </TD>
+  </TR>
+</TABLE>
+
+<TABLE ALIGN=LEFT WIDTH="100%" CELLSPACING=0 CELLPADDING=0 BORDER="0">
+<TR>
+<TD VALIGN=TOP WIDTH=150 ALIGN=CENTER>
+
+<TABLE WIDTH="150" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+  <TD WIDTH="20"   HEIGHT="20" BACKGROUND="../images/przedmioty/1.jpg">&nbsp;</TD>
+  <TD WIDTH="20"   HEIGHT="20" BACKGROUND="../images/przedmioty/2.jpg">&nbsp;</TD>
+  <TD WIDTH="90"   HEIGHT="20" BACKGROUND="../images/przedmioty/2.jpg">&nbsp;</TD>
+  <TD WIDTH="20"   HEIGHT="20" BACKGROUND="../images/przedmioty/3.jpg">&nbsp;</TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/4.jpg">&nbsp;  </TD>
+  <TD WIDTH="20" HEIGHT="20" BACKGROUND="../images/przedmioty/5.jpg"><IMG SRC="../images/przedmioty/ikona.gif"></TD>  <TD ALIGN="LEFT" WIDTH="90" BACKGROUND="../images/przedmioty/5.jpg"><A HREF="index.html">Informacja</A></TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/6.jpg">&nbsp;  </TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/4.jpg">&nbsp;  </TD>
+  <TD WIDTH="20" HEIGHT="20" BACKGROUND="../images/przedmioty/5.jpg"><IMG SRC="../images/przedmioty/ikona.gif"></TD>  <TD ALIGN="LEFT" WIDTH="90" BACKGROUND="../images/przedmioty/5.jpg"><A HREF="podstawy.html">Podstawy</A></TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/6.jpg">&nbsp;  </TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/4.jpg">&nbsp;  </TD>
+  <TD WIDTH="20" HEIGHT="20" BACKGROUND="../images/przedmioty/5.jpg"><IMG SRC="../images/przedmioty/ikona.gif"></TD>  <TD ALIGN="LEFT" WIDTH="90" BACKGROUND="../images/przedmioty/5.jpg"><A HREF="selekcja.html">Selekcja</A></TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/6.jpg">&nbsp;  </TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/4.jpg">&nbsp;  </TD>
+  <TD WIDTH="20" HEIGHT="20" BACKGROUND="../images/przedmioty/5.jpg"><IMG SRC="../images/przedmioty/ikona.gif"></TD>  <TD ALIGN="LEFT" WIDTH="90" BACKGROUND="../images/przedmioty/5.jpg"><A HREF="sciezki.html">Ścieżki</A></TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/6.jpg">&nbsp;  </TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/4.jpg">&nbsp;  </TD>
+  <TD WIDTH="20" HEIGHT="20" BACKGROUND="../images/przedmioty/5.jpg"><IMG SRC="../images/przedmioty/ikona.gif"></TD>  <TD ALIGN="LEFT" WIDTH="90" BACKGROUND="../images/przedmioty/5.jpg"><A HREF="warstwy.html">Warstwy</A></TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/6.jpg">&nbsp;  </TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/4.jpg">&nbsp;  </TD>
+  <TD WIDTH="20" HEIGHT="20" BACKGROUND="../images/przedmioty/5.jpg"><IMG SRC="../images/przedmioty/ikona.gif"></TD>  <TD ALIGN="LEFT" WIDTH="90" BACKGROUND="../images/przedmioty/5.jpg"><A HREF="proste.html">Proste strony WWW</A></TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/6.jpg">&nbsp;  </TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/4.jpg">&nbsp;  </TD>
+  <TD WIDTH="20" HEIGHT="20" BACKGROUND="../images/przedmioty/5.jpg"><IMG SRC="../images/przedmioty/ikona.gif"></TD>  <TD ALIGN="LEFT" WIDTH="90" BACKGROUND="../images/przedmioty/5.jpg"><A HREF="tla.html">Tła strony WWW</A></TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/6.jpg">&nbsp;  </TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/4.jpg">&nbsp;  </TD>
+  <TD WIDTH="20" HEIGHT="20" BACKGROUND="../images/przedmioty/5.jpg"><IMG SRC="../images/przedmioty/ikona.gif"></TD>  <TD ALIGN="LEFT" WIDTH="90" BACKGROUND="../images/przedmioty/5.jpg"><A HREF="zdjeciadocwiczen.html">Zdjęcia do ćwiczeń</A></TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/6.jpg">&nbsp;  </TD>
+</TR>
+<TR>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/7.jpg">&nbsp;  </TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/8.jpg">&nbsp;  </TD>
+  <TD WIDTH="90"  HEIGHT="20" BACKGROUND="../images/przedmioty/8.jpg">&nbsp;  </TD>
+  <TD WIDTH="20"  HEIGHT="20" BACKGROUND="../images/przedmioty/9.jpg">&nbsp;  </TD>
+</TR>
+</TABLE>
+<A HREF="http://www.gajdaw.pl/">&copy;gajdaw</A></TD>
+<TD VALIGN=TOP>
+<center><script type="text/javascript"><!--
+google_ad_client = "pub-1303481175257215";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel ="";
+google_color_border = "336699";
+google_color_bg = "FFFFFF";
+google_color_link = "0000FF";
+google_color_url = "008000.html";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="../../pagead2.googlesyndication.com/pagead/show_ads.html">
+</script></center><H3>Cechy warstw w programie GIMP</H3>
+
+<P>
+Obrazy przygotowywane GIMPem składają się z warstw.
+Warstwa jest jak gdyby przezroczystą folią, na której rysujemy.
+Nowo utworzony rysunek zawiera przynajmniej jedną warstwę - tło.
+</P>
+
+<P>
+Dokładnie jedna spośród wszystkich warstw jest w danym momencie wybrana.
+Warstwę tą będziemy nazywali <EM>warstwą aktywną</EM>.
+To jej dotyczą bieżące operacje edytorskie takie jak na przykład 
+malowanie pędzlem, rysowanie ołówkiem lub wypełnianie kolorem.
+GIMP nie umożliwia ani wyboru kilku aktywnych warstw ani grupowania warstw.
+</P>
+
+<P>
+Jeśli obraz posiada jedynie warstwę tło, wówczas 
+nie musimy zwracać uwagi na aktywną warstwę, bo i tak wszystkie 
+operacje dotyczą tła.
+W przypadku grafiki składającej się z wielu warstw należy 
+bacznie śledzić warstwę aktywną.
+W przeciwnym razie, edycja rysunku może prowadzić do dziwnych i niepożądanych efektów.
+</P>
+
+<P>
+Wśród cech warstwy możemy wyróżnić nazwę, rozmiar, jej położenie na stosie warstw, widoczność,
+przynależność do grupy warstw przesuwanych, tryb przenikania, nieprzepuszczalność 
+oraz maskę.
+
+Cechy te są od siebie niezależne 
+i mogą być dowolnie ustalane dla każdej warstwy z osobna.
+</P>
+
+<P>
+Nazywanie warstw jest pomocne w przypadku złożonych obrazów.
+Wprawdzie okno dialogowe warstw wyświetla miniaturowy obraz 
+zawartości warstwy, jednak w przypadku warstw o podobnym wyglądzie 
+ikony mogą być trudne do odróżnienia.
+Wówczas nazwa wyświetlana z lewej strony ikony powinna pomóc.
+Nazwa warstwy jest dowolnym napisem. W nazwach warstw możemy używać białych znaków oraz 
+polskich liter z ogonkami. Należy jednak pamiętać o tym, że nazwy warstw muszą być unikalne.
+Jeśli zdarzy nam się nazwać dwie warstwy identycznie, wówczas druga z nich otrzyma przyrostek #2.
+</P>
+
+<P>
+Wszystkie warstwy w programie GIMP są prostokątne.
+Program nie umożliwia tworzenia warstw o innych kształtach.
+Nie oznacza to jednak, że warstwa będzie zawsze widoczna na rysunku w kształcie prostokąta.
+Część pikseli warstwy może być przezroczystych, 
+dzięki czemu obraz umieszczony na warstwie może mieć dowolny kształt.
+</P>
+
+<P>
+Rozmiar każdej warstwy może się różnić od rozmiaru rysunku.
+Warstwa może być zarówno mniejsza jak i większa od całego rysunku.
+Wymiary i kształt warstwy ograniczają jej zasięg. 
+Innymi słowy nie możemy modyfikować pikseli obrazu leżących poza aktywną warstwą.
+</P>
+
+<P>
+Trzecią ważną cechą warstwy jest jej miejsce na stosie warstw.
+Warstwy leżą jedna na drugiej i w przypadku zachodzenia na siebie 
+warstwa górna przysłania warstwę dolną.
+Oczywiście każdą warstwę możemy przesuwać zarówno do góry jak i do dołu.
+</P>
+
+<P>
+Kolejna właściwość warstw ułatwiająca pracę 
+to widoczność. Każda warstwa może być widoczna lub niewidoczna.
+Zmiana widoczności warstw ma dwa ważne zastosowania. Z jednej strony 
+umożliwia obejrzenie rysunku bez pewnych jego elementów
+(elementy nie są usunięte a jedynie niewidoczne). 
+Po drugie sterując widocznością możemy wybrać kilka warstw 
+i wykonać na nich operację łączenia bądź wyrównania.
+Widoczność warstw dzieli warstwy na dwie grupy: warstwy widoczne i niewidoczne.
+W ten sposób możemy jak gdyby zaznaczyć kilka warstw.
+</P>
+
+<P>
+Często zdarza się, że wzajemne położenie pewnych warstw jest bardzo ważne.
+Tak będzie na przykład w przypadku warstw tworzących menu. 
+Warstwy takie należy przesuwać razem, w przeciwnym razie każde 
+przesunięcie będzie się wiązało z mozolnym układaniem kolejnych elementów tworzących całość.
+Operacja przesuwania warstw dotyczy warstwy aktywnej oraz warstw,
+które dodamy do grupy warstw modyfikowanych operacją przesuwania.
+</P>
+
+
+<P>
+Wzajemnym przenikaniem warstw sterują właściwości tryb oraz nieprzepuszczalność.
+Nieprzepuszczalność jest ustalana w procentach (od 0% do 100%) i określa 
+jak bardzo dana warstwa jest przezroczysta. Natomiast tryb warstwy określa, w jaki sposób
+piksele danej warstwy mają modyfikować wygląd całego obrazu.
+Dostępnych jest piętnaście różnych trybów, które umożliwiają miedzy innymi 
+wyświetlanie tylko kolorów jaśniejszych, tylko kolorów ciemniejszych oraz wypalanie.
+</P>
+
+<P>
+Ostatnią i zarazem najbardziej skomplikowaną cechą warstwy jest jej maska.
+Maska warstwy to oddzielny obraz związany z dana warstwą.
+Zadaniem maski jest przysłonięcie części warstwy. 
+</P>
+
+
+
+<P>
+Rysunki pierwszy oraz drugi ilustrują opisane właściwości warstw.
+Przedstawiony rysunek składa się z pięciu warstw o nazwach żółta, kot, różowa, pies oraz tło.
+Warstwą najwyższą jest warstwa o nazwie żółta, zaś najniższą - warstwa tło.
+Aktywna jest warstwa szczytowa o nazwie żółta. Informuje nas o tym 
+niebieskie tło w oknie dialogowym warstw. Ikona "oko" widoczna z lewej strony 
+włącza widoczność warstwy. Na przedstawionym rysunku widoczne są wszystkie warstwy 
+oprócz warstwy o nazwie pies. Ikona o kształcie krzyża włączona dla dwóch warstw różowej oraz żółtej
+powoduje, że warstwy te będą przesuwane razem, zachowując swoje wzajemne położenie.
+Ponadto warstwa żółta ma ustawioną nieprzepuszczalność na 52.2 procent, zaś warstwa 
+różowa posiada zdefiniowana maskę (prostokątny rysunek z lewej strony nazwy warstwy).
+</P>
+
+<P>
+Na warstwie żółtej jest narysowane żółte koło.
+Warstwa ta jest umieszczona na samej górze, zatem przykrywa wszystkie inne warstwy.
+Z racji na swoją 52.2 procentową nieprzepuszczalność, żółte koło jest nieco przezroczyste 
+i nie przysłania całkowicie ani napisu "kot" ani różowej figury.
+Drugą warstwą jest warstwa o nazwie kot. Na niej jest umieszczony czarny napis "kot".
+Napis "kot" przysłania całkowicie różową figurę, gdyż nieprzepuszczalność 
+warstwy kot wynosi 100% (jest to wartość domyślna).
+Kolejną warstwą jest warstwa różowa. Na warstwie tej narysowano różowy prostokąt.
+Maska warstwy różowej usuwa narożnik prostokąta.
+Przedostatnia warstwa ma nazwę pies. Wprawdzie na warstwie tej jest umieszczony napis "pies", 
+ale warstwa ta nie jest widoczna.
+Ostatnią warstwą jest białe tło rysunku.  
+</P>
+
+<DIV class="ilustracja"><IMG src="ilustracje/22/22-1.jpg" alt=""><P class="listing">Rys. 1. Przykładowy rysunek wielowarstwowy.
+</P></DIV><DIV class="ilustracja"><IMG src="ilustracje/22/22-2.jpg" alt=""><P class="listing">Rys. 2. Warstwy rysunku 1.
+</P></DIV>
+
+<P>
+Widoczność warstwy zmieniamy klikając w ikonę oka.  
+Jeśli ikona oka się nie pojawia, wówczas warstwa jest niewidoczna.
+Ponowne kliknięcie w miejsce, w którym znajduje się ikona oka dla danej warstwy włącza jej widoczność.
+Jeśli przytrzymamy klawisz Shift i klikniemy w ikonę oka wówczas 
+widoczna stanie się wyłącznie kliknięta warstwa.
+Ponowne kliknięcie z przytrzymanym klawiszem Shift spowoduje włączenie widoczności wszystkich warstw.
+</P>
+
+<P>
+W podobny sposób dołączamy warstwę do grupy warstw wspólnie przesuwanych.
+Kliknięcie w ikonę krzyża (lub w miejsce, gdzie ta ikona się znajduje) włącza 
+oraz wyłącza przesuwanie warstwy.  
+</P>
+
+<P>
+Nazwę warstwy zmieniamy klikając podwójnie w zadaną warstwę w oknie dialogowym <EM>Warstwy, kanały i ścieżki</EM>.
+</P>
+
+<P>
+Natomiast maskę warstwy dodajemy korzystając z menu 
+kontekstowego okna dialogowego warstw.
+Po wybraniu opcji <EM>Dodaj maskę warstwy</EM> pojawi się 
+okno dialogowe, w którym ustalamy pierwotną 
+zawartość maski. W celu usunięcia maski wybieramy 
+opcje <EM>Usuń maskę</EM> dostępną poniżej 
+opcji dodającej maskę.
+</P>
+
+<P>
+Jeśli lista warstw nie mieści się w oknie <EM>Warstwy, kanały i ścieżki</EM>, wówczas warto okno to nieco zwiększyć.
+</P>
+
+<P>
+Uwaga, menu kontekstowe obrazu oraz menu kontekstowe okna warstw różnią się między sobą.
+Jeśli szukając danej opcji nie możemy jej znaleźć w menu kontekstowym okna warstw,
+to należy zajrzeć do menu kontekstowego obrazu.
+</P>
+
+
+
+<H3>Dodawanie warstw do rysunku</H3>
+
+<P>
+Nowe warstwy w rysunku pojawiają się po naciśnięciu jednego z przycisków <EM>Nowa warstwa</EM> lub <EM>Duplikuje warstwę</EM>
+dostępnych w oknie warstw.
+Okno dialogowe warstw jest dostępne po wybraniu opcji 
+<EM>Warstwy | Warstwy, kanały i ścieżki</EM> z menu kontekstowego obrazu (skrót Ctrl+L).
+Przycisk <EM>Duplikuje warstwę</EM> tworzy kopię warstwy aktywnej, zaś 
+przycisk <EM>Nowa warstwa</EM> wyświetla okno dialogowe, w którym użytkownik ustala nazwę warstwy, jej wymiary 
+oraz sposób wypełnienia (warstwa może być przezroczysta, wypełniona kolorem farby lub tła). 
+</P>
+
+<H4>Ćwiczenie 1</H4>
+
+<P>Wykonaj rysunek zawierający cztery warstwy o nazwach różowa, zielona, czerwona oraz tło.
+Na warstwie różowej narysuj różowy kwadrat, na zielonej - zielone koło,
+zaś na czerwonej - czerwony prostokąt.
+</P>
+
+<P>
+Wykonanie ćwiczenia rozpoczynamy od utworzenia nowego obrazu.
+Następnie w oknie warstw tworzymy kolejno trzy warstwy nazywając je różowa, zielona oraz czerwona.
+Domyślnie, rozmiar nowej warstwy jest równy rozmiarowi całego rysunku.
+Ustalmy typ wypełnienia nowo tworzonych warstw na przezroczysty.
+</P>
+
+<P>
+Następnie przystępujemy do narysowania figur. W celu narysowania różowego kwadratu 
+wybieramy jako aktywną warstwę różową (należy kliknąć 
+w nazwę warstwy w oknie dialogowym warstw). Po wybraniu aktywnej warstwy 
+tworzymy selekcję w kształcie kwadratu i wypełniamy ją farbą koloru różowego.
+</P>
+
+<P>
+Pracę nad zielonym kołem rozpoczynamy od wyboru aktywnej warstwy.
+Klikamy w nazwę "zielona" w oknie warstw.
+Następnie zaznaczamy obszar okrągły i wypełniamy go farbą.
+</P>
+
+<P>
+Ostatnią z figur, czerwony prostokąt, wykonujemy identycznie:
+wybieramy aktywną warstwę o nazwie "czerwona", zaznaczamy obszar 
+prostokątny i wypełniamy go farbą.   
+</P>
+
+<DIV class="ilustracja"><IMG src="ilustracje/22/22-3.jpg" alt=""><P class="listing">Rys. 3. Kilkuwarstwowy rysunek z ćwiczenia pierwszego.
+</P></DIV>
+
+
+
+<P>
+Kolejność warstw możemy zmieniać 
+korzystając z odpowiednich przycisków dostępnych w dolnej części okna warstw oraz z menu kontekstowego
+<EM>Warstwy | Stos</EM>. Obie możliwości ilustruje rysunek 4.
+</P>
+
+<DIV class="ilustracja"><IMG src="ilustracje/22/22-4.jpg" alt=""><P class="listing">Rys. 4. Menu kontekstowe oraz przyciski okna <EM>Warstwy, kanały i ścieżki</EM> zmieniające kolejność warstw.
+</P></DIV>
+
+<P>
+Operacja usuwania warstw jest wykonywana przy użyciu przycisku z ikoną kosza, którego należy 
+szukać w dolnej części okna warstw. Oczywiście po naciśnięciu przycisku usunięta zostanie warstwa bieżąca.
+Operacja usuwania warstwy posiada skrót Ctrl+X.
+</P>
+
+<P>
+Jeśli zdarzy się tak, że nieopatrznie usuniemy potrzebną warstwę to należy pamiętać,
+że operacja cofnij (skrót Ctrl+Z) przywróci poprzedni stan rysunku.
+</P>
+
+
+
+<H4>Ćwiczenie 2</H4>
+<P>Dysponujesz sześcioma ilustracjami budownictwo.jpg, przyroda.jpg, miasto.jpg, 
+rekreacja.jpg, rolnictwo.jpg oraz transport.jpg. Każdy z obrazów ma rozmiar 800x600 pikseli.
+Przygotuj ilustrację prezentującą sześć podanych plików na białym tle w pomniejszonych rozmiarach.
+Obraz przygotuj tak, by każda miniaturka była umieszczona na osobnej warstwie.
+</P>
+
+<P>
+Po utworzeniu nowego obrazu o dostatecznie dużych rozmiarach (np. 800x600)
+możemy przystąpić do kopiowania miniatur.
+Kopiowanie każdej z miniatur przebiega następująco: 
+otwieramy plik z obrazem np. budownictwo.jpg. Obraz skalujemy do 
+żądanych rozmiarów np. 200x150 pikseli (operacja <EM>Obraz | Przeskaluj obraz</EM>).
+Następnie zaznaczamy cały obraz (Ctrl+A)
+i kopiujemy (Ctrl+C). Przechodzimy do nowo tworzonego obrazu i wykonujemy operację
+wklejania (Ctrl+V). Wklejony obraz wyląduje w tzw. <EM>pływającym zaznaczeniu</EM>.
+W celu utworzenia nowej warstwy zawierającej właśnie wklejony obraz przechodzimy do okna
+warstw i naciskamy przycisk <EM>Nowa warstwa</EM> (możemy skorzystać ze skrótu Ctrl+N; 
+najwygodniej operację taką wykonać wciskając kolejno Ctrl+V, Ctrl+L oraz Ctrl+N).
+W ten sposób wklejany obraz trafia na osobną warstwę. Nazwę warstwy 
+możemy zmienić podwójnie klikając w oknie warstw w dodaną warstwę.
+</P>
+
+<P>
+Wklejane obrazy wylądują w różnych miejscach, ale zazwyczaj nie tam, gdzie chcielibyśmy je ujrzeć.
+W celu przesunięcia warstwy należy wybrać narzędzie <EM>Przesuwanie warstw i zaznaczeń</EM>, a następnie 
+złapać warstwę myszką i przesunąć. 
+Ustawienie prowadnic bardzo ułatwia dokładne pozycjonowanie warstw.
+</P>
+
+<P>
+Dodatkowo, do przesuwania warstw możemy użyć czterech strzałek z klawiatury.
+Przytrzymanie klawisza Shift zmienia odległość, o jaką strzałki przesuwają warstwę.
+</P>
+
+
+
+
+<DIV class="ilustracja"><IMG src="ilustracje/22/22-5-1.jpg" alt=""><BR><BR><IMG src="ilustracje/22/22-5-2.jpg" alt=""><BR><BR><P class="listing">Rys. 5. Obraz zawierający sześć pomniejszonych plików jpg oraz zawartość okna warstw.</P></DIV>
+<P>
+Istnieje również możliwość wklejenia obrazu bezpośrednio w jedną z istniejących już warstw.
+Służy do tego przycisk z ikoną kotwicy znajdujący się w dolnej części okna warstw.
+Jeśli po wykonaniu operacji wklej użyjemy przycisku zakotwiczania, wówczas 
+wklejany obraz trafi na aktywną warstwę. 
+Głównym minusem zakotwiczania warstw jest to, że po zakotwiczeniu nie możemy 
+już niezależnie modyfikować wklejonego elementu.
+</P>
+
+
+
+
+<H4>Ćwiczenie 3</H4>
+
+<P>
+Wykonaj widokówkę zatytułowaną "Zima" przedstawioną na rysunku 6.
+Do pracy wykorzystaj pięć gotowych zdjęć. Zdjęcia wklej na osobne warstwy, a następnie 
+umieść w sposób przedstawiony na rysunku.</P>
+
+<DIV class="ilustracja"><IMG src="ilustracje/22/22-6.jpg" alt=""><P class="listing">Rys. 6. Widokówka "Zima".
+</P></DIV>
+
+<P>
+Pracę rozpoczynamy od utworzenia nowego obrazu o wymiarach 860x660 pikseli.
+Potem kolejno wklejamy pięć zdjęć pamiętając o skalowaniu zdjęć do rozmiarów 400x300.
+Zdjęcia wklejamy tak, by trafiły na osobne warstwy. 
+Po wklejeniu fotografii ustalamy prowadnice poziome oraz pionowe, po czym przesuwamy wklejone fotografie.
+</P>
+
+<H3>Wyrównanie warstw</H3>
+
+<P>
+Przy obrazach składających się z wielu warstw ręczne wyrównywanie położenia 
+z wykorzystaniem prowadnic jest dosyć pracochłonne.
+Operacja wyrównywania warstw powoduje przemieszczenie widocznych warstw według określonych reguł.
+Jeśli chcemy użyć tej operacji należy najpierw ustalić, by widoczne były tylko te warstwy, które mają zostać
+przemieszczone, a następnie w oknie dialogowym wybrać sposób rozmieszczenia.
+</P>
+
+
+<H4>Ćwiczenie 4</H4>
+
+<P>
+Przygotuj rysunek prezentujący cztery różnokolorowe kwadraty.
+Kwadraty rozłóż w równych odległościach od siebie w kierunku pionowym oraz poziomym,
+tak jak to przedstawiono na rysunku 7.
+</P>
+
+
+<DIV class="ilustracja"><IMG src="ilustracje/22/22-7-1.jpg" alt=""><BR><BR><IMG src="ilustracje/22/22-7-2.jpg" alt=""><BR><BR><IMG src="ilustracje/22/22-7-3.jpg" alt=""><BR><BR><P class="listing">Rys. 7. Operacja <EM>Wyrównaj widoczne warstwy</EM>.</P></DIV>
+<P>
+Wykonanie rysunku rozpoczynamy od przygotowania kwadratów.
+Na pustym rysunku posiadającym jedynie warstwę tła wypełnioną białym kolorem 
+tworzymy kwadratowe zaznaczenie. Zaznaczenie to kopiujemy (Ctrl+C), po czym wklejamy (Ctrl-V).
+Wklejony kwadrat umieszczamy na nowej warstwie podobnie jak to robiliśmy w ćwiczeniu drugim 
+(Ctrl+V, Ctrl+L, Ctrl+N). 
+W ten sposób dodaliśmy do obrazu warstwę o rozmiarach równych zaznaczonemu kwadratowi.
+Warstwie nadajemy nazwę czerwona, po czym kwadrat wypełniamy kolorem czerwonym.
+W identyczny sposób (tj. wykonując operacje kopiuj/wklej)
+wzbogacamy obraz o trzy warstwy, z których  każda zawiera kwadrat innego koloru.
+Gdy obraz liczy pięć warstw przystępujemy do równomiernego rozłożenia kwadratów.
+Przesuwamy kwadraty w dowolne  miejsca rysunku, a następnie aktywujemy opcję 
+<EM>Warstwy | Wyrównaj widoczne warstwy</EM>.
+W oknie dialogowym ustalamy rodzaj wyrównania, po czym zatwierdzamy dokonane zmiany.
+</P>
+
+<P>
+Oczywiście korzyści związane z automatycznym wyrównywaniem widocznych warstw
+są tym większe, im więcej warstw chcemy wyrównać.  
+</P>
+
+
+
+<H4>Ćwiczenie 5</H4>
+
+<P>Dysponujesz szesnastoma zdjęciami o wymiarach 800x600 pikseli.
+Przygotuj jedną ilustracje 800x600 prezentującą tabelkę 4x4 szesnastu fotografii.
+Zadbaj o równe ułożenie wszystkich fotografii.
+</P>
+
+
+<P>
+Celem tego ćwiczenia jest przygotowanie ilustracji widocznej na rysunku 8.
+Oczywiście pierwszym krokiem będzie utworzenie nowego rysunku i wklejenie doń szesnastu miniaturek
+o wymiarach 200x150 pikseli tak, by każda miniaturka trafiła na osobną warstwę.
+Następnie przystępujemy do wyrównania miniatur.
+Ustawiamy widoczność tak, by widoczne były wyłącznie fotografie z pierwszej kolumny.
+
+Przesuńmy najwyższą fotografię tak, by stykała się z górną krawędzią obrazu,
+oraz dolną fotografię tak, 
+by stykała się z dolną krawędzią obrazu. 
+
+Teraz wybieramy operację <EM>Warstwy | Wyrównaj widoczne warstwy</EM>, zaś w oknie dialogowym 
+ustalamy: 
+</P>
+
+<UL>
+<LI>styl poziomy - zbierz oraz pozioma podstawa - lewa krawędź 
+(spowoduje to przesunięcie zdjęć do lewej krawędzi obrazu),</LI>
+
+<LI>styl pionowy - wypełnij z góry na dół oraz pionowa podstawa - górna krawędź 
+(spowoduje to równomierne rozmieszczenie widocznych warstw od góry do dołu),</LI>
+
+<LI>zaznaczamy wykorzystanie dolnej (niewidocznej)  warstwy jako bazy.</LI>
+
+</UL>
+
+<P>Po potwierdzeniu ustalonych parametrów przyciskiem OK, zdjęcia pierwszej kolumny 
+zostaną rozmieszczone zgodnie z naszymi oczekiwaniami.
+W podobny sposób rozkładamy pozostałe warstwy.
+
+</P>
+
+
+<DIV class="ilustracja"><IMG src="ilustracje/22/22-8.jpg" alt=""><P class="listing">Rys. 8. Kratka szesnastu zdjęć.
+</P></DIV>
+
+
+<H3>Spłaszczenie obrazu</H3>
+
+<P>
+Jeśli obraz zawiera zbyt wiele warstw wówczas edycja staje się uciążliwa.
+Wykonanie niemal każdej operacji wymaga szukania potrzebnej warstwy, zmiany widoczności warstw itd.
+Operacją odwrotną do dodawania nowych warstw jest spłaszczanie obrazu.
+Mamy możliwość połączyć ze sobą wszystkie warstwy, warstwy widoczne lub warstwy od bieżącej w dół.
+Wszystkie powyższe operacje są dostępne w menu kontekstowym okna warstw.
+</P>
+
+
+
+<H4>Ćwiczenie 6</H4>
+
+<P>Opierając się na ćwiczeniu 5 wykonaj ilustrację prezentującą 
+szesnaście ilustracji z ćwiczenia 5.</P>
+
+
+<P>
+Ponieważ w ćwiczeniu 5 wystąpiło szesnaście rysunków, a teraz mamy wykonać kolejne szesnaście 
+miniatur, zatem umieszczenie każdej z miniatur na osobnej warstwie sprawiłoby, że 
+obraz liczyłby 257 warstw! Wyrównanie tak wielkiej liczby warstw to zadanie dość 
+karkołomne!
+Znacznie łatwiej wykonać to ćwiczenie przygotowując spłaszczoną wersję ćwiczenia 5.
+Po otworzeniu pliku xcf będącego wynikiem ćwiczenia 5, 
+wykonujemy operację <EM>Warstwy | Spłaszcz obraz</EM>.
+
+Tak otrzymany obraz kopiujemy i wklejamy do otwartego dokumentu.
+Po wklejeniu czterech identycznych obrazów i równym ich rozłożeniu
+ponownie wykonujemy operację łączącą warstwy, lecz tym razem łączymy 
+jedynie cztery miniaturki. Należy wyłączyć widoczność tła, po  czym wykonać 
+<EM>Warstwy | Połącz widoczne warstwy</EM> (skrót klawiszowy Ctrl+M).
+Otrzymaną warstwę kopiujemy i wklejamy trzy razy.
+Tak otrzymane cztery warstwy (każda z nich jest identyczna i przedstawia cztery miniaturki
+rysunku z ćwiczenia 5) równo rozkładamy przy pomocy komendy wyrównywania widocznych warstw.
+</P>
+
+<DIV class="ilustracja"><IMG src="ilustracje/22/22-9.jpg" alt=""><P class="listing">Rys. 9. Kratka 256 miniatur.
+</P></DIV>
+
+<H3>Efekt cienia</H3>
+
+<P>
+Efekt cienia jest dostępny w menu kontekstowym <EM>Script-Fu | Cień | Rzucany cień</EM>.
+Efekt ten działa w oparciu o bieżące zaznaczenie.
+Rzucany cień jest cieniem, jakie rzuca zaznaczenie.
+Wykonanie efektu cienia powoduje dodanie do rysunku nowej warstwy o nazwie "Drop shadow", 
+na której jest umieszczony cień.
+</P>
+
+
+<H4>Ćwiczenie 7</H4>
+<P>Przygotuj rysunek kwadratu, który rzuca cień.</P>
+
+
+<P>
+Po utworzeniu nowego obrazu o białym tle wykonujemy kwadratowe zaznaczenie.
+Zaznaczenie to wypełniamy kolorem niebieskim.
+Następnie wybieramy z menu kontekstowego efekt cienia.
+Rysunek 10 prezentuje otrzymany  kwadrat, warstwy obrazu oraz parametry,
+jakie są dostępne dla efektu cienia. 
+</P>
+
+<DIV class="ilustracja"><IMG src="ilustracje/22/22-10-1.jpg" alt=""><BR><BR><IMG src="ilustracje/22/22-10-2.jpg" alt=""><BR><BR><IMG src="ilustracje/22/22-10-3.jpg" alt=""><BR><BR><P class="listing">Rys. 10. Rzucanie cienia.</P></DIV>
+
+<H4>Ćwiczenie 8</H4>
+
+<P>
+Dysponując pięcioma fotografiami morza przygotuj widokówkę 
+przedstawioną na rysunku 11. Zauważ, że wszystkie zdjęcia rzucają niewielki cień.
+</P>
+
+
+<P>
+Ćwiczenie to jest pewnym rozszerzeniem ćwiczenia 3.
+Pracę rozpoczynamy więc identycznie jak w ćwiczeniu trzecim i
+kontynujemy aż do uzyskania pięciu zdjęć odpowiednio rozmieszczonych.
+Teraz dokonujemy zaznaczenia białego obszaru dookoła fotografii.
+Najłatwiej wykonamy to zadanie korzystając z magicznej różdżki
+(tj. narzędzia o nazwie <EM>Zaznaczanie sąsiadujących obszarów</EM>; skrót z).  
+Pojedyncze kliknięcie w biały obszar otaczający zdjęcia dokona odpowiedniej selekcji
+(warstwą aktywną powinno być tło, zaś narzędzie <EM>Zaznaczanie sąsiadujących obszarów</EM> powinno mieć zaznaczoną opcję 
+<EM>Próbkowanie z kanałem alfa</EM> i ustalony próg próbkowania około 10).
+Teraz wykonujemy efekt cienia i widokówka jest gotowa.
+</P>
+
+
+<DIV class="ilustracja"><IMG src="ilustracje/22/22-11.jpg" alt=""><P class="listing">Rys. 11. Widokówka "Fale".
+</P></DIV>
+<P>
+Efekt cienia stanowi przykład operacji, która po wykonaniu dodaje do obrazu warstwę.
+Innymi przydatnymi efektami tego typu są dodawanie krawędzi, ramki czy siatki do obrazu.
+</P>
+
+
+
+
+<H3>Modyfikacja kolorów</H3>
+
+<P>
+Kolejne ważne zastosowanie warstw to modyfikacja kolorów rysunku.
+Kolorystyka warstw, podobnie jak położenie, może być zmieniana niezależnie.
+</P>
+
+
+
+<H4>Ćwiczenie 9</H4>
+
+<P>
+Przekształć ilustrację z ćwiczenia 2 tak, by każda warstwa miała inny odcień
+(patrz rysunek 12).
+</P>
+
+<P>
+Po otworzeniu rysunku z zadania 2 przystępujemy do modyfikacji kolorów.
+Operacja <EM>Obraz | Kolory | Desaturacja</EM> przekształca aktywną warstwę 
+w obraz czarno-biały. Następnie wyświetlamy okno dialogowe 
+zmieniające balans kolorów <EM>Obraz | Kolory | Balans kolorów</EM>
+i korzystając z suwaków nadajemy warstwie żądany odcień.
+</P>
+
+<P>
+W identyczny sposób postępujemy z następnymi warstwami.
+</P>
+
+
+<DIV class="ilustracja"><IMG src="ilustracje/22/22-12.jpg" alt=""><P class="listing">Rys. 12. Modyfikacja kolorów poszczególnych warstw.
+</P></DIV>
+
+
+
+
+<H3>Nieprzepuszczalność warstwy</H3>
+
+
+<P>
+Dzięki właściwości o nazwie nieprzepuszczalność warstwy mogą się 
+częściowo przysłaniać. Zmniejszając nieprzepuszczalność spowodujemy, 
+że warstwa stanie się w pewnym stopniu przezroczysta.
+Najprostszy przykład wykorzystania nieprzepuszczalności to
+częściowe rozjaśnienie pewnych fragmentów rysunku. 
+</P>
+
+
+
+<H4>Ćwiczenie 10</H4>
+
+<P>
+Przygotuj widokówkę "Zima" z ćwiczenia 3 dodając efekty 
+widoczne na rysunku 13.
+</P>
+
+
+<P>
+Zmiany oryginalnej widokówki polegają na wybieleniu oraz zaokrągleniu narożników 
+czterech fotografii znajdujących się w tle.
+</P>
+
+
+<P>
+Rozpocznijmy od wybielenia. Do rysunku dodajemy warstwę białą.
+Umieszczamy ją poniżej fotografii środkowej, ale ponad fotografiami narożnymi.
+Jeśli warstwa ta jest widoczna, wówczas przesłania ona fotografie narożne.
+Jeśli teraz zmniejszymy nieprzepuszczalność dodanej białej warstwy do około 50%,
+wówczas fotografie narożne staną się widoczne jak za mgłą.
+</P>
+
+<P>
+Drugi efekt, zaokrąglenie narożników wymaga zaznaczenia białego obszaru dookoła wszystkich fotografii.
+Ustalmy widoczność warstw tak, by widoczne były warstwy tło oraz cztery narożne fotografie.
+Następnie zmieńmy właściwości narzędzia <EM>Zaznaczanie sąsiadujących obszarów</EM> 
+(należy kliknąć dwukrotnie w ikonę narzędzia - magiczną różdżkę - w oknie głównym GIMPa).
+We właściwościach narzędzia zaznaczamy opcję <EM>Próbkowanie z kanałem alfa</EM> oraz ustalamy 
+próg próbkowania na 2.4.
+Jeśli teraz klikniemy w biały obszar obrazu wówczas 
+selekcja obejmie całą białą przestrzeń pomiędzy fotografiami (upewnijmy się, że aktywną warstwą jest tło
+oraz usuńmy ewentualne zaznaczenie Ctrl+Shift+A).
+</P>
+
+<P>
+Po zaznaczeniu białego obszaru wykonujemy operację wygładzania selekcji 
+o promieniu 30 pikseli (opcja <EM>Zaznaczenie | Wygładź</EM>), 
+po czym ponownie wyostrzamy zaznaczenie (opcja <EM>Zaznaczenie | Wyostrz</EM>).
+</P>
+
+<P>
+Następnie dodajemy do obrazu nową warstwę i wypełniamy na niej zaznaczenie białym kolorem.
+Jeśli warstwę umieścimy w stosie warstw pomiędzy fotografią środkową a fotografiami narożnymi,
+wówczas otrzymamy efekt zaokrąglonych rogów.
+</P>
+
+
+
+
+<DIV class="ilustracja"><IMG src="ilustracje/22/22-13.jpg" alt=""><P class="listing">Rys. 13. Nieprzepuszczalność warstw.
+</P></DIV>
+
+
+
+
+
+<H3>Narzędzia tekstowe</H3>
+
+<P>
+Narzędzie tekstowe służy do wzbogacania tworzonych obrazów o napisy. 
+Podobnie jak w przypadku operacji wklejania mamy dwie możliwości
+użycia narzędzia: napis możemy zakotwiczyć na jednej z istniejących warstw lub
+umieścić na nowej warstwie. 
+Z powodów identycznych jak w przypadku wklejania, umieszczanie napisów na oddzielnych warstwach 
+jest wygodniejsze.
+</P>
+
+
+<H4>Ćwiczenie 11</H4>
+
+<P>Przygotuj rysunek zawierający napis "Witamy w programie GIMP!". Każdy wyraz 
+napisz innym kolorem i czcionką.</P>
+
+<DIV class="ilustracja"><IMG src="ilustracje/22/22-14.jpg" alt=""><P class="listing">Rys. 14. Przykład użycia narzędzia tekstowego.
+</P></DIV>
+
+<P>
+Po wybraniu narzędzia tekstowego z okna głównego programu  (skrót klawiszowy: t),
+klikamy w dowolne miejsce obrazu. Na ekranie pojawi się okno dialogowe
+umożliwiające wybór kroju czcionki, wielkości liter oraz stylu pisma (kursywa, pogrubienie).
+Gdy ustalimy wszystkie parametry oraz wpiszemy tekst "Witamy" należy zamknąć okno dialogowe.
+Teraz przechodzimy do okna warstw i tworzymy nową warstwę.
+Wpisany przed chwilą napis powinien pojawić się w edytowanym 
+dokumencie na nowo utworzonej warstwie.
+</P>
+
+<P>
+Kolor czcionki zmieniamy wykorzystując przyciski <EM>Kolor narzędzia i tła</EM>
+w lewym dolnym rogu GIMPa lub wykorzystując paletę kolorów (skrót Ctrl+P).
+</P>
+
+<P>
+Jeśli dodane napisy umieścimy na nowych warstwach, wówczas każdy z nich możemy niezależnie
+przesuwać i zmieniać. Zmianę koloru napisu już dodanego realizujemy następująco.
+Modyfikowana warstwa powinna być warstwą aktywną.
+Operacja <EM>Warstwy | Zaznaczenie z kanału alfa</EM> spowoduje zaznaczenie wprowadzonego napisu.
+Teraz korzystamy z narzędzia do wypełniania farbą (skrót Shift+B) i wlewamy w napis dowolny inny kolor. 
+W identyczny sposób możemy zmienić kolor każdego napisu (o ile jest on umieszczony 
+na osobnej warstwie, a nie zakotwiczony).
+</P>
+
+
+
+
+
+
+
+
+<H4>Ćwiczenie 12</H4>
+
+<P>Przygotuj logo firmy "ABC" przedstawione na rysunku 15.</P>
+
+<DIV class="ilustracja"><IMG src="ilustracje/22/22-15.jpg" alt=""><P class="listing">Rys. 15. Logo firmy ABC.
+</P></DIV>
+
+<P>
+Logo zawiera trzy prostokąty, dwa czarne i jeden żółty, oraz dwa napisy.
+Pracę rozpoczynamy od narysowania prostokątów. Wykorzystujemy do tego zaznaczenie prostokątne 
+oraz narzędzie <EM>kubełek</EM>  służące do wypełniania obszarów farbą.
+</P>
+
+<P>
+Następnie dodajemy do rysunku napis "ABC Web Solutions" pisany żółtą czcionką.
+Napis ten umieszczamy na osobnej warstwie.
+Warstwę z napisem kopiujemy  stosując przycisk <EM>Duplikuje warstwę</EM> (okno warstw).
+Skopiowany napis przesuwamy nieco do góry, po czym zmieniamy jego kolor na czarny.
+</P>
+
+<P>
+Oczywiście ćwiczenie możemy również wykonać umieszczając na żółto-czarnych prostokątach trzy napisy 
+"ABC", "Web" oraz "Solutions".
+</P>
+
+
+
+
+
+
+<H3>Ozdobne napisy</H3>
+
+<P>
+Oprócz zwykłego narzędzia tekstowego umożliwiającego pisanie tekstów standardowymi czcionkami 
+zainstalowanymi w systemie GIMP posiada bibliotekę skryptów generujących 
+różnorodne napisy ozdobne. Ozdobne napisy znajdziemy w menu głównym 
+wybierając kolejno opcje <EM>Dodatki | Script-Fu | Loga</EM>.
+</P>
+
+<P>
+Każdy ze skryptów tworzących loga posiada pewną liczbę właściwości takich jak wielkość liter, krój czcionki 
+czy tekstury. Po wykonaniu skryptu tworzony jest rysunek zawierający 
+logo.
+</P>
+
+
+
+
+
+<H4>Ćwiczenie 13</H4>
+
+<P>Przygotuj napis "Witamy w GIMPie!" widoczny na rysunku 16.</P>
+
+<DIV class="ilustracja"><IMG src="ilustracje/22/22-16-1.jpg" alt=""><BR><BR><IMG src="ilustracje/22/22-16-2.jpg" alt=""><BR><BR><P class="listing">Rys. 16. Ozdobny napis wykonany skryptem <EM>Lśniące</EM>.</P></DIV>
+<P>
+Napis ten jest generowany skryptem <EM>menu główne | Dodatki | Script-Fu | Loga | Lśniące</EM>.
+Po wpisaniu tekstu "Witamy w GIMPie!" i zatwierdzeniu  zostanie przygotowane żądane logo.
+Jak widać na rysunku 16, skrypt tworzy obraz wielowarstwowy. Na osobnych warstwach 
+zostały umieszczone litery, cień oraz efekty.
+</P>
+
+
+
+<H4>Ćwiczenie 14</H4>
+
+<P>
+Wykorzystując skrypt <EM>Lśniące</EM>  przygotuj logo firmy ABC widoczne na rysunku 17.
+</P>
+
+<DIV class="ilustracja"><IMG src="ilustracje/22/22-17.jpg" alt=""><P class="listing">Rys. 17. Logo firmy ABC zawierające wklejone litery wykonane skryptem <EM>Lśniące</EM>.
+</P></DIV>
+
+<P>
+Logo składa się z kilku elementów. Po pierwsze widzimy duży kwadrat zawierający 
+trzy kwadraty czarne, trzy żółte oraz trzy białe. Duży kwadrat rysujemy na tle wykorzystując 
+narzędzie do prostokątnego zaznaczania obszarów, prowadnice oraz 
+kubełek do wlewania farby. Następnym elementem jest cień rzucany przez duży kwadrat.
+Cień dodajemy zaznaczając duży kwadrat i wykonując skrypt <EM>Script-Fu | Cień | Rzucany cień</EM>.
+Trzecim elementem loga jest czarny napis "ABC Web Solutions". Napis dodajemy wykorzystując narzędzie
+tekstowe. Ostatnim elementem są trzy lśniące litery A, B, C.
+
+Każdą z liter wykonujemy uruchamiając poznany już skrypt <EM>Lśniące</EM>.
+W skrypcie zmieniamy gradient na <EM>Golden</EM>.
+Tworzymy logo zawierające literę A. W uzyskanym rysunku wyłączamy widoczność warstwy tła,
+i łączymy widoczne warstwy: <EM>Warstwy | Połącz widoczne warstwy</EM>.
+Teraz zaznaczamy cały rysunek przedstawiający literę A (Ctrl+A), następnie go kopiujemy i wklejamy 
+w opracowywane logo na osobną warstwę. Podobnie postępujemy z literami B oraz C: 
+tworzymy literę skryptem <EM>Lśniące</EM>, wyłączamy widoczność tła, łączymy widoczne warstwy, zaznaczamy całość, 
+kopiujemy i wklejamy na osobną warstwę rysunku z logiem firmy ABC. 
+</P>
+
+<P>
+Otrzymane logo powinno zawierać sześć warstw: tło (z rysunkiem kwadratu), cień, warstwę z czarnym napisem oraz trzy warstwy z
+literami A, B oraz C.
+</P>
+
+
+
+<H3>Maskowanie warstw</H3>
+
+<P>
+
+Ostatnim etapem zgłębiania wiedzy na temat warstw jest
+maskowanie. Każda warstwa może posiadać własną maskę.
+Maska jest czarno-białym obrazem, który modyfikuje widoczność warstwy.
+Kolor biały maski przepuszcza zaś czarny ukrywa zawartość warstwy.
+Po masce warstwy malujemy wykorzystując wszystkie dostępne narzędzia 
+takie jak pędzel, wypełnianie kolorem, wypełnianie gradientem
+czy narzędzie tekstowe.
+</P>
+
+
+<H4>Ćwiczenie 15</H4>
+
+<P>
+Do obrazu z ćwiczenia 8 dodaj maskę warstwy, która 
+przepuszcza napis "Kto?" tak jak to przedstawiono na rysunku 18.
+</P>
+
+<DIV class="ilustracja"><IMG src="ilustracje/22/22-18.jpg" alt=""><P class="listing">Rys. 18. Rysunek z ćwiczenia 8 wzbogacony o maskę.
+</P></DIV>
+<P>
+Po otworzeniu obrazu z ćwiczenia 8 łączymy wszystkie warstwy oprócz tła, 
+tak by otrzymany obraz posiadał warstwę białe tło oraz warstwę zawierająca wszystkie miniaturki.
+Następnie do warstwy z miniaturkami dodajemy maskę: <EM>Warstwy | Dodaj maskę warstwy</EM>.
+Dodając maskę ustalamy jej kolor na czarny (pełna przezroczystość).
+Teraz przechodzimy do edycji maski. Klikamy w ikonę maski w oknie warstw.
+Wszystkie operacje edycyjne odnoszą się teraz do maski.
+Zmieniamy kolor narzędzia na biały, a następnie wybieramy narzędzie tekstowe.
+Wprowadzamy napis "Kto?", zamykamy okno narzędzia tekstowego i przechodzimy do okna warstw.
+Teraz nie mamy możliwości dodania wprowadzonego tekstu na oddzielnej warstwie.
+Naciskamy przycisk zakotwiczenia, przez co napis "Kto?" zostanie umieszczony na masce.
+Kliknijmy ikonę maski przytrzymując przycisk Ctrl.
+Operacja Ctrl+klik powoduje włączenie/wyłączenie działania maski.
+</P>
+
+
+
+<H4>Ćwiczenie 16</H4>
+
+<P>Wykonaj plakat p.t. "Lubisz las - zbieraj makulaturę".</P>
+
+<DIV class="ilustracja"><IMG src="ilustracje/22/22-19.jpg" alt=""><P class="listing">Rys. 19. Plakat "Lubisz las - zbieraj makulaturę".
+</P></DIV>
+<P>
+Plakat "Lubisz las ..." zawiera pięć warstw: tło, widokówkę, warstwę białą, która rozjaśnia widokówkę,
+drugą warstwę z widokówką, warstwę z napisem oraz warstwę z czarną obwódką napisu.
+Druga warstwa z widokówką zawiera maskę, która przepuszcza jedynie napis "Lubisz las ...".
+Dodanie do obrazu warstwy z napisem ułatwia zmianę maski.
+Warstwę z napisem przesuwamy w dowolne miejsce. W momencie, gdy napis jest gotowy zaznaczamy go 
+(zaznaczenie z kanału alfa dla warstwy z napisem), 
+po czy przechodzimy do edycji maski i wypełniamy zaznaczenie kolorem białym.
+</P>
+
+
+
+<H4>Ćwiczenie 17</H4>
+
+<P>
+Nałóż na siebie dwie fotografie tak, by przejście z jednej fotografii do drugiej 
+było płynne.
+</P>
+
+<P>
+Zadanie to wykonujemy wklejając dwie fotografie na osobne warstwy.
+Każdej z nich dodajemy maskę, na której umieszczamy liniowy gradient 
+zmieniający się od koloru białego do czarnego.
+
+</P>
+
+
+<DIV class="ilustracja"><IMG src="ilustracje/22/22-20.jpg" alt=""><P class="listing">Rys. 20. Płynne przenikanie zdjęć.</P></DIV>
+
+
+
+<H3>Podsumowanie</H3>
+
+
+<P>
+Korzyści z wykorzystania warstw w tworzonych grafikach 
+polegają na oddzieleniu różnych elementów rysunku.
+Każda warstwa może być modyfikowana niezależnie od pozostałych.
+Zmianom podlegają takie cechy jak położenie, rozmiar czy kolorystyka.
+Dzięki temu przegrupowanie elementów rysunku sprowadza się do
+przesuwania warstw oraz zmiany ich kolejności.
+</P>
+
+<P>
+Główny zarzut do warstw w GIMPie to brak możliwości grupowania i rozgrupowywania.
+Bez operacji grupowania warstw wykonanie efektu dla wielu osobnych elementów 
+będzie wymagało wiele pracy 
+(każdą warstwę będzie trzeba uczynić aktywną, wykonać zaznaczenie a następnie sam efekt).
+Ponadto, jeśli nie grupujemy warstw, to zarządzanie długą listą w oknie dialogowym 
+również nie jest wygodne.
+</P>
+
+<P>
+Tabele 1 oraz 2 przedstawiają opcje programu GIMP wykorzystane w omówionych ćwiczeniach.
+Tabela 1 zawiera opcje menu kontekstowego okna <EM>Warstwy, kanały i ścieżki</EM>,
+które aktywujemy prawym kliknięciem w jedną z warstw wewnątrz okna.
+Opcje przedstawione w tabeli 2 są dostępne w menu kontekstowym obrazu
+aktywowanym po prawym kliknięciu w obraz.
+</P>
+
+<P>
+Kolejne drobne błędy w GIMPie to nazwa opcji <EM>Usuń kanał</EM>
+w menu kontekstowym okna warstw (powinno być: <EM>Usuń warstwę</EM>) oraz 
+skrót klawiszowy <EM>Prior</EM> w menu kontekstowym obrazu 
+<EM>Warstwy | Stos | Poprzednia warstwa</EM> (powinno być: PgUp).
+</P>
+
+
+
+<DIV class="ilustracja">
+
+
+<TABLE border="1"><TR><TD><STRONG>Funkcja</STRONG></TD><TD><STRONG>Opcja menu</STRONG></TD><TD><STRONG>Klawisz skrótu
+</STRONG></TD></TR>
+
+
+
+<TR><TD>Tworzenie nowej warstwy</TD>
+<TD>Nowa warstwa</TD>
+<TD>Ctrl+N
+</TD>
+</TR>
+
+<TR><TD>Zmiana kolejności warstw</TD>
+<TD>Stos</TD>
+<TD>Ctrl+B, Ctrl+F, Ctrl+Shift+B, Ctrl+Shift+F 
+</TD>
+</TR>
+
+<TR><TD>Duplikowanie istniejącej warstwy</TD>
+<TD>Zduplikuj warstwę</TD>
+<TD>Ctrl+C
+</TD>
+</TR>
+
+<TR><TD>Zakotwiczanie pływającego zaznaczenia</TD>
+<TD>Zakotwicz warstwę</TD>
+<TD>Ctrl+H
+</TD>
+</TR>
+
+<TR><TD>Usuwanie warstwy</TD>
+<TD>Usuń kanał</TD>
+<TD>Ctrl+X
+</TD>
+</TR>
+
+<TR><TD>Łączenie warstw widocznych</TD>
+<TD>Połącz widoczne warstwy</TD>
+<TD>Ctrl+M
+</TD>
+</TR>
+
+<TR><TD>Łączenie wszystkich warstw</TD>
+<TD>Spłaszcz obraz</TD>
+<TD>-
+</TD>
+</TR>
+
+<TR><TD>Dodawanie maski</TD>
+<TD>Dodaj maskę warstwy</TD>
+<TD>-
+</TD>
+</TR>
+
+<TR><TD>Usuwanie maski warstwy</TD>
+<TD>Usuń maskę warstwy</TD>
+<TD>-
+</TD>
+</TR>
+
+<TR><TD>Zaznaczenie nieprzezroczystego fragmentu warstwy</TD>
+<TD>Zaznaczenie z kanału alfa</TD>
+<TD>-</TD>
+</TR>
+
+
+</TABLE><P class="listing">Tabela 1. Opcje menu kontekstowego okna <EM>Warstwy, kanały i ścieżki</EM>.
+</P></DIV><DIV class="ilustracja">
+
+
+<TABLE border="1"><TR><TD><STRONG>Funkcja</STRONG></TD><TD><STRONG>Opcja menu</STRONG></TD><TD><STRONG>Klawisz skrótu
+</STRONG></TD></TR>
+
+
+
+<TR><TD>Wyrównanie</TD>
+<TD>Warstwy | Wyrównaj widoczne warstwy</TD>
+<TD>-
+</TD>
+</TR>
+
+<TR><TD>Narzędzie tekstowe</TD>
+<TD>Narzędzia | Tekst</TD>
+<TD>t
+</TD>
+</TR>
+
+<TR><TD>Paleta kolorów</TD>
+<TD>Okna dialogowe | Palety</TD>
+<TD>Ctrl+P
+</TD>
+</TR>
+
+<TR><TD>Magiczna różdżka</TD>
+<TD>Narzędzia | Zaznaczanie | Zaznaczanie rozmyte</TD>
+<TD>z
+</TD>
+</TR>
+
+<TR><TD>Wypełnianie kolorem</TD>
+<TD>Narzędzia | Rysowanie | Wypełnianie kubełkiem</TD>
+<TD>Shift+B
+</TD>
+</TR>
+
+<TR><TD>Wypełnianie gradientem</TD>
+<TD>Narzędzia | Rysowanie | Gradient</TD>
+<TD>l
+</TD>
+</TR>
+
+<TR><TD>Przesuwanie warstw</TD>
+<TD>Narzędzia | Przekształcanie | Przesuń</TD>
+<TD>m
+</TD>
+</TR>
+
+<TR><TD>Przesuwanie warstw</TD>
+<TD>-</TD>
+<TD>strzałki, Shift+strzałki
+</TD>
+</TR>
+
+<TR><TD>Zmiana bieżącej warstwy</TD>
+<TD>-</TD>
+<TD>PgDown/PgUp
+</TD>
+</TR>
+
+<TR><TD>Obniżanie/podnoszenie warstwy</TD>
+<TD>-</TD>
+<TD>Shift+PgUp, Shift+PgDown
+</TD>
+</TR>
+
+<TR><TD>Warstwa na szczyt/na dół</TD>
+<TD>-</TD>
+<TD>Ctrl+PgUp, Ctrl+PgDown
+</TD>
+</TR>
+
+<TR><TD>Działanie maski</TD>
+<TD>-</TD>
+<TD>Ctrl+klik w maskę</TD>
+</TR>
+
+
+</TABLE><P class="listing">Tabela 2. Opcje menu kontekstowego obrazu.</P></DIV>
+
+
+</TD>
+</TR>
+</TABLE>
+</BODY>
+
+<!-- Mirrored from www.gajdaw.pl/gimp/warstwy.html by HTTrack Website Copier/3.x [XR&CO'2006], Thu, 09 Feb 2006 19:56:36 GMT -->
+</HTML>
+
+
+

@@ -1,0 +1,3 @@
+﻿W pliku tekstowym zbior.txt znajduje się zbiór liczb naturalnych
+oddzielonych od siebie spacjami. Znajdź największą i najmniejszą
+z nich oraz oblicz ich średnią.
