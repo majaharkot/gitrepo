@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="rysunek.svg">
+  <defs
+     id="defs2">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 148.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="210 : 148.5 : 1"
+       inkscape:persp3d-origin="105 : 99 : 1"
+       id="perspective3899" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3893">
+      <stop
+         style="stop-color:#5875c2;stop-opacity:1;"
+         offset="0"
+         id="stop3889" />
+      <stop
+         style="stop-color:#5875c2;stop-opacity:0;"
+         offset="1"
+         id="stop3891" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3893"
+       id="linearGradient3897"
+       x1="14.859839"
+       y1="27.786053"
+       x2="75.35984"
+       y2="27.786053"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.96"
+     inkscape:cx="131.21274"
+     inkscape:cy="994.03711"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="false"
+     inkscape:window-width="1853"
+     inkscape:window-height="1021"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g861"
+       transform="translate(10.085227,-3.1950788)" />
+    <rect
+       style="opacity:1;fill:#fbfbfb;fill-opacity:1;fill-rule:nonzero;stroke:#a4afca;stroke-width:0.7;stroke-miterlimit:0.2;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2435"
+       width="60"
+       height="30"
+       x="8.2235355"
+       y="14.360642" />
+    <rect
+       style="opacity:1;fill:#a4afca;fill-opacity:1;fill-rule:nonzero;stroke:#a4afca;stroke-width:0.69999999;stroke-miterlimit:0.2;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2437"
+       width="60"
+       height="4"
+       x="8.2235355"
+       y="14.360642" />
+    <rect
+       style="opacity:1;fill:#e6210d;fill-opacity:1;fill-rule:nonzero;stroke:#a4afca;stroke-width:0;stroke-miterlimit:0.2;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2449"
+       width="4.499999"
+       height="1.9999989"
+       x="61.977001"
+       y="15.412001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffeaea;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="63.228405"
+       y="17.233227"
+       id="text2453"><tspan
+         sodipodi:role="line"
+         id="tspan2451"
+         x="63.228405"
+         y="17.233227"
+         style="font-size:3.17499995px;fill:#ffeaea;fill-opacity:1;stroke-width:0.26458332">x</tspan></text>
+    <rect
+       style="opacity:1;fill:#c9cedc;fill-opacity:1;fill-rule:nonzero;stroke:#a4afca;stroke-width:0;stroke-miterlimit:0.2;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2455"
+       width="4.4999995"
+       height="1.9999993"
+       x="56.677002"
+       y="15.412001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="57.97345"
+       y="16.14201"
+       id="text2459"><tspan
+         sodipodi:role="line"
+         id="tspan2457"
+         x="57.97345"
+         y="16.14201"
+         style="font-size:3.52777767px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332">_</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="9.0280123"
+       y="16.952843"
+       id="text2463"><tspan
+         sodipodi:role="line"
+         id="tspan2461"
+         x="9.0280123"
+         y="16.952843"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332">business_card.html</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="10.100647"
+       y="23.924971"
+       id="text2467"><tspan
+         sodipodi:role="line"
+         id="tspan2465"
+         x="10.100647"
+         y="23.924971"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332">&lt;card&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="10.100647"
+         y="26.570805"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+         id="tspan2473"
+         dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0">   &lt;name&gt;            &lt;/name&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="10.100647"
+         y="29.216637"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+         id="tspan2475">   &lt;title&gt;           &lt;/title&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="10.100647"
+         y="31.862471"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+         id="tspan2477">   &lt;telephone&gt;           &lt;/telephone&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="10.100647"
+         y="34.508305"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+         id="tspan2479">   &lt;email&gt;                          &lt;/email&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="10.100647"
+         y="37.154137"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+         id="tspan2469">   &lt;firm&gt;             &lt;/firm&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="10.100647"
+         y="39.799969"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+         id="tspan2471">&lt;/card&gt;</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2481"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:18.66666667px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion2483"><rect
+           id="rect2485"
+           width="66.891891"
+           height="22.297297"
+           x="22.635136"
+           y="16.438604" /></flowRegion><flowPara
+         id="flowPara2487"></flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2489"
+       style="font-style:normal;font-weight:normal;font-size:18.66666603px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.14615446,0,0,0.17759314,15.262478,20.018187)"><flowRegion
+         id="flowRegion2491"><rect
+           id="rect2493"
+           width="202.36487"
+           height="22.972973"
+           x="46.283783"
+           y="20.830496" /></flowRegion><flowPara
+         id="flowPara2495"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.32781124px;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">Maja Harkot</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2497"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18.66666603px;line-height:1.25;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,-2.4818937,18.971076)"><flowRegion
+         id="flowRegion2499"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18.66666603px;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"><rect
+           id="rect2501"
+           width="213.51352"
+           height="23.986486"
+           x="97.972977"
+           y="21.168333"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18.66666603px;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
+         id="flowPara2503"
+         style="font-size:9.33333302px">Webmaster</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2505"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.33333302px;line-height:1.25;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,-2.9182933,26.033084)"><flowRegion
+         id="flowRegion2507"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.33333302px;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"><rect
+           id="rect2509"
+           width="69.932434"
+           height="24.324324"
+           x="118.24324"
+           y="13.398064"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.33333302px;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
+         id="flowPara2511">788584423</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2513"
+       style="font-style:normal;font-weight:normal;font-size:9.33333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,1.1620214,31.306895)"><flowRegion
+         id="flowRegion2515"
+         style="font-size:9.33333302px"><rect
+           id="rect2517"
+           width="189.52702"
+           height="30.067568"
+           x="82.432434"
+           y="3.2629282"
+           style="font-size:9.33333302px" /></flowRegion><flowPara
+         id="flowPara2519"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.33333302px;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">realwebmaster@mail.com</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2521"
+       style="font-style:normal;font-weight:normal;font-size:18.66666603px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,6.4358108,28.603604)"><flowRegion
+         id="flowRegion2523"><rect
+           id="rect2525"
+           width="121.62162"
+           height="25.337837"
+           x="57.432434"
+           y="15.425091" /></flowRegion><flowPara
+         id="flowPara2527"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.33333302px;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">The Masters</flowPara></flowRoot>  </g>
+</svg>
