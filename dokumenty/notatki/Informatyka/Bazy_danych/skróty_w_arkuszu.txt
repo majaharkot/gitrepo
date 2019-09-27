@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-09-17T09:17:11+02:00
+
+====== skróty w arkuszu ======
+Created wtorek 17 września 2019
+
+CTRL+SHIFT+STRAZŁKA W DÓŁ

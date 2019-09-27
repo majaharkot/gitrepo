@@ -41,3 +41,32 @@ primary key - klucz główny
 podstawowym typem relacji w bazach danych jest jeden do wielu
 
 autoinkrementacja
+
+ANOMALIE BAZ DANYCH:
+	- anomalia usówania
+	- anomalia modyfikacji
+	- anomalia dodawania
+	- redundancja
+
+NORMALIZACJA BAZY DANYCH
+
+__Normalizacja__ to bezstratny proces organizowania danych w tabelach mający na celu zmniejszenie ilości danych składowanych w bazie oraz wyeliminowanie potencjalnych anomalii
+
+* PIERWSZA POSTAĆ NORMALNA 
+
+== atomowość danych - każde pole w bazie przechowuje jedną informacje ==
+			Mówimy, że tabela (encja) jest w pierwszej postaci normalnej, kiedy wiersz przechowuje informacje o pojedynczym obiekcie, nie zawiera kolekcji, posiada klucz główny (kolumnę lub grupę kolumn jednoznacznie identyfikujących go w zbiorze) a dane są atomowe.
+			
+* DRUGA POSTAĆ NORMALNA
+   każda tabela powinna przechowywać dane dotyczące tylko konkretnej klasy obiektów
+			Normalizując do 2NF, wydzielić należy zbiór atrybutów (kolumn) który jest zależny tylko od klucza głównego. Wszystkie atrybuty informacyjne (nie należące do klucza), muszą zawierać informacje o elementach tej konkretnej klasy (encji, tabeli) a nie żadnej innej.
+
+* TRZECIA POSTAĆ NORMALNA
+   kolumna informacyjna nie należąca do klucza nie zależy też od innej kolumny informacyjnej, nie należącej do klucza (Czyli każdy niekluczowy argument jest bezpośrednio zależny tylko od klucza głównego a
+   nie od innej kolumny )
+
+DANE/TEKST JAKO KOLUMNY — ROZDZIELANIE KOLUMNY NA NP. DWIE
+
+SELECT listy.nazwa, AVG( punktacja.punkty ) FROM punktacja, listy WHERE punktacja.id_listy = listy.id_listy GROUP BY listy.nazwa
+SELECT listy.nazwa, AVG( punktacja.punkty ) FROM punktacja, listy WHERE punktacja.id_listy = listy.id_listy GROUP BY listy.nazwa HAVING ( ( listy.nazwa LIKE 'C%' ) )
+avg - pole wyliczeniowe
