@@ -1,0 +1,18 @@
+hasło: zaq1@WSX
+
+SHOW DATABASES;
+USE mysql;
+SHOW TABLES;
+DESCRIBE user;
+SELECT user,host,plugin,authentication_string FROM user;
+drop user 'adam'@localhost;  --usówanie użytkownika
+GRANT USAGE ON *.* TO 'ewa'@localhost IDENTIFIED BY 'zaq1@WSX';  --dodawanie użytkownika (tworzenie konta)
+CREATE DATABASE IF NOT EXISTS uczniowie3ag1;  --dodawanie bazy danych
+GRANT ALL PRIVILEGES ON uczniowie3ag1.* TO 'ewa'@localhost;  --nadawanie użytkownikowi uprawnień
+FLUSH PRIVILEGES;  --odświeżenie uprawnień
+SHOW GRANTS;  --pokaż moje uprawnienia
+USE uczniowie3ag1;
+SOURCE uczniowie_98.sql;  --utworzenie tabel w bazie na podstawie pliku sql
+LOAD DATA LOCAL INFILE 'uczniowie.csv' INTO TABLE uczniowie FIELDS TERMINATED BY ';' OPTIONALLY ENCLOSED BY '"' LINES TERMINATED BY '\n' IGNORE 1 LINES;  --dodawanie danych do tabeli z pliku csv
+na początku dodajemy dane do tabel, w których nie ma kluczy obcych!
+w celu sprawdzenia poprawności dodania stosujemy kwerendę: SELECT* FROM uczniowie;
