@@ -16,9 +16,9 @@ Lista::Lista() {
 }
 
 Lista::~Lista() {
-
-    while(header.head != NULL)
-        Usun();
+    ;
+    //while(header.head != NULL)
+        //Usun();
 
 }
 
@@ -29,8 +29,8 @@ void Lista::Dodaj(int value) {
     el -> next = NULL;
 
     if (header.head == NULL) {
-        head = el;
-        tail = el;
+        header.head = el;
+        header.tail = el;
     } else {
         header.tail -> next = el;  //łączenie elementów listy
         header.tail = el;
@@ -46,7 +46,6 @@ void Lista::Wyswietl() {
         cout << el -> value << endl;
         el = el -> next;
     }
-    cout << endl;
 }
 
 

@@ -8,7 +8,7 @@ typedef struct ELEMENT{
 typedef struct HEADER{
 
     ELEMENT *head;
-    ELEMENT *tial;
+    ELEMENT *tail;
 
 }HEADER;
 
