@@ -1,0 +1,61 @@
+id_zajec,id_obiektu,zajecia,cena
+1,7,Basen,9
+2,7,Aqua-aerobik,10
+3,7,Silownia,9
+4,7,Aqua running,11
+5,7,Fitness ABT,10
+6,7,Fitness Shape,10
+7,7,Basic Step,10
+8,7,Body Ball,10
+9,1,Zumba,10
+10,1,Fitness ABT,10
+11,1,Fitness TBC,10
+12,1,Fitness Shape,10
+13,1,Pilates,10
+14,1,Joga,11
+15,1,Dance Fit,11
+16,1,Active Pump,11
+17,1,Trening obwodowy,10
+18,1,Silownia,9
+19,3,Zumba,11
+20,3,Fitness TBC,11
+21,3,Silownia,9
+22,3,Pilates,10
+23,3,Indoor cycling,11
+24,6,Fitness ABT,11
+25,6,Fitness TBC,11
+26,6,Fitness Shape,11
+27,6,Joga,11
+28,6,Zumba,11
+29,6,Zdrowe plecy,11
+30,6,Pilates,11
+31,9,Fitness ABT,11
+32,9,Fitness TBC,11
+33,9,Fitness Shape,11
+34,9,Joga,11
+35,9,Zumba,11
+36,9,Zdrowe plecy,10
+37,9,Pilates,12
+38,5,Fitness ABT,12
+39,5,Fitness TBC,12
+40,5,Fitness Shape,12
+41,5,Zumba,12
+42,5,Pilates,11
+43,4,Pilates,11
+44,4,Zdrowe plecy,11
+45,4,Indoor walking,11
+46,4,Joga,11
+47,2,Aqua-aerobik,10
+48,2,Basen,9
+49,2,Zumba,11
+50,2,Zdrowe plecy,10
+51,2,Pilates,11
+52,2,Indoor cycling,11
+53,8,Silownia,9
+54,8,Aqua-aerobik,10
+55,8,Zumba,12
+56,8,Fitness ABT,12
+57,8,Fitness TBC,12
+58,8,Fitness Shape,12
+59,8,Pilates,12
+60,8,Body Art,12
