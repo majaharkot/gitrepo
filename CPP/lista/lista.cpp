@@ -16,9 +16,9 @@ Lista::Lista() {
 }
 
 Lista::~Lista() {
-    ;
-    //while(header.head != NULL)
-        //Usun();
+    
+    while(header.head != NULL)
+        Usun();
 
 }
 
@@ -46,6 +46,30 @@ void Lista::Wyswietl() {
         cout << el -> value << endl;
         el = el -> next;
     }
+}
+
+int Lista::Usun() {
+    
+    if(header.head == NULL)
+        return 0;
+
+    int value;
+
+    if (header.head == header.tail) {
+        value = header.head -> value;
+        delete header.head;
+        header.head = header.tail = NULL;
+    } else {
+        //value = header.tail -> value
+        ELEMENT *el = header.head;
+        while (el -> next != header.tail)
+            el = el -> next;        //zapis adresu przedostatniego
+        value = el -> next -> value;
+        delete el -> next;
+        el -> next = NULL;
+        header.tail = el;      // aktualizacja wskaznika ostatniego elementu
+    }
+    return value;
 }
 
 
